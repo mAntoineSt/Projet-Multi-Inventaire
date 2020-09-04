@@ -73,11 +73,72 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="Accueil et Options\Controles utilisateurs\AdministrationModification.Designer.vb">
+      <DependentUpon>AdministrationModification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Accueil et Options\Controles utilisateurs\AdministrationModification.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Accueil et Options\Controles utilisateurs\AdministrationSupression.Designer.vb">
+      <DependentUpon>AdministrationSupression.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Accueil et Options\Controles utilisateurs\AdministrationSupression.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Accueil et Options\Forms\Accueil.Designer.vb">
+      <DependentUpon>Accueil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Accueil et Options\Forms\Accueil.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Accueil et Options\Forms\Administration.Designer.vb">
+      <DependentUpon>Administration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Accueil et Options\Forms\Administration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accueil et Options\Forms\Options.Designer.vb">
+      <DependentUpon>Options.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Accueil et Options\Forms\Options.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\ClassBD.vb" />
+    <Compile Include="Connexions\Controles utilisateurs\CreationAdmin.Designer.vb">
+      <DependentUpon>CreationAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Connexions\Controles utilisateurs\CreationAdmin.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Connexions\Controles utilisateurs\CreationEtudiant.Designer.vb">
+      <DependentUpon>CreationEtudiant.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Connexions\Controles utilisateurs\CreationEtudiant.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Connexions\Controles utilisateurs\CreationPersonnel.Designer.vb">
+      <DependentUpon>CreationPersonnel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Connexions\Controles utilisateurs\CreationPersonnel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Connexions\Controles utilisateurs\CreationProfesseur.Designer.vb">
+      <DependentUpon>CreationProfesseur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Connexions\Controles utilisateurs\CreationProfesseur.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Connexions\Forms\Connexion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connexions\Forms\Connexion.Designer.vb">
+      <DependentUpon>Connexion.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connexions\Forms\Creation comptes.Designer.vb">
+      <DependentUpon>Creation comptes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Connexions\Forms\Creation comptes.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -95,10 +156,58 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Prêts\Controles utilisateurs\PretAjout.Designer.vb">
+      <DependentUpon>PretAjout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prêts\Controles utilisateurs\PretAjout.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prêts\Controles utilisateurs\PretModification.Designer.vb">
+      <DependentUpon>PretModification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prêts\Controles utilisateurs\PretModification.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prêts\Controles utilisateurs\PretSupression.Designer.vb">
+      <DependentUpon>PretSupression.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prêts\Controles utilisateurs\PretSupression.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prêts\Forms\Prets.Designer.vb">
+      <DependentUpon>Prets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prêts\Forms\Prets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Retours\Controles utilisateurs\RetourAjout.Designer.vb">
+      <DependentUpon>RetourAjout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Retours\Controles utilisateurs\RetourAjout.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Retours\Controles utilisateurs\RetourModification.Designer.vb">
+      <DependentUpon>RetourModification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Retours\Controles utilisateurs\RetourModification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Retours\Controles utilisateurs\RetourSuppression.Designer.vb">
+      <DependentUpon>RetourSuppression.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Retours\Controles utilisateurs\RetourSuppression.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Retours\Forms\Retours.Designer.vb">
+      <DependentUpon>Retours.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Retours\Forms\Retours.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Connexions\Forms\Connexion.resx">
+      <DependentUpon>Connexion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -119,5 +228,6 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
