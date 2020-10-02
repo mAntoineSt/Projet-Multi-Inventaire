@@ -209,6 +209,12 @@
     <EmbeddedResource Include="Accueil et Options\Forms\Accueil.resx">
       <DependentUpon>Accueil.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Accueil et Options\Forms\Administration.resx">
+      <DependentUpon>Administration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accueil et Options\Forms\Options.resx">
+      <DependentUpon>Options.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Connexions\Forms\Connexion.resx">
       <DependentUpon>Connexion.vb</DependentUpon>
     </EmbeddedResource>
