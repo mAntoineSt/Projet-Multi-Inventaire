@@ -91,16 +91,40 @@
     <Compile Include="Accueil et Options\Forms\Accueil.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Accueil et Options\Forms\Administration.Designer.vb">
+    <Compile Include="Administration\Forms\Administration.Designer.vb">
       <DependentUpon>Administration.vb</DependentUpon>
     </Compile>
-    <Compile Include="Accueil et Options\Forms\Administration.vb">
+    <Compile Include="Administration\Forms\Administration.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Accueil et Options\Forms\Options.Designer.vb">
       <DependentUpon>Options.vb</DependentUpon>
     </Compile>
     <Compile Include="Accueil et Options\Forms\Options.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administration\Forms\Gestion_Admins.Designer.vb">
+      <DependentUpon>Gestion_Admins.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Forms\Gestion_Admins.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administration\Forms\Gestion_Emprunteurs.Designer.vb">
+      <DependentUpon>Gestion_Emprunteurs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Forms\Gestion_Emprunteurs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administration\Forms\Gestion_Preteurs.Designer.vb">
+      <DependentUpon>Gestion_Preteurs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Forms\Gestion_Preteurs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administration\Forms\Stats.Designer.vb">
+      <DependentUpon>Stats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Forms\Stats.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Classes\ClassBD.vb" />
@@ -209,11 +233,14 @@
     <EmbeddedResource Include="Accueil et Options\Forms\Accueil.resx">
       <DependentUpon>Accueil.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Accueil et Options\Forms\Administration.resx">
+    <EmbeddedResource Include="Administration\Forms\Administration.resx">
       <DependentUpon>Administration.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Accueil et Options\Forms\Options.resx">
       <DependentUpon>Options.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\Forms\Stats.resx">
+      <DependentUpon>Stats.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Connexions\Forms\Connexion.resx">
       <DependentUpon>Connexion.vb</DependentUpon>
@@ -237,6 +264,8 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Administration\Controles utilisateurs\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
