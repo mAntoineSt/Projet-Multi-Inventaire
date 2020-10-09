@@ -141,6 +141,36 @@
     <Compile Include="Connexions\Forms\Creation comptes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Gestion du Matériel\Controles utilisateurs\EnregistrementMateriel.Designer.vb">
+      <DependentUpon>EnregistrementMateriel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion du Matériel\Controles utilisateurs\EnregistrementMateriel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gestion du Matériel\Controles utilisateurs\FicheMateriel.Designer.vb">
+      <DependentUpon>FicheMateriel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion du Matériel\Controles utilisateurs\FicheMateriel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gestion du Matériel\Controles utilisateurs\ListeMateriel.Designer.vb">
+      <DependentUpon>ListeMateriel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion du Matériel\Controles utilisateurs\ListeMateriel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gestion du Matériel\Controles utilisateurs\PanneauAccueil.Designer.vb">
+      <DependentUpon>PanneauAccueil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion du Matériel\Controles utilisateurs\PanneauAccueil.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gestion du Matériel\Forms\GestionMateriel.Designer.vb">
+      <DependentUpon>GestionMateriel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion du Matériel\Forms\GestionMateriel.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -190,7 +220,7 @@
       <DependentUpon>RetourModification.vb</DependentUpon>
     </Compile>
     <Compile Include="Retours\Controles utilisateurs\RetourModification.vb">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Retours\Controles utilisateurs\RetourSuppression.Designer.vb">
       <DependentUpon>RetourSuppression.vb</DependentUpon>
@@ -208,6 +238,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Connexions\Forms\Connexion.resx">
       <DependentUpon>Connexion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion du Matériel\Controles utilisateurs\ListeMateriel.resx">
+      <DependentUpon>ListeMateriel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion du Matériel\Forms\GestionMateriel.resx">
+      <DependentUpon>GestionMateriel.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
