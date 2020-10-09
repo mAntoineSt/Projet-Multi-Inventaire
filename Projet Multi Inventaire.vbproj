@@ -141,36 +141,6 @@
     <Compile Include="Connexions\Forms\Creation comptes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Gestion du Matériel\Controles utilisateur\AccueilMateriel.Designer.vb">
-      <DependentUpon>AccueilMateriel.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Gestion du Matériel\Controles utilisateur\AccueilMateriel.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Gestion du Matériel\Controles utilisateur\EnregistrementMateriel.Designer.vb">
-      <DependentUpon>EnregistrementMateriel.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Gestion du Matériel\Controles utilisateur\EnregistrementMateriel.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Gestion du Matériel\Controles utilisateur\FicheMateriel.Designer.vb">
-      <DependentUpon>FicheMateriel.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Gestion du Matériel\Controles utilisateur\FicheMateriel.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Gestion du Matériel\Controles utilisateur\ListeMateriel.Designer.vb">
-      <DependentUpon>ListeMateriel.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Gestion du Matériel\Controles utilisateur\ListeMateriel.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Gestion du Matériel\Forms\GestionMateriel.Designer.vb">
-      <DependentUpon>GestionMateriel.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Gestion du Matériel\Forms\GestionMateriel.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
