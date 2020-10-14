@@ -27,6 +27,22 @@ Partial Class Statistiques
         Me.bPreteurs = New System.Windows.Forms.Button()
         Me.bAdministrateurs = New System.Windows.Forms.Button()
         Me.gbGlobale = New System.Windows.Forms.GroupBox()
+        Me.lNbrFraisRetards = New System.Windows.Forms.Label()
+        Me.lTitreNbrFraisRetards = New System.Windows.Forms.Label()
+        Me.bGlobalePDF = New System.Windows.Forms.Button()
+        Me.bGlobaleDOCS = New System.Windows.Forms.Button()
+        Me.bGlobaleXLSX = New System.Windows.Forms.Button()
+        Me.lNbrResponsabilites = New System.Windows.Forms.Label()
+        Me.lNbrConditions = New System.Windows.Forms.Label()
+        Me.lNbrEquipements = New System.Windows.Forms.Label()
+        Me.lNbrAdministratifs = New System.Windows.Forms.Label()
+        Me.lNbrPreteurs = New System.Windows.Forms.Label()
+        Me.lNbrEmprunteurs = New System.Windows.Forms.Label()
+        Me.lNbrPersonneBD = New System.Windows.Forms.Label()
+        Me.lNbrRetours = New System.Windows.Forms.Label()
+        Me.lNbrPrets = New System.Windows.Forms.Label()
+        Me.lNbrOuverturesApplis = New System.Windows.Forms.Label()
+        Me.lTitreNbrResponsabilites = New System.Windows.Forms.Label()
         Me.lTitreNbrConditions = New System.Windows.Forms.Label()
         Me.lTitreNbrEquipements = New System.Windows.Forms.Label()
         Me.lTitreNbrAdministratifs = New System.Windows.Forms.Label()
@@ -43,56 +59,67 @@ Partial Class Statistiques
         Me.lGlobaleChoixMois = New System.Windows.Forms.Label()
         Me.gbPartieEmprunteurs = New System.Windows.Forms.GroupBox()
         Me.gbPartiePreteurs = New System.Windows.Forms.GroupBox()
-        Me.gbPartieAdministrateur = New System.Windows.Forms.GroupBox()
-        Me.bGlobalePDF = New System.Windows.Forms.Button()
-        Me.bGlobaleDOCS = New System.Windows.Forms.Button()
-        Me.bGlobaleXLSX = New System.Windows.Forms.Button()
-        Me.lTitreNbrResponsabilites = New System.Windows.Forms.Label()
-        Me.lNbrOuverturesApplis = New System.Windows.Forms.Label()
-        Me.lNbrPrets = New System.Windows.Forms.Label()
-        Me.lNbrRetours = New System.Windows.Forms.Label()
-        Me.lNbrPersonneBD = New System.Windows.Forms.Label()
-        Me.lNbrEmprunteurs = New System.Windows.Forms.Label()
-        Me.lNbrPreteurs = New System.Windows.Forms.Label()
-        Me.lNbrAdministratifs = New System.Windows.Forms.Label()
-        Me.lNbrEquipements = New System.Windows.Forms.Label()
-        Me.lNbrConditions = New System.Windows.Forms.Label()
-        Me.lNbrResponsabilites = New System.Windows.Forms.Label()
-        Me.bEmprunteursPDF = New System.Windows.Forms.Button()
-        Me.bEmprunteursDOCS = New System.Windows.Forms.Button()
-        Me.bEmprunteursXLSX = New System.Windows.Forms.Button()
-        Me.cbEmprunteurChoixAnnee = New System.Windows.Forms.ComboBox()
-        Me.cbEmprunteurChoixMois = New System.Windows.Forms.ComboBox()
-        Me.lEmprunteurTitreChoixAnnee = New System.Windows.Forms.Label()
-        Me.lEmprunteurTitreChoixMois = New System.Windows.Forms.Label()
-        Me.lTitrePartieEmprunteurs = New System.Windows.Forms.Label()
-        Me.lEmprunteursTitreNbrEmprunteurs = New System.Windows.Forms.Label()
-        Me.lEmprunteurTitreNbrPretsEffectuees = New System.Windows.Forms.Label()
-        Me.lEmprunteursTitreNbrPretsActifs = New System.Windows.Forms.Label()
-        Me.lEmprunteursTitreNbrRetoursEffectuees = New System.Windows.Forms.Label()
-        Me.lEmprunteursTitreNbrEmpruntsActifs = New System.Windows.Forms.Label()
-        Me.lEmprunteurTitreEmprunteursSuspendues = New System.Windows.Forms.Label()
-        Me.lEmprunteursTitreNbrRetoursAttentes = New System.Windows.Forms.Label()
-        Me.lTitreNbrFraisRetards = New System.Windows.Forms.Label()
-        Me.lNbrFraisRetards = New System.Windows.Forms.Label()
-        Me.lEmprunteursNbrEmprunteurs = New System.Windows.Forms.Label()
-        Me.lEmprunteursNbrEmpruntsActifs = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.lEmprunteurNbrPretsEffectuees = New System.Windows.Forms.Label()
-        Me.lEmprunteursNbrPretsActifs = New System.Windows.Forms.Label()
-        Me.lEmprunteursNbrRetoursEffectuees = New System.Windows.Forms.Label()
-        Me.lEmprunteursNbrRetoursAttentes = New System.Windows.Forms.Label()
+        Me.bPreteursPDF = New System.Windows.Forms.Button()
+        Me.bPreteursDOCS = New System.Windows.Forms.Button()
+        Me.bPreteursXLSX = New System.Windows.Forms.Button()
         Me.lPreteursTitre = New System.Windows.Forms.Label()
         Me.cbPreteursChoixAnnee = New System.Windows.Forms.ComboBox()
         Me.cbPreteursChoixMois = New System.Windows.Forms.ComboBox()
         Me.lPreteursTitreChoixAnnee = New System.Windows.Forms.Label()
         Me.lPreteursTitreChoixMois = New System.Windows.Forms.Label()
-        Me.bPreteursPDF = New System.Windows.Forms.Button()
-        Me.bPreteursDOCS = New System.Windows.Forms.Button()
-        Me.bPreteursXLSX = New System.Windows.Forms.Button()
+        Me.lEmprunteursNbrRetoursAttentes = New System.Windows.Forms.Label()
+        Me.lEmprunteursNbrRetoursEffectuees = New System.Windows.Forms.Label()
+        Me.lEmprunteursNbrPretsActifs = New System.Windows.Forms.Label()
+        Me.lEmprunteurNbrPretsEffectuees = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.lEmprunteursNbrEmpruntsActifs = New System.Windows.Forms.Label()
+        Me.lEmprunteursNbrEmprunteurs = New System.Windows.Forms.Label()
+        Me.lEmprunteursTitreNbrRetoursAttentes = New System.Windows.Forms.Label()
+        Me.lEmprunteurTitreEmprunteursSuspendues = New System.Windows.Forms.Label()
+        Me.lEmprunteursTitreNbrEmpruntsActifs = New System.Windows.Forms.Label()
+        Me.lEmprunteursTitreNbrRetoursEffectuees = New System.Windows.Forms.Label()
+        Me.lEmprunteursTitreNbrPretsActifs = New System.Windows.Forms.Label()
+        Me.lEmprunteurTitreNbrPretsEffectuees = New System.Windows.Forms.Label()
+        Me.lEmprunteursTitreNbrEmprunteurs = New System.Windows.Forms.Label()
+        Me.lTitrePartieEmprunteurs = New System.Windows.Forms.Label()
+        Me.cbEmprunteurChoixAnnee = New System.Windows.Forms.ComboBox()
+        Me.cbEmprunteurChoixMois = New System.Windows.Forms.ComboBox()
+        Me.lEmprunteurTitreChoixAnnee = New System.Windows.Forms.Label()
+        Me.lEmprunteurTitreChoixMois = New System.Windows.Forms.Label()
+        Me.bEmprunteursPDF = New System.Windows.Forms.Button()
+        Me.bEmprunteursDOCS = New System.Windows.Forms.Button()
+        Me.bEmprunteursXLSX = New System.Windows.Forms.Button()
+        Me.gbPartieAdministrateur = New System.Windows.Forms.GroupBox()
+        Me.lPreteursTitreNbrPreteurs = New System.Windows.Forms.Label()
+        Me.lPreteursTitreNbrPreteursActifs = New System.Windows.Forms.Label()
+        Me.lPreteursTitreNbrPreteursSuspendues = New System.Windows.Forms.Label()
+        Me.lPreteursTitreNbrPretsAutorisees = New System.Windows.Forms.Label()
+        Me.lPreteursTitreNbrRetoursAutorisees = New System.Windows.Forms.Label()
+        Me.lPreteursTitreNbrRetoursAttentesAutorisation = New System.Windows.Forms.Label()
+        Me.lPreteursNbrPreteurs = New System.Windows.Forms.Label()
+        Me.lPreteursNbrPreteursActifs = New System.Windows.Forms.Label()
+        Me.lPreteursNbrPreteursSuspendues = New System.Windows.Forms.Label()
+        Me.lPreteursNbrPretsAutorisees = New System.Windows.Forms.Label()
+        Me.lPreteursNbrRetoursAutorisees = New System.Windows.Forms.Label()
+        Me.lPreteursNbrRetoursAttentesAutorisation = New System.Windows.Forms.Label()
+        Me.bAdminsPDF = New System.Windows.Forms.Button()
+        Me.bAdminsDOCS = New System.Windows.Forms.Button()
+        Me.bAdminsXLSX = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.cbAdminsChoixAnnee = New System.Windows.Forms.ComboBox()
+        Me.cbAdminsChoixMois = New System.Windows.Forms.ComboBox()
+        Me.lAdminsTitreChoixAnnee = New System.Windows.Forms.Label()
+        Me.lAdminsTitreChoixMois = New System.Windows.Forms.Label()
+        Me.lAdminsTitreNombreAdmins = New System.Windows.Forms.Label()
+        Me.lAdminsTitreNbrAdminsActifs = New System.Windows.Forms.Label()
+        Me.lAdminsTitreNbrAdminsSuspendues = New System.Windows.Forms.Label()
+        Me.lAdminsNombreAdmins = New System.Windows.Forms.Label()
+        Me.lAdminsNbrAdminsActifs = New System.Windows.Forms.Label()
+        Me.lAdminsNbrAdminsSuspendues = New System.Windows.Forms.Label()
         Me.gbGlobale.SuspendLayout()
         Me.gbPartieEmprunteurs.SuspendLayout()
         Me.gbPartiePreteurs.SuspendLayout()
+        Me.gbPartieAdministrateur.SuspendLayout()
         Me.SuspendLayout()
         '
         'bPartieGlobale
@@ -169,6 +196,150 @@ Partial Class Statistiques
         Me.gbGlobale.TabIndex = 4
         Me.gbGlobale.TabStop = False
         Me.gbGlobale.Text = "Partie globale"
+        '
+        'lNbrFraisRetards
+        '
+        Me.lNbrFraisRetards.AutoSize = True
+        Me.lNbrFraisRetards.Location = New System.Drawing.Point(229, 358)
+        Me.lNbrFraisRetards.Name = "lNbrFraisRetards"
+        Me.lNbrFraisRetards.Size = New System.Drawing.Size(54, 13)
+        Me.lNbrFraisRetards.TabIndex = 29
+        Me.lNbrFraisRetards.Text = "NOMBRE"
+        '
+        'lTitreNbrFraisRetards
+        '
+        Me.lTitreNbrFraisRetards.AutoSize = True
+        Me.lTitreNbrFraisRetards.Location = New System.Drawing.Point(26, 357)
+        Me.lTitreNbrFraisRetards.Name = "lTitreNbrFraisRetards"
+        Me.lTitreNbrFraisRetards.Size = New System.Drawing.Size(197, 13)
+        Me.lTitreNbrFraisRetards.TabIndex = 28
+        Me.lTitreNbrFraisRetards.Text = "Nombre de frais de retards accumulées :"
+        '
+        'bGlobalePDF
+        '
+        Me.bGlobalePDF.Location = New System.Drawing.Point(496, 296)
+        Me.bGlobalePDF.Name = "bGlobalePDF"
+        Me.bGlobalePDF.Size = New System.Drawing.Size(164, 71)
+        Me.bGlobalePDF.TabIndex = 6
+        Me.bGlobalePDF.Text = "Exporter en .PDF"
+        Me.bGlobalePDF.UseVisualStyleBackColor = True
+        '
+        'bGlobaleDOCS
+        '
+        Me.bGlobaleDOCS.Location = New System.Drawing.Point(496, 181)
+        Me.bGlobaleDOCS.Name = "bGlobaleDOCS"
+        Me.bGlobaleDOCS.Size = New System.Drawing.Size(164, 71)
+        Me.bGlobaleDOCS.TabIndex = 7
+        Me.bGlobaleDOCS.Text = "Exporter en .DOCS"
+        Me.bGlobaleDOCS.UseVisualStyleBackColor = True
+        '
+        'bGlobaleXLSX
+        '
+        Me.bGlobaleXLSX.Location = New System.Drawing.Point(496, 70)
+        Me.bGlobaleXLSX.Name = "bGlobaleXLSX"
+        Me.bGlobaleXLSX.Size = New System.Drawing.Size(164, 71)
+        Me.bGlobaleXLSX.TabIndex = 8
+        Me.bGlobaleXLSX.Text = "Exporter en .XLSX"
+        Me.bGlobaleXLSX.UseVisualStyleBackColor = True
+        '
+        'lNbrResponsabilites
+        '
+        Me.lNbrResponsabilites.AutoSize = True
+        Me.lNbrResponsabilites.Location = New System.Drawing.Point(210, 331)
+        Me.lNbrResponsabilites.Name = "lNbrResponsabilites"
+        Me.lNbrResponsabilites.Size = New System.Drawing.Size(54, 13)
+        Me.lNbrResponsabilites.TabIndex = 27
+        Me.lNbrResponsabilites.Text = "NOMBRE"
+        '
+        'lNbrConditions
+        '
+        Me.lNbrConditions.AutoSize = True
+        Me.lNbrConditions.Location = New System.Drawing.Point(188, 304)
+        Me.lNbrConditions.Name = "lNbrConditions"
+        Me.lNbrConditions.Size = New System.Drawing.Size(54, 13)
+        Me.lNbrConditions.TabIndex = 26
+        Me.lNbrConditions.Text = "NOMBRE"
+        '
+        'lNbrEquipements
+        '
+        Me.lNbrEquipements.AutoSize = True
+        Me.lNbrEquipements.Location = New System.Drawing.Point(181, 277)
+        Me.lNbrEquipements.Name = "lNbrEquipements"
+        Me.lNbrEquipements.Size = New System.Drawing.Size(54, 13)
+        Me.lNbrEquipements.TabIndex = 25
+        Me.lNbrEquipements.Text = "NOMBRE"
+        '
+        'lNbrAdministratifs
+        '
+        Me.lNbrAdministratifs.AutoSize = True
+        Me.lNbrAdministratifs.Location = New System.Drawing.Point(191, 253)
+        Me.lNbrAdministratifs.Name = "lNbrAdministratifs"
+        Me.lNbrAdministratifs.Size = New System.Drawing.Size(54, 13)
+        Me.lNbrAdministratifs.TabIndex = 23
+        Me.lNbrAdministratifs.Text = "NOMBRE"
+        '
+        'lNbrPreteurs
+        '
+        Me.lNbrPreteurs.AutoSize = True
+        Me.lNbrPreteurs.Location = New System.Drawing.Point(161, 227)
+        Me.lNbrPreteurs.Name = "lNbrPreteurs"
+        Me.lNbrPreteurs.Size = New System.Drawing.Size(54, 13)
+        Me.lNbrPreteurs.TabIndex = 22
+        Me.lNbrPreteurs.Text = "NOMBRE"
+        '
+        'lNbrEmprunteurs
+        '
+        Me.lNbrEmprunteurs.AutoSize = True
+        Me.lNbrEmprunteurs.Location = New System.Drawing.Point(175, 200)
+        Me.lNbrEmprunteurs.Name = "lNbrEmprunteurs"
+        Me.lNbrEmprunteurs.Size = New System.Drawing.Size(54, 13)
+        Me.lNbrEmprunteurs.TabIndex = 21
+        Me.lNbrEmprunteurs.Text = "NOMBRE"
+        '
+        'lNbrPersonneBD
+        '
+        Me.lNbrPersonneBD.AutoSize = True
+        Me.lNbrPersonneBD.Location = New System.Drawing.Point(307, 172)
+        Me.lNbrPersonneBD.Name = "lNbrPersonneBD"
+        Me.lNbrPersonneBD.Size = New System.Drawing.Size(54, 13)
+        Me.lNbrPersonneBD.TabIndex = 20
+        Me.lNbrPersonneBD.Text = "NOMBRE"
+        '
+        'lNbrRetours
+        '
+        Me.lNbrRetours.AutoSize = True
+        Me.lNbrRetours.Location = New System.Drawing.Point(179, 135)
+        Me.lNbrRetours.Name = "lNbrRetours"
+        Me.lNbrRetours.Size = New System.Drawing.Size(54, 13)
+        Me.lNbrRetours.TabIndex = 19
+        Me.lNbrRetours.Text = "NOMBRE"
+        '
+        'lNbrPrets
+        '
+        Me.lNbrPrets.AutoSize = True
+        Me.lNbrPrets.Location = New System.Drawing.Point(166, 99)
+        Me.lNbrPrets.Name = "lNbrPrets"
+        Me.lNbrPrets.Size = New System.Drawing.Size(54, 13)
+        Me.lNbrPrets.TabIndex = 18
+        Me.lNbrPrets.Text = "NOMBRE"
+        '
+        'lNbrOuverturesApplis
+        '
+        Me.lNbrOuverturesApplis.AutoSize = True
+        Me.lNbrOuverturesApplis.Location = New System.Drawing.Point(210, 67)
+        Me.lNbrOuverturesApplis.Name = "lNbrOuverturesApplis"
+        Me.lNbrOuverturesApplis.Size = New System.Drawing.Size(54, 13)
+        Me.lNbrOuverturesApplis.TabIndex = 17
+        Me.lNbrOuverturesApplis.Text = "NOMBRE"
+        '
+        'lTitreNbrResponsabilites
+        '
+        Me.lTitreNbrResponsabilites.AutoSize = True
+        Me.lTitreNbrResponsabilites.Location = New System.Drawing.Point(26, 331)
+        Me.lTitreNbrResponsabilites.Name = "lTitreNbrResponsabilites"
+        Me.lTitreNbrResponsabilites.Size = New System.Drawing.Size(178, 13)
+        Me.lTitreNbrResponsabilites.TabIndex = 16
+        Me.lTitreNbrResponsabilites.Text = "Nombre de responsabilités inscrites :"
         '
         'lTitreNbrConditions
         '
@@ -299,7 +470,6 @@ Partial Class Statistiques
         '
         'gbPartieEmprunteurs
         '
-        Me.gbPartieEmprunteurs.Controls.Add(Me.gbPartiePreteurs)
         Me.gbPartieEmprunteurs.Controls.Add(Me.lEmprunteursNbrRetoursAttentes)
         Me.gbPartieEmprunteurs.Controls.Add(Me.lEmprunteursNbrRetoursEffectuees)
         Me.gbPartieEmprunteurs.Controls.Add(Me.lEmprunteursNbrPretsActifs)
@@ -322,7 +492,7 @@ Partial Class Statistiques
         Me.gbPartieEmprunteurs.Controls.Add(Me.bEmprunteursPDF)
         Me.gbPartieEmprunteurs.Controls.Add(Me.bEmprunteursDOCS)
         Me.gbPartieEmprunteurs.Controls.Add(Me.bEmprunteursXLSX)
-        Me.gbPartieEmprunteurs.Location = New System.Drawing.Point(302, 39)
+        Me.gbPartieEmprunteurs.Location = New System.Drawing.Point(296, 40)
         Me.gbPartieEmprunteurs.Name = "gbPartieEmprunteurs"
         Me.gbPartieEmprunteurs.Size = New System.Drawing.Size(697, 394)
         Me.gbPartieEmprunteurs.TabIndex = 5
@@ -332,6 +502,18 @@ Partial Class Statistiques
         '
         'gbPartiePreteurs
         '
+        Me.gbPartiePreteurs.Controls.Add(Me.lPreteursNbrRetoursAttentesAutorisation)
+        Me.gbPartiePreteurs.Controls.Add(Me.lPreteursNbrRetoursAutorisees)
+        Me.gbPartiePreteurs.Controls.Add(Me.lPreteursNbrPretsAutorisees)
+        Me.gbPartiePreteurs.Controls.Add(Me.lPreteursNbrPreteursSuspendues)
+        Me.gbPartiePreteurs.Controls.Add(Me.lPreteursNbrPreteursActifs)
+        Me.gbPartiePreteurs.Controls.Add(Me.lPreteursNbrPreteurs)
+        Me.gbPartiePreteurs.Controls.Add(Me.lPreteursTitreNbrRetoursAttentesAutorisation)
+        Me.gbPartiePreteurs.Controls.Add(Me.lPreteursTitreNbrRetoursAutorisees)
+        Me.gbPartiePreteurs.Controls.Add(Me.lPreteursTitreNbrPretsAutorisees)
+        Me.gbPartiePreteurs.Controls.Add(Me.lPreteursTitreNbrPreteursSuspendues)
+        Me.gbPartiePreteurs.Controls.Add(Me.lPreteursTitreNbrPreteursActifs)
+        Me.gbPartiePreteurs.Controls.Add(Me.lPreteursTitreNbrPreteurs)
         Me.gbPartiePreteurs.Controls.Add(Me.bPreteursPDF)
         Me.gbPartiePreteurs.Controls.Add(Me.bPreteursDOCS)
         Me.gbPartiePreteurs.Controls.Add(Me.bPreteursXLSX)
@@ -340,7 +522,7 @@ Partial Class Statistiques
         Me.gbPartiePreteurs.Controls.Add(Me.cbPreteursChoixMois)
         Me.gbPartiePreteurs.Controls.Add(Me.lPreteursTitreChoixAnnee)
         Me.gbPartiePreteurs.Controls.Add(Me.lPreteursTitreChoixMois)
-        Me.gbPartiePreteurs.Location = New System.Drawing.Point(0, 0)
+        Me.gbPartiePreteurs.Location = New System.Drawing.Point(295, 39)
         Me.gbPartiePreteurs.Name = "gbPartiePreteurs"
         Me.gbPartiePreteurs.Size = New System.Drawing.Size(697, 396)
         Me.gbPartiePreteurs.TabIndex = 5
@@ -348,372 +530,32 @@ Partial Class Statistiques
         Me.gbPartiePreteurs.Text = "Partie prêteurs"
         Me.gbPartiePreteurs.Visible = False
         '
-        'gbPartieAdministrateur
-        '
-        Me.gbPartieAdministrateur.Location = New System.Drawing.Point(3, 3)
-        Me.gbPartieAdministrateur.Name = "gbPartieAdministrateur"
-        Me.gbPartieAdministrateur.Size = New System.Drawing.Size(293, 158)
-        Me.gbPartieAdministrateur.TabIndex = 5
-        Me.gbPartieAdministrateur.TabStop = False
-        Me.gbPartieAdministrateur.Text = "Partie administrateur"
-        Me.gbPartieAdministrateur.Visible = False
-        '
-        'bGlobalePDF
-        '
-        Me.bGlobalePDF.Location = New System.Drawing.Point(496, 296)
-        Me.bGlobalePDF.Name = "bGlobalePDF"
-        Me.bGlobalePDF.Size = New System.Drawing.Size(164, 71)
-        Me.bGlobalePDF.TabIndex = 6
-        Me.bGlobalePDF.Text = "Exporter en .PDF"
-        Me.bGlobalePDF.UseVisualStyleBackColor = True
-        '
-        'bGlobaleDOCS
-        '
-        Me.bGlobaleDOCS.Location = New System.Drawing.Point(496, 181)
-        Me.bGlobaleDOCS.Name = "bGlobaleDOCS"
-        Me.bGlobaleDOCS.Size = New System.Drawing.Size(164, 71)
-        Me.bGlobaleDOCS.TabIndex = 7
-        Me.bGlobaleDOCS.Text = "Exporter en .DOCS"
-        Me.bGlobaleDOCS.UseVisualStyleBackColor = True
-        '
-        'bGlobaleXLSX
-        '
-        Me.bGlobaleXLSX.Location = New System.Drawing.Point(496, 70)
-        Me.bGlobaleXLSX.Name = "bGlobaleXLSX"
-        Me.bGlobaleXLSX.Size = New System.Drawing.Size(164, 71)
-        Me.bGlobaleXLSX.TabIndex = 8
-        Me.bGlobaleXLSX.Text = "Exporter en .XLSX"
-        Me.bGlobaleXLSX.UseVisualStyleBackColor = True
-        '
-        'lTitreNbrResponsabilites
-        '
-        Me.lTitreNbrResponsabilites.AutoSize = True
-        Me.lTitreNbrResponsabilites.Location = New System.Drawing.Point(26, 331)
-        Me.lTitreNbrResponsabilites.Name = "lTitreNbrResponsabilites"
-        Me.lTitreNbrResponsabilites.Size = New System.Drawing.Size(178, 13)
-        Me.lTitreNbrResponsabilites.TabIndex = 16
-        Me.lTitreNbrResponsabilites.Text = "Nombre de responsabilités inscrites :"
-        '
-        'lNbrOuverturesApplis
-        '
-        Me.lNbrOuverturesApplis.AutoSize = True
-        Me.lNbrOuverturesApplis.Location = New System.Drawing.Point(210, 67)
-        Me.lNbrOuverturesApplis.Name = "lNbrOuverturesApplis"
-        Me.lNbrOuverturesApplis.Size = New System.Drawing.Size(54, 13)
-        Me.lNbrOuverturesApplis.TabIndex = 17
-        Me.lNbrOuverturesApplis.Text = "NOMBRE"
-        '
-        'lNbrPrets
-        '
-        Me.lNbrPrets.AutoSize = True
-        Me.lNbrPrets.Location = New System.Drawing.Point(166, 99)
-        Me.lNbrPrets.Name = "lNbrPrets"
-        Me.lNbrPrets.Size = New System.Drawing.Size(54, 13)
-        Me.lNbrPrets.TabIndex = 18
-        Me.lNbrPrets.Text = "NOMBRE"
-        '
-        'lNbrRetours
-        '
-        Me.lNbrRetours.AutoSize = True
-        Me.lNbrRetours.Location = New System.Drawing.Point(179, 135)
-        Me.lNbrRetours.Name = "lNbrRetours"
-        Me.lNbrRetours.Size = New System.Drawing.Size(54, 13)
-        Me.lNbrRetours.TabIndex = 19
-        Me.lNbrRetours.Text = "NOMBRE"
-        '
-        'lNbrPersonneBD
-        '
-        Me.lNbrPersonneBD.AutoSize = True
-        Me.lNbrPersonneBD.Location = New System.Drawing.Point(307, 172)
-        Me.lNbrPersonneBD.Name = "lNbrPersonneBD"
-        Me.lNbrPersonneBD.Size = New System.Drawing.Size(54, 13)
-        Me.lNbrPersonneBD.TabIndex = 20
-        Me.lNbrPersonneBD.Text = "NOMBRE"
-        '
-        'lNbrEmprunteurs
-        '
-        Me.lNbrEmprunteurs.AutoSize = True
-        Me.lNbrEmprunteurs.Location = New System.Drawing.Point(175, 200)
-        Me.lNbrEmprunteurs.Name = "lNbrEmprunteurs"
-        Me.lNbrEmprunteurs.Size = New System.Drawing.Size(54, 13)
-        Me.lNbrEmprunteurs.TabIndex = 21
-        Me.lNbrEmprunteurs.Text = "NOMBRE"
-        '
-        'lNbrPreteurs
-        '
-        Me.lNbrPreteurs.AutoSize = True
-        Me.lNbrPreteurs.Location = New System.Drawing.Point(161, 227)
-        Me.lNbrPreteurs.Name = "lNbrPreteurs"
-        Me.lNbrPreteurs.Size = New System.Drawing.Size(54, 13)
-        Me.lNbrPreteurs.TabIndex = 22
-        Me.lNbrPreteurs.Text = "NOMBRE"
-        '
-        'lNbrAdministratifs
-        '
-        Me.lNbrAdministratifs.AutoSize = True
-        Me.lNbrAdministratifs.Location = New System.Drawing.Point(191, 253)
-        Me.lNbrAdministratifs.Name = "lNbrAdministratifs"
-        Me.lNbrAdministratifs.Size = New System.Drawing.Size(54, 13)
-        Me.lNbrAdministratifs.TabIndex = 23
-        Me.lNbrAdministratifs.Text = "NOMBRE"
-        '
-        'lNbrEquipements
-        '
-        Me.lNbrEquipements.AutoSize = True
-        Me.lNbrEquipements.Location = New System.Drawing.Point(181, 277)
-        Me.lNbrEquipements.Name = "lNbrEquipements"
-        Me.lNbrEquipements.Size = New System.Drawing.Size(54, 13)
-        Me.lNbrEquipements.TabIndex = 25
-        Me.lNbrEquipements.Text = "NOMBRE"
-        '
-        'lNbrConditions
-        '
-        Me.lNbrConditions.AutoSize = True
-        Me.lNbrConditions.Location = New System.Drawing.Point(188, 304)
-        Me.lNbrConditions.Name = "lNbrConditions"
-        Me.lNbrConditions.Size = New System.Drawing.Size(54, 13)
-        Me.lNbrConditions.TabIndex = 26
-        Me.lNbrConditions.Text = "NOMBRE"
-        '
-        'lNbrResponsabilites
-        '
-        Me.lNbrResponsabilites.AutoSize = True
-        Me.lNbrResponsabilites.Location = New System.Drawing.Point(210, 331)
-        Me.lNbrResponsabilites.Name = "lNbrResponsabilites"
-        Me.lNbrResponsabilites.Size = New System.Drawing.Size(54, 13)
-        Me.lNbrResponsabilites.TabIndex = 27
-        Me.lNbrResponsabilites.Text = "NOMBRE"
-        '
-        'bEmprunteursPDF
-        '
-        Me.bEmprunteursPDF.Location = New System.Drawing.Point(508, 291)
-        Me.bEmprunteursPDF.Name = "bEmprunteursPDF"
-        Me.bEmprunteursPDF.Size = New System.Drawing.Size(164, 71)
-        Me.bEmprunteursPDF.TabIndex = 9
-        Me.bEmprunteursPDF.Text = "Exporter en .PDF"
-        Me.bEmprunteursPDF.UseVisualStyleBackColor = True
-        '
-        'bEmprunteursDOCS
-        '
-        Me.bEmprunteursDOCS.Location = New System.Drawing.Point(508, 176)
-        Me.bEmprunteursDOCS.Name = "bEmprunteursDOCS"
-        Me.bEmprunteursDOCS.Size = New System.Drawing.Size(164, 71)
-        Me.bEmprunteursDOCS.TabIndex = 10
-        Me.bEmprunteursDOCS.Text = "Exporter en .DOCS"
-        Me.bEmprunteursDOCS.UseVisualStyleBackColor = True
-        '
-        'bEmprunteursXLSX
-        '
-        Me.bEmprunteursXLSX.Location = New System.Drawing.Point(508, 65)
-        Me.bEmprunteursXLSX.Name = "bEmprunteursXLSX"
-        Me.bEmprunteursXLSX.Size = New System.Drawing.Size(164, 71)
-        Me.bEmprunteursXLSX.TabIndex = 11
-        Me.bEmprunteursXLSX.Text = "Exporter en .XLSX"
-        Me.bEmprunteursXLSX.UseVisualStyleBackColor = True
-        '
-        'cbEmprunteurChoixAnnee
-        '
-        Me.cbEmprunteurChoixAnnee.FormattingEnabled = True
-        Me.cbEmprunteurChoixAnnee.Items.AddRange(New Object() {"Aucunes"})
-        Me.cbEmprunteurChoixAnnee.Location = New System.Drawing.Point(406, 19)
-        Me.cbEmprunteurChoixAnnee.Name = "cbEmprunteurChoixAnnee"
-        Me.cbEmprunteurChoixAnnee.Size = New System.Drawing.Size(110, 21)
-        Me.cbEmprunteurChoixAnnee.TabIndex = 15
-        '
-        'cbEmprunteurChoixMois
-        '
-        Me.cbEmprunteurChoixMois.FormattingEnabled = True
-        Me.cbEmprunteurChoixMois.Items.AddRange(New Object() {"Aucunes"})
-        Me.cbEmprunteurChoixMois.Location = New System.Drawing.Point(581, 19)
-        Me.cbEmprunteurChoixMois.Name = "cbEmprunteurChoixMois"
-        Me.cbEmprunteurChoixMois.Size = New System.Drawing.Size(110, 21)
-        Me.cbEmprunteurChoixMois.TabIndex = 14
-        '
-        'lEmprunteurTitreChoixAnnee
-        '
-        Me.lEmprunteurTitreChoixAnnee.AutoSize = True
-        Me.lEmprunteurTitreChoixAnnee.Location = New System.Drawing.Point(362, 23)
-        Me.lEmprunteurTitreChoixAnnee.Name = "lEmprunteurTitreChoixAnnee"
-        Me.lEmprunteurTitreChoixAnnee.Size = New System.Drawing.Size(38, 13)
-        Me.lEmprunteurTitreChoixAnnee.TabIndex = 13
-        Me.lEmprunteurTitreChoixAnnee.Text = "Année"
-        '
-        'lEmprunteurTitreChoixMois
-        '
-        Me.lEmprunteurTitreChoixMois.AutoSize = True
-        Me.lEmprunteurTitreChoixMois.Location = New System.Drawing.Point(546, 23)
-        Me.lEmprunteurTitreChoixMois.Name = "lEmprunteurTitreChoixMois"
-        Me.lEmprunteurTitreChoixMois.Size = New System.Drawing.Size(29, 13)
-        Me.lEmprunteurTitreChoixMois.TabIndex = 12
-        Me.lEmprunteurTitreChoixMois.Text = "Mois"
-        '
-        'lTitrePartieEmprunteurs
-        '
-        Me.lTitrePartieEmprunteurs.AutoSize = True
-        Me.lTitrePartieEmprunteurs.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.lTitrePartieEmprunteurs.Location = New System.Drawing.Point(4, 20)
-        Me.lTitrePartieEmprunteurs.Name = "lTitrePartieEmprunteurs"
-        Me.lTitrePartieEmprunteurs.Size = New System.Drawing.Size(352, 20)
-        Me.lTitrePartieEmprunteurs.TabIndex = 16
-        Me.lTitrePartieEmprunteurs.Text = "Toutes les infos des emprunteurs de l'application"
-        '
-        'lEmprunteursTitreNbrEmprunteurs
-        '
-        Me.lEmprunteursTitreNbrEmprunteurs.AutoSize = True
-        Me.lEmprunteursTitreNbrEmprunteurs.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.lEmprunteursTitreNbrEmprunteurs.Location = New System.Drawing.Point(28, 99)
-        Me.lEmprunteursTitreNbrEmprunteurs.Name = "lEmprunteursTitreNbrEmprunteurs"
-        Me.lEmprunteursTitreNbrEmprunteurs.Size = New System.Drawing.Size(207, 22)
-        Me.lEmprunteursTitreNbrEmprunteurs.TabIndex = 17
-        Me.lEmprunteursTitreNbrEmprunteurs.Text = "Nombre d'emprunteurs : "
-        '
-        'lEmprunteurTitreNbrPretsEffectuees
-        '
-        Me.lEmprunteurTitreNbrPretsEffectuees.AutoSize = True
-        Me.lEmprunteurTitreNbrPretsEffectuees.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.lEmprunteurTitreNbrPretsEffectuees.Location = New System.Drawing.Point(28, 205)
-        Me.lEmprunteurTitreNbrPretsEffectuees.Name = "lEmprunteurTitreNbrPretsEffectuees"
-        Me.lEmprunteurTitreNbrPretsEffectuees.Size = New System.Drawing.Size(246, 22)
-        Me.lEmprunteurTitreNbrPretsEffectuees.TabIndex = 18
-        Me.lEmprunteurTitreNbrPretsEffectuees.Text = "Nombre de prêts effectuées : "
-        '
-        'lEmprunteursTitreNbrPretsActifs
-        '
-        Me.lEmprunteursTitreNbrPretsActifs.AutoSize = True
-        Me.lEmprunteursTitreNbrPretsActifs.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.lEmprunteursTitreNbrPretsActifs.Location = New System.Drawing.Point(31, 242)
-        Me.lEmprunteursTitreNbrPretsActifs.Name = "lEmprunteursTitreNbrPretsActifs"
-        Me.lEmprunteursTitreNbrPretsActifs.Size = New System.Drawing.Size(205, 22)
-        Me.lEmprunteursTitreNbrPretsActifs.TabIndex = 19
-        Me.lEmprunteursTitreNbrPretsActifs.Text = "Nombre de prêts actifs : "
-        '
-        'lEmprunteursTitreNbrRetoursEffectuees
-        '
-        Me.lEmprunteursTitreNbrRetoursEffectuees.AutoSize = True
-        Me.lEmprunteursTitreNbrRetoursEffectuees.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.lEmprunteursTitreNbrRetoursEffectuees.Location = New System.Drawing.Point(31, 284)
-        Me.lEmprunteursTitreNbrRetoursEffectuees.Name = "lEmprunteursTitreNbrRetoursEffectuees"
-        Me.lEmprunteursTitreNbrRetoursEffectuees.Size = New System.Drawing.Size(262, 22)
-        Me.lEmprunteursTitreNbrRetoursEffectuees.TabIndex = 20
-        Me.lEmprunteursTitreNbrRetoursEffectuees.Text = "Nombre de retours effectuées : "
-        '
-        'lEmprunteursTitreNbrEmpruntsActifs
-        '
-        Me.lEmprunteursTitreNbrEmpruntsActifs.AutoSize = True
-        Me.lEmprunteursTitreNbrEmpruntsActifs.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.lEmprunteursTitreNbrEmpruntsActifs.Location = New System.Drawing.Point(28, 129)
-        Me.lEmprunteursTitreNbrEmpruntsActifs.Name = "lEmprunteursTitreNbrEmpruntsActifs"
-        Me.lEmprunteursTitreNbrEmpruntsActifs.Size = New System.Drawing.Size(254, 22)
-        Me.lEmprunteursTitreNbrEmpruntsActifs.TabIndex = 21
-        Me.lEmprunteursTitreNbrEmpruntsActifs.Text = "Nombre d'emprunteurs actifs : "
-        '
-        'lEmprunteurTitreEmprunteursSuspendues
-        '
-        Me.lEmprunteurTitreEmprunteursSuspendues.AutoSize = True
-        Me.lEmprunteurTitreEmprunteursSuspendues.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.lEmprunteurTitreEmprunteursSuspendues.Location = New System.Drawing.Point(28, 168)
-        Me.lEmprunteurTitreEmprunteursSuspendues.Name = "lEmprunteurTitreEmprunteursSuspendues"
-        Me.lEmprunteurTitreEmprunteursSuspendues.Size = New System.Drawing.Size(309, 22)
-        Me.lEmprunteurTitreEmprunteursSuspendues.TabIndex = 22
-        Me.lEmprunteurTitreEmprunteursSuspendues.Text = "Nombre d'emprunteurs suspendues : "
-        '
-        'lEmprunteursTitreNbrRetoursAttentes
-        '
-        Me.lEmprunteursTitreNbrRetoursAttentes.AutoSize = True
-        Me.lEmprunteursTitreNbrRetoursAttentes.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.lEmprunteursTitreNbrRetoursAttentes.Location = New System.Drawing.Point(31, 328)
-        Me.lEmprunteursTitreNbrRetoursAttentes.Name = "lEmprunteursTitreNbrRetoursAttentes"
-        Me.lEmprunteursTitreNbrRetoursAttentes.Size = New System.Drawing.Size(259, 22)
-        Me.lEmprunteursTitreNbrRetoursAttentes.TabIndex = 23
-        Me.lEmprunteursTitreNbrRetoursAttentes.Text = "Nombre de retours en attente : "
-        '
-        'lTitreNbrFraisRetards
-        '
-        Me.lTitreNbrFraisRetards.AutoSize = True
-        Me.lTitreNbrFraisRetards.Location = New System.Drawing.Point(26, 357)
-        Me.lTitreNbrFraisRetards.Name = "lTitreNbrFraisRetards"
-        Me.lTitreNbrFraisRetards.Size = New System.Drawing.Size(197, 13)
-        Me.lTitreNbrFraisRetards.TabIndex = 28
-        Me.lTitreNbrFraisRetards.Text = "Nombre de frais de retards accumulées :"
-        '
-        'lNbrFraisRetards
-        '
-        Me.lNbrFraisRetards.AutoSize = True
-        Me.lNbrFraisRetards.Location = New System.Drawing.Point(229, 358)
-        Me.lNbrFraisRetards.Name = "lNbrFraisRetards"
-        Me.lNbrFraisRetards.Size = New System.Drawing.Size(54, 13)
-        Me.lNbrFraisRetards.TabIndex = 29
-        Me.lNbrFraisRetards.Text = "NOMBRE"
-        '
-        'lEmprunteursNbrEmprunteurs
-        '
-        Me.lEmprunteursNbrEmprunteurs.AutoSize = True
-        Me.lEmprunteursNbrEmprunteurs.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.lEmprunteursNbrEmprunteurs.Location = New System.Drawing.Point(238, 99)
-        Me.lEmprunteursNbrEmprunteurs.Name = "lEmprunteursNbrEmprunteurs"
-        Me.lEmprunteursNbrEmprunteurs.Size = New System.Drawing.Size(88, 22)
-        Me.lEmprunteursNbrEmprunteurs.TabIndex = 24
-        Me.lEmprunteursNbrEmprunteurs.Text = "NOMBRE"
-        '
-        'lEmprunteursNbrEmpruntsActifs
-        '
-        Me.lEmprunteursNbrEmpruntsActifs.AutoSize = True
-        Me.lEmprunteursNbrEmpruntsActifs.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.lEmprunteursNbrEmpruntsActifs.Location = New System.Drawing.Point(288, 129)
-        Me.lEmprunteursNbrEmpruntsActifs.Name = "lEmprunteursNbrEmpruntsActifs"
-        Me.lEmprunteursNbrEmpruntsActifs.Size = New System.Drawing.Size(88, 22)
-        Me.lEmprunteursNbrEmpruntsActifs.TabIndex = 25
-        Me.lEmprunteursNbrEmpruntsActifs.Text = "NOMBRE"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.Label12.Location = New System.Drawing.Point(343, 168)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(88, 22)
-        Me.Label12.TabIndex = 26
-        Me.Label12.Text = "NOMBRE"
-        '
-        'lEmprunteurNbrPretsEffectuees
-        '
-        Me.lEmprunteurNbrPretsEffectuees.AutoSize = True
-        Me.lEmprunteurNbrPretsEffectuees.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.lEmprunteurNbrPretsEffectuees.Location = New System.Drawing.Point(276, 205)
-        Me.lEmprunteurNbrPretsEffectuees.Name = "lEmprunteurNbrPretsEffectuees"
-        Me.lEmprunteurNbrPretsEffectuees.Size = New System.Drawing.Size(88, 22)
-        Me.lEmprunteurNbrPretsEffectuees.TabIndex = 27
-        Me.lEmprunteurNbrPretsEffectuees.Text = "NOMBRE"
-        '
-        'lEmprunteursNbrPretsActifs
-        '
-        Me.lEmprunteursNbrPretsActifs.AutoSize = True
-        Me.lEmprunteursNbrPretsActifs.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.lEmprunteursNbrPretsActifs.Location = New System.Drawing.Point(238, 242)
-        Me.lEmprunteursNbrPretsActifs.Name = "lEmprunteursNbrPretsActifs"
-        Me.lEmprunteursNbrPretsActifs.Size = New System.Drawing.Size(88, 22)
-        Me.lEmprunteursNbrPretsActifs.TabIndex = 28
-        Me.lEmprunteursNbrPretsActifs.Text = "NOMBRE"
-        '
-        'lEmprunteursNbrRetoursEffectuees
-        '
-        Me.lEmprunteursNbrRetoursEffectuees.AutoSize = True
-        Me.lEmprunteursNbrRetoursEffectuees.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.lEmprunteursNbrRetoursEffectuees.Location = New System.Drawing.Point(288, 284)
-        Me.lEmprunteursNbrRetoursEffectuees.Name = "lEmprunteursNbrRetoursEffectuees"
-        Me.lEmprunteursNbrRetoursEffectuees.Size = New System.Drawing.Size(88, 22)
-        Me.lEmprunteursNbrRetoursEffectuees.TabIndex = 29
-        Me.lEmprunteursNbrRetoursEffectuees.Text = "NOMBRE"
-        '
-        'lEmprunteursNbrRetoursAttentes
-        '
-        Me.lEmprunteursNbrRetoursAttentes.AutoSize = True
-        Me.lEmprunteursNbrRetoursAttentes.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.lEmprunteursNbrRetoursAttentes.Location = New System.Drawing.Point(288, 328)
-        Me.lEmprunteursNbrRetoursAttentes.Name = "lEmprunteursNbrRetoursAttentes"
-        Me.lEmprunteursNbrRetoursAttentes.Size = New System.Drawing.Size(88, 22)
-        Me.lEmprunteursNbrRetoursAttentes.TabIndex = 30
-        Me.lEmprunteursNbrRetoursAttentes.Text = "NOMBRE"
+        'bPreteursPDF
+        '
+        Me.bPreteursPDF.Location = New System.Drawing.Point(508, 276)
+        Me.bPreteursPDF.Name = "bPreteursPDF"
+        Me.bPreteursPDF.Size = New System.Drawing.Size(164, 71)
+        Me.bPreteursPDF.TabIndex = 22
+        Me.bPreteursPDF.Text = "Exporter en .PDF"
+        Me.bPreteursPDF.UseVisualStyleBackColor = True
+        '
+        'bPreteursDOCS
+        '
+        Me.bPreteursDOCS.Location = New System.Drawing.Point(508, 184)
+        Me.bPreteursDOCS.Name = "bPreteursDOCS"
+        Me.bPreteursDOCS.Size = New System.Drawing.Size(164, 71)
+        Me.bPreteursDOCS.TabIndex = 23
+        Me.bPreteursDOCS.Text = "Exporter en .DOCS"
+        Me.bPreteursDOCS.UseVisualStyleBackColor = True
+        '
+        'bPreteursXLSX
+        '
+        Me.bPreteursXLSX.Location = New System.Drawing.Point(508, 93)
+        Me.bPreteursXLSX.Name = "bPreteursXLSX"
+        Me.bPreteursXLSX.Size = New System.Drawing.Size(164, 71)
+        Me.bPreteursXLSX.TabIndex = 24
+        Me.bPreteursXLSX.Text = "Exporter en .XLSX"
+        Me.bPreteursXLSX.UseVisualStyleBackColor = True
         '
         'lPreteursTitre
         '
@@ -761,37 +603,501 @@ Partial Class Statistiques
         Me.lPreteursTitreChoixMois.TabIndex = 17
         Me.lPreteursTitreChoixMois.Text = "Mois"
         '
-        'bPreteursPDF
+        'lEmprunteursNbrRetoursAttentes
         '
-        Me.bPreteursPDF.Location = New System.Drawing.Point(508, 276)
-        Me.bPreteursPDF.Name = "bPreteursPDF"
-        Me.bPreteursPDF.Size = New System.Drawing.Size(164, 71)
-        Me.bPreteursPDF.TabIndex = 22
-        Me.bPreteursPDF.Text = "Exporter en .PDF"
-        Me.bPreteursPDF.UseVisualStyleBackColor = True
+        Me.lEmprunteursNbrRetoursAttentes.AutoSize = True
+        Me.lEmprunteursNbrRetoursAttentes.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
+        Me.lEmprunteursNbrRetoursAttentes.Location = New System.Drawing.Point(288, 328)
+        Me.lEmprunteursNbrRetoursAttentes.Name = "lEmprunteursNbrRetoursAttentes"
+        Me.lEmprunteursNbrRetoursAttentes.Size = New System.Drawing.Size(88, 22)
+        Me.lEmprunteursNbrRetoursAttentes.TabIndex = 30
+        Me.lEmprunteursNbrRetoursAttentes.Text = "NOMBRE"
         '
-        'bPreteursDOCS
+        'lEmprunteursNbrRetoursEffectuees
         '
-        Me.bPreteursDOCS.Location = New System.Drawing.Point(508, 184)
-        Me.bPreteursDOCS.Name = "bPreteursDOCS"
-        Me.bPreteursDOCS.Size = New System.Drawing.Size(164, 71)
-        Me.bPreteursDOCS.TabIndex = 23
-        Me.bPreteursDOCS.Text = "Exporter en .DOCS"
-        Me.bPreteursDOCS.UseVisualStyleBackColor = True
+        Me.lEmprunteursNbrRetoursEffectuees.AutoSize = True
+        Me.lEmprunteursNbrRetoursEffectuees.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
+        Me.lEmprunteursNbrRetoursEffectuees.Location = New System.Drawing.Point(288, 284)
+        Me.lEmprunteursNbrRetoursEffectuees.Name = "lEmprunteursNbrRetoursEffectuees"
+        Me.lEmprunteursNbrRetoursEffectuees.Size = New System.Drawing.Size(88, 22)
+        Me.lEmprunteursNbrRetoursEffectuees.TabIndex = 29
+        Me.lEmprunteursNbrRetoursEffectuees.Text = "NOMBRE"
         '
-        'bPreteursXLSX
+        'lEmprunteursNbrPretsActifs
         '
-        Me.bPreteursXLSX.Location = New System.Drawing.Point(508, 93)
-        Me.bPreteursXLSX.Name = "bPreteursXLSX"
-        Me.bPreteursXLSX.Size = New System.Drawing.Size(164, 71)
-        Me.bPreteursXLSX.TabIndex = 24
-        Me.bPreteursXLSX.Text = "Exporter en .XLSX"
-        Me.bPreteursXLSX.UseVisualStyleBackColor = True
+        Me.lEmprunteursNbrPretsActifs.AutoSize = True
+        Me.lEmprunteursNbrPretsActifs.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
+        Me.lEmprunteursNbrPretsActifs.Location = New System.Drawing.Point(238, 242)
+        Me.lEmprunteursNbrPretsActifs.Name = "lEmprunteursNbrPretsActifs"
+        Me.lEmprunteursNbrPretsActifs.Size = New System.Drawing.Size(88, 22)
+        Me.lEmprunteursNbrPretsActifs.TabIndex = 28
+        Me.lEmprunteursNbrPretsActifs.Text = "NOMBRE"
+        '
+        'lEmprunteurNbrPretsEffectuees
+        '
+        Me.lEmprunteurNbrPretsEffectuees.AutoSize = True
+        Me.lEmprunteurNbrPretsEffectuees.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
+        Me.lEmprunteurNbrPretsEffectuees.Location = New System.Drawing.Point(276, 205)
+        Me.lEmprunteurNbrPretsEffectuees.Name = "lEmprunteurNbrPretsEffectuees"
+        Me.lEmprunteurNbrPretsEffectuees.Size = New System.Drawing.Size(88, 22)
+        Me.lEmprunteurNbrPretsEffectuees.TabIndex = 27
+        Me.lEmprunteurNbrPretsEffectuees.Text = "NOMBRE"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
+        Me.Label12.Location = New System.Drawing.Point(343, 168)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(88, 22)
+        Me.Label12.TabIndex = 26
+        Me.Label12.Text = "NOMBRE"
+        '
+        'lEmprunteursNbrEmpruntsActifs
+        '
+        Me.lEmprunteursNbrEmpruntsActifs.AutoSize = True
+        Me.lEmprunteursNbrEmpruntsActifs.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
+        Me.lEmprunteursNbrEmpruntsActifs.Location = New System.Drawing.Point(288, 129)
+        Me.lEmprunteursNbrEmpruntsActifs.Name = "lEmprunteursNbrEmpruntsActifs"
+        Me.lEmprunteursNbrEmpruntsActifs.Size = New System.Drawing.Size(88, 22)
+        Me.lEmprunteursNbrEmpruntsActifs.TabIndex = 25
+        Me.lEmprunteursNbrEmpruntsActifs.Text = "NOMBRE"
+        '
+        'lEmprunteursNbrEmprunteurs
+        '
+        Me.lEmprunteursNbrEmprunteurs.AutoSize = True
+        Me.lEmprunteursNbrEmprunteurs.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
+        Me.lEmprunteursNbrEmprunteurs.Location = New System.Drawing.Point(238, 99)
+        Me.lEmprunteursNbrEmprunteurs.Name = "lEmprunteursNbrEmprunteurs"
+        Me.lEmprunteursNbrEmprunteurs.Size = New System.Drawing.Size(88, 22)
+        Me.lEmprunteursNbrEmprunteurs.TabIndex = 24
+        Me.lEmprunteursNbrEmprunteurs.Text = "NOMBRE"
+        '
+        'lEmprunteursTitreNbrRetoursAttentes
+        '
+        Me.lEmprunteursTitreNbrRetoursAttentes.AutoSize = True
+        Me.lEmprunteursTitreNbrRetoursAttentes.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
+        Me.lEmprunteursTitreNbrRetoursAttentes.Location = New System.Drawing.Point(31, 328)
+        Me.lEmprunteursTitreNbrRetoursAttentes.Name = "lEmprunteursTitreNbrRetoursAttentes"
+        Me.lEmprunteursTitreNbrRetoursAttentes.Size = New System.Drawing.Size(259, 22)
+        Me.lEmprunteursTitreNbrRetoursAttentes.TabIndex = 23
+        Me.lEmprunteursTitreNbrRetoursAttentes.Text = "Nombre de retours en attente : "
+        '
+        'lEmprunteurTitreEmprunteursSuspendues
+        '
+        Me.lEmprunteurTitreEmprunteursSuspendues.AutoSize = True
+        Me.lEmprunteurTitreEmprunteursSuspendues.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
+        Me.lEmprunteurTitreEmprunteursSuspendues.Location = New System.Drawing.Point(28, 168)
+        Me.lEmprunteurTitreEmprunteursSuspendues.Name = "lEmprunteurTitreEmprunteursSuspendues"
+        Me.lEmprunteurTitreEmprunteursSuspendues.Size = New System.Drawing.Size(309, 22)
+        Me.lEmprunteurTitreEmprunteursSuspendues.TabIndex = 22
+        Me.lEmprunteurTitreEmprunteursSuspendues.Text = "Nombre d'emprunteurs suspendues : "
+        '
+        'lEmprunteursTitreNbrEmpruntsActifs
+        '
+        Me.lEmprunteursTitreNbrEmpruntsActifs.AutoSize = True
+        Me.lEmprunteursTitreNbrEmpruntsActifs.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
+        Me.lEmprunteursTitreNbrEmpruntsActifs.Location = New System.Drawing.Point(28, 129)
+        Me.lEmprunteursTitreNbrEmpruntsActifs.Name = "lEmprunteursTitreNbrEmpruntsActifs"
+        Me.lEmprunteursTitreNbrEmpruntsActifs.Size = New System.Drawing.Size(254, 22)
+        Me.lEmprunteursTitreNbrEmpruntsActifs.TabIndex = 21
+        Me.lEmprunteursTitreNbrEmpruntsActifs.Text = "Nombre d'emprunteurs actifs : "
+        '
+        'lEmprunteursTitreNbrRetoursEffectuees
+        '
+        Me.lEmprunteursTitreNbrRetoursEffectuees.AutoSize = True
+        Me.lEmprunteursTitreNbrRetoursEffectuees.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
+        Me.lEmprunteursTitreNbrRetoursEffectuees.Location = New System.Drawing.Point(31, 284)
+        Me.lEmprunteursTitreNbrRetoursEffectuees.Name = "lEmprunteursTitreNbrRetoursEffectuees"
+        Me.lEmprunteursTitreNbrRetoursEffectuees.Size = New System.Drawing.Size(262, 22)
+        Me.lEmprunteursTitreNbrRetoursEffectuees.TabIndex = 20
+        Me.lEmprunteursTitreNbrRetoursEffectuees.Text = "Nombre de retours effectuées : "
+        '
+        'lEmprunteursTitreNbrPretsActifs
+        '
+        Me.lEmprunteursTitreNbrPretsActifs.AutoSize = True
+        Me.lEmprunteursTitreNbrPretsActifs.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
+        Me.lEmprunteursTitreNbrPretsActifs.Location = New System.Drawing.Point(31, 242)
+        Me.lEmprunteursTitreNbrPretsActifs.Name = "lEmprunteursTitreNbrPretsActifs"
+        Me.lEmprunteursTitreNbrPretsActifs.Size = New System.Drawing.Size(205, 22)
+        Me.lEmprunteursTitreNbrPretsActifs.TabIndex = 19
+        Me.lEmprunteursTitreNbrPretsActifs.Text = "Nombre de prêts actifs : "
+        '
+        'lEmprunteurTitreNbrPretsEffectuees
+        '
+        Me.lEmprunteurTitreNbrPretsEffectuees.AutoSize = True
+        Me.lEmprunteurTitreNbrPretsEffectuees.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
+        Me.lEmprunteurTitreNbrPretsEffectuees.Location = New System.Drawing.Point(28, 205)
+        Me.lEmprunteurTitreNbrPretsEffectuees.Name = "lEmprunteurTitreNbrPretsEffectuees"
+        Me.lEmprunteurTitreNbrPretsEffectuees.Size = New System.Drawing.Size(246, 22)
+        Me.lEmprunteurTitreNbrPretsEffectuees.TabIndex = 18
+        Me.lEmprunteurTitreNbrPretsEffectuees.Text = "Nombre de prêts effectuées : "
+        '
+        'lEmprunteursTitreNbrEmprunteurs
+        '
+        Me.lEmprunteursTitreNbrEmprunteurs.AutoSize = True
+        Me.lEmprunteursTitreNbrEmprunteurs.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
+        Me.lEmprunteursTitreNbrEmprunteurs.Location = New System.Drawing.Point(28, 99)
+        Me.lEmprunteursTitreNbrEmprunteurs.Name = "lEmprunteursTitreNbrEmprunteurs"
+        Me.lEmprunteursTitreNbrEmprunteurs.Size = New System.Drawing.Size(207, 22)
+        Me.lEmprunteursTitreNbrEmprunteurs.TabIndex = 17
+        Me.lEmprunteursTitreNbrEmprunteurs.Text = "Nombre d'emprunteurs : "
+        '
+        'lTitrePartieEmprunteurs
+        '
+        Me.lTitrePartieEmprunteurs.AutoSize = True
+        Me.lTitrePartieEmprunteurs.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.lTitrePartieEmprunteurs.Location = New System.Drawing.Point(4, 20)
+        Me.lTitrePartieEmprunteurs.Name = "lTitrePartieEmprunteurs"
+        Me.lTitrePartieEmprunteurs.Size = New System.Drawing.Size(352, 20)
+        Me.lTitrePartieEmprunteurs.TabIndex = 16
+        Me.lTitrePartieEmprunteurs.Text = "Toutes les infos des emprunteurs de l'application"
+        '
+        'cbEmprunteurChoixAnnee
+        '
+        Me.cbEmprunteurChoixAnnee.FormattingEnabled = True
+        Me.cbEmprunteurChoixAnnee.Items.AddRange(New Object() {"Aucunes"})
+        Me.cbEmprunteurChoixAnnee.Location = New System.Drawing.Point(406, 19)
+        Me.cbEmprunteurChoixAnnee.Name = "cbEmprunteurChoixAnnee"
+        Me.cbEmprunteurChoixAnnee.Size = New System.Drawing.Size(110, 21)
+        Me.cbEmprunteurChoixAnnee.TabIndex = 15
+        '
+        'cbEmprunteurChoixMois
+        '
+        Me.cbEmprunteurChoixMois.FormattingEnabled = True
+        Me.cbEmprunteurChoixMois.Items.AddRange(New Object() {"Aucunes"})
+        Me.cbEmprunteurChoixMois.Location = New System.Drawing.Point(581, 19)
+        Me.cbEmprunteurChoixMois.Name = "cbEmprunteurChoixMois"
+        Me.cbEmprunteurChoixMois.Size = New System.Drawing.Size(110, 21)
+        Me.cbEmprunteurChoixMois.TabIndex = 14
+        '
+        'lEmprunteurTitreChoixAnnee
+        '
+        Me.lEmprunteurTitreChoixAnnee.AutoSize = True
+        Me.lEmprunteurTitreChoixAnnee.Location = New System.Drawing.Point(362, 23)
+        Me.lEmprunteurTitreChoixAnnee.Name = "lEmprunteurTitreChoixAnnee"
+        Me.lEmprunteurTitreChoixAnnee.Size = New System.Drawing.Size(38, 13)
+        Me.lEmprunteurTitreChoixAnnee.TabIndex = 13
+        Me.lEmprunteurTitreChoixAnnee.Text = "Année"
+        '
+        'lEmprunteurTitreChoixMois
+        '
+        Me.lEmprunteurTitreChoixMois.AutoSize = True
+        Me.lEmprunteurTitreChoixMois.Location = New System.Drawing.Point(546, 23)
+        Me.lEmprunteurTitreChoixMois.Name = "lEmprunteurTitreChoixMois"
+        Me.lEmprunteurTitreChoixMois.Size = New System.Drawing.Size(29, 13)
+        Me.lEmprunteurTitreChoixMois.TabIndex = 12
+        Me.lEmprunteurTitreChoixMois.Text = "Mois"
+        '
+        'bEmprunteursPDF
+        '
+        Me.bEmprunteursPDF.Location = New System.Drawing.Point(508, 291)
+        Me.bEmprunteursPDF.Name = "bEmprunteursPDF"
+        Me.bEmprunteursPDF.Size = New System.Drawing.Size(164, 71)
+        Me.bEmprunteursPDF.TabIndex = 9
+        Me.bEmprunteursPDF.Text = "Exporter en .PDF"
+        Me.bEmprunteursPDF.UseVisualStyleBackColor = True
+        '
+        'bEmprunteursDOCS
+        '
+        Me.bEmprunteursDOCS.Location = New System.Drawing.Point(508, 176)
+        Me.bEmprunteursDOCS.Name = "bEmprunteursDOCS"
+        Me.bEmprunteursDOCS.Size = New System.Drawing.Size(164, 71)
+        Me.bEmprunteursDOCS.TabIndex = 10
+        Me.bEmprunteursDOCS.Text = "Exporter en .DOCS"
+        Me.bEmprunteursDOCS.UseVisualStyleBackColor = True
+        '
+        'bEmprunteursXLSX
+        '
+        Me.bEmprunteursXLSX.Location = New System.Drawing.Point(508, 65)
+        Me.bEmprunteursXLSX.Name = "bEmprunteursXLSX"
+        Me.bEmprunteursXLSX.Size = New System.Drawing.Size(164, 71)
+        Me.bEmprunteursXLSX.TabIndex = 11
+        Me.bEmprunteursXLSX.Text = "Exporter en .XLSX"
+        Me.bEmprunteursXLSX.UseVisualStyleBackColor = True
+        '
+        'gbPartieAdministrateur
+        '
+        Me.gbPartieAdministrateur.Controls.Add(Me.lAdminsNbrAdminsSuspendues)
+        Me.gbPartieAdministrateur.Controls.Add(Me.lAdminsNbrAdminsActifs)
+        Me.gbPartieAdministrateur.Controls.Add(Me.lAdminsNombreAdmins)
+        Me.gbPartieAdministrateur.Controls.Add(Me.lAdminsTitreNbrAdminsSuspendues)
+        Me.gbPartieAdministrateur.Controls.Add(Me.lAdminsTitreNbrAdminsActifs)
+        Me.gbPartieAdministrateur.Controls.Add(Me.lAdminsTitreNombreAdmins)
+        Me.gbPartieAdministrateur.Controls.Add(Me.bAdminsPDF)
+        Me.gbPartieAdministrateur.Controls.Add(Me.bAdminsDOCS)
+        Me.gbPartieAdministrateur.Controls.Add(Me.bAdminsXLSX)
+        Me.gbPartieAdministrateur.Controls.Add(Me.Label1)
+        Me.gbPartieAdministrateur.Controls.Add(Me.cbAdminsChoixAnnee)
+        Me.gbPartieAdministrateur.Controls.Add(Me.cbAdminsChoixMois)
+        Me.gbPartieAdministrateur.Controls.Add(Me.lAdminsTitreChoixAnnee)
+        Me.gbPartieAdministrateur.Controls.Add(Me.lAdminsTitreChoixMois)
+        Me.gbPartieAdministrateur.Location = New System.Drawing.Point(301, 40)
+        Me.gbPartieAdministrateur.Name = "gbPartieAdministrateur"
+        Me.gbPartieAdministrateur.Size = New System.Drawing.Size(697, 394)
+        Me.gbPartieAdministrateur.TabIndex = 5
+        Me.gbPartieAdministrateur.TabStop = False
+        Me.gbPartieAdministrateur.Text = "Partie administrateur"
+        Me.gbPartieAdministrateur.Visible = False
+        '
+        'lPreteursTitreNbrPreteurs
+        '
+        Me.lPreteursTitreNbrPreteurs.AutoSize = True
+        Me.lPreteursTitreNbrPreteurs.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.lPreteursTitreNbrPreteurs.Location = New System.Drawing.Point(26, 98)
+        Me.lPreteursTitreNbrPreteurs.Name = "lPreteursTitreNbrPreteurs"
+        Me.lPreteursTitreNbrPreteurs.Size = New System.Drawing.Size(158, 20)
+        Me.lPreteursTitreNbrPreteurs.TabIndex = 25
+        Me.lPreteursTitreNbrPreteurs.Text = "Nombre de prêteurs :"
+        '
+        'lPreteursTitreNbrPreteursActifs
+        '
+        Me.lPreteursTitreNbrPreteursActifs.AutoSize = True
+        Me.lPreteursTitreNbrPreteursActifs.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.lPreteursTitreNbrPreteursActifs.Location = New System.Drawing.Point(25, 131)
+        Me.lPreteursTitreNbrPreteursActifs.Name = "lPreteursTitreNbrPreteursActifs"
+        Me.lPreteursTitreNbrPreteursActifs.Size = New System.Drawing.Size(200, 20)
+        Me.lPreteursTitreNbrPreteursActifs.TabIndex = 26
+        Me.lPreteursTitreNbrPreteursActifs.Text = "Nombre de prêteurs actifs :"
+        '
+        'lPreteursTitreNbrPreteursSuspendues
+        '
+        Me.lPreteursTitreNbrPreteursSuspendues.AutoSize = True
+        Me.lPreteursTitreNbrPreteursSuspendues.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.lPreteursTitreNbrPreteursSuspendues.Location = New System.Drawing.Point(25, 166)
+        Me.lPreteursTitreNbrPreteursSuspendues.Name = "lPreteursTitreNbrPreteursSuspendues"
+        Me.lPreteursTitreNbrPreteursSuspendues.Size = New System.Drawing.Size(249, 20)
+        Me.lPreteursTitreNbrPreteursSuspendues.TabIndex = 27
+        Me.lPreteursTitreNbrPreteursSuspendues.Text = "Nombre de prêteurs suspendues :"
+        '
+        'lPreteursTitreNbrPretsAutorisees
+        '
+        Me.lPreteursTitreNbrPretsAutorisees.AutoSize = True
+        Me.lPreteursTitreNbrPretsAutorisees.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.lPreteursTitreNbrPretsAutorisees.Location = New System.Drawing.Point(25, 209)
+        Me.lPreteursTitreNbrPretsAutorisees.Name = "lPreteursTitreNbrPretsAutorisees"
+        Me.lPreteursTitreNbrPretsAutorisees.Size = New System.Drawing.Size(204, 20)
+        Me.lPreteursTitreNbrPretsAutorisees.TabIndex = 28
+        Me.lPreteursTitreNbrPretsAutorisees.Text = "Nombre de prêts autorisés :"
+        '
+        'lPreteursTitreNbrRetoursAutorisees
+        '
+        Me.lPreteursTitreNbrRetoursAutorisees.AutoSize = True
+        Me.lPreteursTitreNbrRetoursAutorisees.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.lPreteursTitreNbrRetoursAutorisees.Location = New System.Drawing.Point(25, 255)
+        Me.lPreteursTitreNbrRetoursAutorisees.Name = "lPreteursTitreNbrRetoursAutorisees"
+        Me.lPreteursTitreNbrRetoursAutorisees.Size = New System.Drawing.Size(218, 20)
+        Me.lPreteursTitreNbrRetoursAutorisees.TabIndex = 29
+        Me.lPreteursTitreNbrRetoursAutorisees.Text = "Nombre de retours autorisés :"
+        '
+        'lPreteursTitreNbrRetoursAttentesAutorisation
+        '
+        Me.lPreteursTitreNbrRetoursAttentesAutorisation.AutoSize = True
+        Me.lPreteursTitreNbrRetoursAttentesAutorisation.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.lPreteursTitreNbrRetoursAttentesAutorisation.Location = New System.Drawing.Point(25, 299)
+        Me.lPreteursTitreNbrRetoursAttentesAutorisation.Name = "lPreteursTitreNbrRetoursAttentesAutorisation"
+        Me.lPreteursTitreNbrRetoursAttentesAutorisation.Size = New System.Drawing.Size(333, 20)
+        Me.lPreteursTitreNbrRetoursAttentesAutorisation.TabIndex = 30
+        Me.lPreteursTitreNbrRetoursAttentesAutorisation.Text = "Nombre de retours en attente d'autorisations :"
+        '
+        'lPreteursNbrPreteurs
+        '
+        Me.lPreteursNbrPreteurs.AutoSize = True
+        Me.lPreteursNbrPreteurs.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.lPreteursNbrPreteurs.Location = New System.Drawing.Point(187, 100)
+        Me.lPreteursNbrPreteurs.Name = "lPreteursNbrPreteurs"
+        Me.lPreteursNbrPreteurs.Size = New System.Drawing.Size(79, 20)
+        Me.lPreteursNbrPreteurs.TabIndex = 31
+        Me.lPreteursNbrPreteurs.Text = "NOMBRE"
+        '
+        'lPreteursNbrPreteursActifs
+        '
+        Me.lPreteursNbrPreteursActifs.AutoSize = True
+        Me.lPreteursNbrPreteursActifs.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.lPreteursNbrPreteursActifs.Location = New System.Drawing.Point(228, 131)
+        Me.lPreteursNbrPreteursActifs.Name = "lPreteursNbrPreteursActifs"
+        Me.lPreteursNbrPreteursActifs.Size = New System.Drawing.Size(79, 20)
+        Me.lPreteursNbrPreteursActifs.TabIndex = 32
+        Me.lPreteursNbrPreteursActifs.Text = "NOMBRE"
+        '
+        'lPreteursNbrPreteursSuspendues
+        '
+        Me.lPreteursNbrPreteursSuspendues.AutoSize = True
+        Me.lPreteursNbrPreteursSuspendues.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.lPreteursNbrPreteursSuspendues.Location = New System.Drawing.Point(276, 167)
+        Me.lPreteursNbrPreteursSuspendues.Name = "lPreteursNbrPreteursSuspendues"
+        Me.lPreteursNbrPreteursSuspendues.Size = New System.Drawing.Size(79, 20)
+        Me.lPreteursNbrPreteursSuspendues.TabIndex = 33
+        Me.lPreteursNbrPreteursSuspendues.Text = "NOMBRE"
+        '
+        'lPreteursNbrPretsAutorisees
+        '
+        Me.lPreteursNbrPretsAutorisees.AutoSize = True
+        Me.lPreteursNbrPretsAutorisees.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.lPreteursNbrPretsAutorisees.Location = New System.Drawing.Point(228, 209)
+        Me.lPreteursNbrPretsAutorisees.Name = "lPreteursNbrPretsAutorisees"
+        Me.lPreteursNbrPretsAutorisees.Size = New System.Drawing.Size(79, 20)
+        Me.lPreteursNbrPretsAutorisees.TabIndex = 34
+        Me.lPreteursNbrPretsAutorisees.Text = "NOMBRE"
+        '
+        'lPreteursNbrRetoursAutorisees
+        '
+        Me.lPreteursNbrRetoursAutorisees.AutoSize = True
+        Me.lPreteursNbrRetoursAutorisees.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.lPreteursNbrRetoursAutorisees.Location = New System.Drawing.Point(247, 255)
+        Me.lPreteursNbrRetoursAutorisees.Name = "lPreteursNbrRetoursAutorisees"
+        Me.lPreteursNbrRetoursAutorisees.Size = New System.Drawing.Size(79, 20)
+        Me.lPreteursNbrRetoursAutorisees.TabIndex = 35
+        Me.lPreteursNbrRetoursAutorisees.Text = "NOMBRE"
+        '
+        'lPreteursNbrRetoursAttentesAutorisation
+        '
+        Me.lPreteursNbrRetoursAttentesAutorisation.AutoSize = True
+        Me.lPreteursNbrRetoursAttentesAutorisation.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.lPreteursNbrRetoursAttentesAutorisation.Location = New System.Drawing.Point(361, 300)
+        Me.lPreteursNbrRetoursAttentesAutorisation.Name = "lPreteursNbrRetoursAttentesAutorisation"
+        Me.lPreteursNbrRetoursAttentesAutorisation.Size = New System.Drawing.Size(79, 20)
+        Me.lPreteursNbrRetoursAttentesAutorisation.TabIndex = 36
+        Me.lPreteursNbrRetoursAttentesAutorisation.Text = "NOMBRE"
+        '
+        'bAdminsPDF
+        '
+        Me.bAdminsPDF.Location = New System.Drawing.Point(506, 290)
+        Me.bAdminsPDF.Name = "bAdminsPDF"
+        Me.bAdminsPDF.Size = New System.Drawing.Size(164, 71)
+        Me.bAdminsPDF.TabIndex = 30
+        Me.bAdminsPDF.Text = "Exporter en .PDF"
+        Me.bAdminsPDF.UseVisualStyleBackColor = True
+        '
+        'bAdminsDOCS
+        '
+        Me.bAdminsDOCS.Location = New System.Drawing.Point(506, 198)
+        Me.bAdminsDOCS.Name = "bAdminsDOCS"
+        Me.bAdminsDOCS.Size = New System.Drawing.Size(164, 71)
+        Me.bAdminsDOCS.TabIndex = 31
+        Me.bAdminsDOCS.Text = "Exporter en .DOCS"
+        Me.bAdminsDOCS.UseVisualStyleBackColor = True
+        '
+        'bAdminsXLSX
+        '
+        Me.bAdminsXLSX.Location = New System.Drawing.Point(506, 107)
+        Me.bAdminsXLSX.Name = "bAdminsXLSX"
+        Me.bAdminsXLSX.Size = New System.Drawing.Size(164, 71)
+        Me.bAdminsXLSX.TabIndex = 32
+        Me.bAdminsXLSX.Text = "Exporter en .XLSX"
+        Me.bAdminsXLSX.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.Label1.Location = New System.Drawing.Point(-4, 31)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(367, 20)
+        Me.Label1.TabIndex = 29
+        Me.Label1.Text = "Toutes les infos de l'administrations de l'application"
+        '
+        'cbAdminsChoixAnnee
+        '
+        Me.cbAdminsChoixAnnee.FormattingEnabled = True
+        Me.cbAdminsChoixAnnee.Items.AddRange(New Object() {"Aucunes"})
+        Me.cbAdminsChoixAnnee.Location = New System.Drawing.Point(579, 34)
+        Me.cbAdminsChoixAnnee.Name = "cbAdminsChoixAnnee"
+        Me.cbAdminsChoixAnnee.Size = New System.Drawing.Size(110, 21)
+        Me.cbAdminsChoixAnnee.TabIndex = 28
+        '
+        'cbAdminsChoixMois
+        '
+        Me.cbAdminsChoixMois.FormattingEnabled = True
+        Me.cbAdminsChoixMois.Items.AddRange(New Object() {"Aucunes"})
+        Me.cbAdminsChoixMois.Location = New System.Drawing.Point(404, 34)
+        Me.cbAdminsChoixMois.Name = "cbAdminsChoixMois"
+        Me.cbAdminsChoixMois.Size = New System.Drawing.Size(110, 21)
+        Me.cbAdminsChoixMois.TabIndex = 27
+        '
+        'lAdminsTitreChoixAnnee
+        '
+        Me.lAdminsTitreChoixAnnee.AutoSize = True
+        Me.lAdminsTitreChoixAnnee.Location = New System.Drawing.Point(535, 38)
+        Me.lAdminsTitreChoixAnnee.Name = "lAdminsTitreChoixAnnee"
+        Me.lAdminsTitreChoixAnnee.Size = New System.Drawing.Size(38, 13)
+        Me.lAdminsTitreChoixAnnee.TabIndex = 26
+        Me.lAdminsTitreChoixAnnee.Text = "Année"
+        '
+        'lAdminsTitreChoixMois
+        '
+        Me.lAdminsTitreChoixMois.AutoSize = True
+        Me.lAdminsTitreChoixMois.Location = New System.Drawing.Point(369, 38)
+        Me.lAdminsTitreChoixMois.Name = "lAdminsTitreChoixMois"
+        Me.lAdminsTitreChoixMois.Size = New System.Drawing.Size(29, 13)
+        Me.lAdminsTitreChoixMois.TabIndex = 25
+        Me.lAdminsTitreChoixMois.Text = "Mois"
+        '
+        'lAdminsTitreNombreAdmins
+        '
+        Me.lAdminsTitreNombreAdmins.AutoSize = True
+        Me.lAdminsTitreNombreAdmins.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
+        Me.lAdminsTitreNombreAdmins.Location = New System.Drawing.Point(25, 158)
+        Me.lAdminsTitreNombreAdmins.Name = "lAdminsTitreNombreAdmins"
+        Me.lAdminsTitreNombreAdmins.Size = New System.Drawing.Size(170, 24)
+        Me.lAdminsTitreNombreAdmins.TabIndex = 33
+        Me.lAdminsTitreNombreAdmins.Text = "Nombre d'admins :"
+        '
+        'lAdminsTitreNbrAdminsActifs
+        '
+        Me.lAdminsTitreNbrAdminsActifs.AutoSize = True
+        Me.lAdminsTitreNbrAdminsActifs.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
+        Me.lAdminsTitreNbrAdminsActifs.Location = New System.Drawing.Point(25, 200)
+        Me.lAdminsTitreNbrAdminsActifs.Name = "lAdminsTitreNbrAdminsActifs"
+        Me.lAdminsTitreNbrAdminsActifs.Size = New System.Drawing.Size(216, 24)
+        Me.lAdminsTitreNbrAdminsActifs.TabIndex = 34
+        Me.lAdminsTitreNbrAdminsActifs.Text = "Nombre d'admins actifs :"
+        '
+        'lAdminsTitreNbrAdminsSuspendues
+        '
+        Me.lAdminsTitreNbrAdminsSuspendues.AutoSize = True
+        Me.lAdminsTitreNbrAdminsSuspendues.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
+        Me.lAdminsTitreNbrAdminsSuspendues.Location = New System.Drawing.Point(25, 246)
+        Me.lAdminsTitreNbrAdminsSuspendues.Name = "lAdminsTitreNbrAdminsSuspendues"
+        Me.lAdminsTitreNbrAdminsSuspendues.Size = New System.Drawing.Size(279, 24)
+        Me.lAdminsTitreNbrAdminsSuspendues.TabIndex = 35
+        Me.lAdminsTitreNbrAdminsSuspendues.Text = "Nombre d'admins suspendues :"
+        '
+        'lAdminsNombreAdmins
+        '
+        Me.lAdminsNombreAdmins.AutoSize = True
+        Me.lAdminsNombreAdmins.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
+        Me.lAdminsNombreAdmins.Location = New System.Drawing.Point(209, 158)
+        Me.lAdminsNombreAdmins.Name = "lAdminsNombreAdmins"
+        Me.lAdminsNombreAdmins.Size = New System.Drawing.Size(93, 24)
+        Me.lAdminsNombreAdmins.TabIndex = 36
+        Me.lAdminsNombreAdmins.Text = "NOMBRE"
+        '
+        'lAdminsNbrAdminsActifs
+        '
+        Me.lAdminsNbrAdminsActifs.AutoSize = True
+        Me.lAdminsNbrAdminsActifs.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
+        Me.lAdminsNbrAdminsActifs.Location = New System.Drawing.Point(247, 200)
+        Me.lAdminsNbrAdminsActifs.Name = "lAdminsNbrAdminsActifs"
+        Me.lAdminsNbrAdminsActifs.Size = New System.Drawing.Size(93, 24)
+        Me.lAdminsNbrAdminsActifs.TabIndex = 37
+        Me.lAdminsNbrAdminsActifs.Text = "NOMBRE"
+        '
+        'lAdminsNbrAdminsSuspendues
+        '
+        Me.lAdminsNbrAdminsSuspendues.AutoSize = True
+        Me.lAdminsNbrAdminsSuspendues.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
+        Me.lAdminsNbrAdminsSuspendues.Location = New System.Drawing.Point(310, 246)
+        Me.lAdminsNbrAdminsSuspendues.Name = "lAdminsNbrAdminsSuspendues"
+        Me.lAdminsNbrAdminsSuspendues.Size = New System.Drawing.Size(93, 24)
+        Me.lAdminsNbrAdminsSuspendues.TabIndex = 38
+        Me.lAdminsNbrAdminsSuspendues.Text = "NOMBRE"
         '
         'Statistiques
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.Controls.Add(Me.gbPartiePreteurs)
         Me.Controls.Add(Me.gbPartieEmprunteurs)
         Me.Controls.Add(Me.gbPartieAdministrateur)
         Me.Controls.Add(Me.gbGlobale)
@@ -807,6 +1113,8 @@ Partial Class Statistiques
         Me.gbPartieEmprunteurs.PerformLayout()
         Me.gbPartiePreteurs.ResumeLayout(False)
         Me.gbPartiePreteurs.PerformLayout()
+        Me.gbPartieAdministrateur.ResumeLayout(False)
+        Me.gbPartieAdministrateur.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -879,4 +1187,30 @@ Partial Class Statistiques
     Friend WithEvents cbPreteursChoixMois As ComboBox
     Friend WithEvents lPreteursTitreChoixAnnee As Label
     Friend WithEvents lPreteursTitreChoixMois As Label
+    Friend WithEvents lPreteursTitreNbrPreteurs As Label
+    Friend WithEvents lPreteursTitreNbrPreteursActifs As Label
+    Friend WithEvents lPreteursNbrRetoursAttentesAutorisation As Label
+    Friend WithEvents lPreteursNbrRetoursAutorisees As Label
+    Friend WithEvents lPreteursNbrPretsAutorisees As Label
+    Friend WithEvents lPreteursNbrPreteursSuspendues As Label
+    Friend WithEvents lPreteursNbrPreteursActifs As Label
+    Friend WithEvents lPreteursNbrPreteurs As Label
+    Friend WithEvents lPreteursTitreNbrRetoursAttentesAutorisation As Label
+    Friend WithEvents lPreteursTitreNbrRetoursAutorisees As Label
+    Friend WithEvents lPreteursTitreNbrPretsAutorisees As Label
+    Friend WithEvents lPreteursTitreNbrPreteursSuspendues As Label
+    Friend WithEvents bAdminsPDF As Button
+    Friend WithEvents bAdminsDOCS As Button
+    Friend WithEvents bAdminsXLSX As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents cbAdminsChoixAnnee As ComboBox
+    Friend WithEvents cbAdminsChoixMois As ComboBox
+    Friend WithEvents lAdminsTitreChoixAnnee As Label
+    Friend WithEvents lAdminsTitreChoixMois As Label
+    Friend WithEvents lAdminsNbrAdminsSuspendues As Label
+    Friend WithEvents lAdminsNbrAdminsActifs As Label
+    Friend WithEvents lAdminsNombreAdmins As Label
+    Friend WithEvents lAdminsTitreNbrAdminsSuspendues As Label
+    Friend WithEvents lAdminsTitreNbrAdminsActifs As Label
+    Friend WithEvents lAdminsTitreNombreAdmins As Label
 End Class

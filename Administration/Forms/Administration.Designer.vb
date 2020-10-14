@@ -118,6 +118,7 @@ Partial Class Administration
         Me.ClientSize = New System.Drawing.Size(1013, 501)
         Me.Controls.Add(Me.pUserControls)
         Me.Controls.Add(Me.msMenu)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
