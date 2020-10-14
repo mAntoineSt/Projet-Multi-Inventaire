@@ -189,6 +189,12 @@
     <Compile Include="Administration\Forms\Administration.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Administration\Forms\Ajout_Modif_Admin.Designer.vb">
+      <DependentUpon>Ajout_Modif_Admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Forms\Ajout_Modif_Admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Classes\ClassBD.vb" />
     <Compile Include="Connexions\Controles utilisateurs\CreationAdmin.Designer.vb">
       <DependentUpon>CreationAdmin.vb</DependentUpon>
@@ -321,6 +327,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Administration\Forms\Administration.resx">
       <DependentUpon>Administration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\Forms\Ajout_Modif_Admin.resx">
+      <DependentUpon>Ajout_Modif_Admin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Connexions\Forms\Connexion.resx">
       <DependentUpon>Connexion.vb</DependentUpon>
