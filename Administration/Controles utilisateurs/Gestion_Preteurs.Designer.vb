@@ -40,7 +40,7 @@ Partial Class Gestion_Preteurs
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.Label1)
         Me.Name = "Gestion_Preteurs"
-        Me.Size = New System.Drawing.Size(899, 473)
+        Me.Size = New System.Drawing.Size(1013, 473)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

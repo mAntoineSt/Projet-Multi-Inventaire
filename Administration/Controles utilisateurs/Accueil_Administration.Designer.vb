@@ -76,7 +76,7 @@ Partial Class Accueil_Administration
         Me.lTitreAcces.AutoSize = True
         Me.lTitreAcces.BackColor = System.Drawing.Color.Lime
         Me.lTitreAcces.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold)
-        Me.lTitreAcces.Location = New System.Drawing.Point(50, 192)
+        Me.lTitreAcces.Location = New System.Drawing.Point(107, 192)
         Me.lTitreAcces.Name = "lTitreAcces"
         Me.lTitreAcces.Size = New System.Drawing.Size(238, 24)
         Me.lTitreAcces.TabIndex = 3
@@ -87,7 +87,7 @@ Partial Class Accueil_Administration
         Me.lTitrePasAcces.AutoSize = True
         Me.lTitrePasAcces.BackColor = System.Drawing.Color.Red
         Me.lTitrePasAcces.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold)
-        Me.lTitrePasAcces.Location = New System.Drawing.Point(565, 192)
+        Me.lTitrePasAcces.Location = New System.Drawing.Point(622, 192)
         Me.lTitrePasAcces.Name = "lTitrePasAcces"
         Me.lTitrePasAcces.Size = New System.Drawing.Size(294, 24)
         Me.lTitrePasAcces.TabIndex = 4
@@ -100,7 +100,7 @@ Partial Class Accueil_Administration
         Me.pAcces.Controls.Add(Me.lAccesGestionAdmins)
         Me.pAcces.Controls.Add(Me.lAccesGestionPreteurs)
         Me.pAcces.Controls.Add(Me.lAccesGestionEmprunteurs)
-        Me.pAcces.Location = New System.Drawing.Point(40, 219)
+        Me.pAcces.Location = New System.Drawing.Point(97, 219)
         Me.pAcces.Name = "pAcces"
         Me.pAcces.Size = New System.Drawing.Size(258, 242)
         Me.pAcces.TabIndex = 5
@@ -110,7 +110,7 @@ Partial Class Accueil_Administration
         Me.pPasAcces.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.pPasAcces.Controls.Add(Me.lPasAccesGestionStats)
         Me.pPasAcces.Controls.Add(Me.lPasAccesGestionAdmins)
-        Me.pPasAcces.Location = New System.Drawing.Point(586, 219)
+        Me.pPasAcces.Location = New System.Drawing.Point(643, 219)
         Me.pPasAcces.Name = "pPasAcces"
         Me.pPasAcces.Size = New System.Drawing.Size(258, 242)
         Me.pPasAcces.TabIndex = 6
@@ -181,7 +181,7 @@ Partial Class Accueil_Administration
         Me.Panel1.Controls.Add(Me.lTitre)
         Me.Panel1.Controls.Add(Me.lTitreRole)
         Me.Panel1.Controls.Add(Me.lRole)
-        Me.Panel1.Location = New System.Drawing.Point(176, 13)
+        Me.Panel1.Location = New System.Drawing.Point(233, 13)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(547, 150)
         Me.Panel1.TabIndex = 7
@@ -196,7 +196,7 @@ Partial Class Accueil_Administration
         Me.Controls.Add(Me.lTitrePasAcces)
         Me.Controls.Add(Me.lTitreAcces)
         Me.Name = "Accueil_Administration"
-        Me.Size = New System.Drawing.Size(899, 473)
+        Me.Size = New System.Drawing.Size(1013, 473)
         Me.pAcces.ResumeLayout(False)
         Me.pAcces.PerformLayout()
         Me.pPasAcces.ResumeLayout(False)
