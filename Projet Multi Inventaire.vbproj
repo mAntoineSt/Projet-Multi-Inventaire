@@ -49,6 +49,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Ressources\logo_departement_informatique.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
@@ -144,11 +147,35 @@
     <Compile Include="Accueil et Options\Forms\Accueil.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administration\Forms\Administration.Designer.vb">
-      <DependentUpon>Administration.vb</DependentUpon>
+    <Compile Include="Administration\Controles utilisateurs\Accueil_Administration.Designer.vb">
+      <DependentUpon>Accueil_Administration.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administration\Forms\Administration.vb">
+    <Compile Include="Administration\Controles utilisateurs\Accueil_Administration.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administration\Controles utilisateurs\Gestion_Admins.Designer.vb">
+      <DependentUpon>Gestion_Admins.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Controles utilisateurs\Gestion_Admins.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administration\Controles utilisateurs\Gestion_Emprunteurs.Designer.vb">
+      <DependentUpon>Gestion_Emprunteurs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Controles utilisateurs\Gestion_Emprunteurs.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administration\Controles utilisateurs\Gestion_Preteurs.Designer.vb">
+      <DependentUpon>Gestion_Preteurs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Controles utilisateurs\Gestion_Preteurs.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administration\Controles utilisateurs\Statistiques.Designer.vb">
+      <DependentUpon>Statistiques.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Controles utilisateurs\Statistiques.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Accueil et Options\Forms\Options.Designer.vb">
       <DependentUpon>Options.vb</DependentUpon>
@@ -156,28 +183,10 @@
     <Compile Include="Accueil et Options\Forms\Options.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administration\Forms\Gestion_Admins.Designer.vb">
-      <DependentUpon>Gestion_Admins.vb</DependentUpon>
+    <Compile Include="Administration\Forms\Administration.Designer.vb">
+      <DependentUpon>Administration.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administration\Forms\Gestion_Admins.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Administration\Forms\Gestion_Emprunteurs.Designer.vb">
-      <DependentUpon>Gestion_Emprunteurs.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Administration\Forms\Gestion_Emprunteurs.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Administration\Forms\Gestion_Preteurs.Designer.vb">
-      <DependentUpon>Gestion_Preteurs.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Administration\Forms\Gestion_Preteurs.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Administration\Forms\Stats.Designer.vb">
-      <DependentUpon>Stats.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Administration\Forms\Stats.vb">
+    <Compile Include="Administration\Forms\Administration.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Classes\ClassBD.vb" />
@@ -227,6 +236,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -297,14 +307,26 @@
     <EmbeddedResource Include="Accueil et Options\Forms\Accueil.resx">
       <DependentUpon>Accueil.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administration\Forms\Administration.resx">
-      <DependentUpon>Administration.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Accueil et Options\Forms\Options.resx">
       <DependentUpon>Options.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administration\Forms\Stats.resx">
-      <DependentUpon>Stats.vb</DependentUpon>
+    <EmbeddedResource Include="Administration\Controles utilisateurs\Accueil_Administration.resx">
+      <DependentUpon>Accueil_Administration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\Controles utilisateurs\Gestion_Admins.resx">
+      <DependentUpon>Gestion_Admins.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\Controles utilisateurs\Gestion_Emprunteurs.resx">
+      <DependentUpon>Gestion_Emprunteurs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\Controles utilisateurs\Gestion_Preteurs.resx">
+      <DependentUpon>Gestion_Preteurs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\Controles utilisateurs\Statistiques.resx">
+      <DependentUpon>Statistiques.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\Forms\Administration.resx">
+      <DependentUpon>Administration.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Connexions\Forms\Connexion.resx">
       <DependentUpon>Connexion.vb</DependentUpon>
@@ -359,12 +381,12 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Content Include="Ressources\logo_departement_informatique.ico" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Administration\Controles utilisateurs\" />
     <Folder Include="Installer\" />
   </ItemGroup>
   <ItemGroup />

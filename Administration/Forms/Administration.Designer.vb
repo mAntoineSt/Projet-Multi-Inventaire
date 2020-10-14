@@ -22,108 +22,120 @@ Partial Class Administration
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.lbTitre = New System.Windows.Forms.Label()
-        Me.lbMessageRole = New System.Windows.Forms.Label()
-        Me.lbRole = New System.Windows.Forms.Label()
-        Me.btStats = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Administration))
+        Me.pUserControls = New System.Windows.Forms.Panel()
+        Me.msMenu = New System.Windows.Forms.MenuStrip()
+        Me.msRetourAccueil = New System.Windows.Forms.ToolStripMenuItem()
+        Me.msAccueilAdmin = New System.Windows.Forms.ToolStripMenuItem()
+        Me.msGestionAdmins = New System.Windows.Forms.ToolStripMenuItem()
+        Me.msGestionEmprunteurs = New System.Windows.Forms.ToolStripMenuItem()
+        Me.msGestionPreteurs = New System.Windows.Forms.ToolStripMenuItem()
+        Me.msStatistiques = New System.Windows.Forms.ToolStripMenuItem()
+        Me.msMenu.SuspendLayout()
         Me.SuspendLayout()
         '
-        'lbTitre
+        'pUserControls
         '
-        Me.lbTitre.AutoSize = True
-        Me.lbTitre.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbTitre.Location = New System.Drawing.Point(104, 19)
-        Me.lbTitre.Name = "lbTitre"
-        Me.lbTitre.Size = New System.Drawing.Size(372, 42)
-        Me.lbTitre.TabIndex = 0
-        Me.lbTitre.Text = "Menu administration"
+        Me.pUserControls.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pUserControls.Location = New System.Drawing.Point(0, 28)
+        Me.pUserControls.Name = "pUserControls"
+        Me.pUserControls.Size = New System.Drawing.Size(1013, 473)
+        Me.pUserControls.TabIndex = 1
         '
-        'lbMessageRole
+        'msMenu
         '
-        Me.lbMessageRole.AutoSize = True
-        Me.lbMessageRole.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbMessageRole.Location = New System.Drawing.Point(194, 70)
-        Me.lbMessageRole.Name = "lbMessageRole"
-        Me.lbMessageRole.Size = New System.Drawing.Size(101, 20)
-        Me.lbMessageRole.TabIndex = 1
-        Me.lbMessageRole.Text = "Rôle actuel : "
+        Me.msMenu.BackColor = System.Drawing.Color.Transparent
+        Me.msMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.msRetourAccueil, Me.msAccueilAdmin, Me.msGestionAdmins, Me.msGestionEmprunteurs, Me.msGestionPreteurs, Me.msStatistiques})
+        Me.msMenu.Location = New System.Drawing.Point(0, 0)
+        Me.msMenu.Name = "msMenu"
+        Me.msMenu.Size = New System.Drawing.Size(1013, 28)
+        Me.msMenu.TabIndex = 2
+        Me.msMenu.Text = "msMenu"
         '
-        'lbRole
+        'msRetourAccueil
         '
-        Me.lbRole.AutoSize = True
-        Me.lbRole.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbRole.Location = New System.Drawing.Point(301, 70)
-        Me.lbRole.Name = "lbRole"
-        Me.lbRole.Size = New System.Drawing.Size(53, 20)
-        Me.lbRole.TabIndex = 2
-        Me.lbRole.Text = "ROLE"
+        Me.msRetourAccueil.BackColor = System.Drawing.Color.Black
+        Me.msRetourAccueil.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.msRetourAccueil.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.msRetourAccueil.Margin = New System.Windows.Forms.Padding(10, 0, 10, 0)
+        Me.msRetourAccueil.Name = "msRetourAccueil"
+        Me.msRetourAccueil.Size = New System.Drawing.Size(134, 24)
+        Me.msRetourAccueil.Text = "Retour à l'accueil"
         '
-        'btStats
+        'msAccueilAdmin
         '
-        Me.btStats.Location = New System.Drawing.Point(87, 129)
-        Me.btStats.Name = "btStats"
-        Me.btStats.Size = New System.Drawing.Size(144, 52)
-        Me.btStats.TabIndex = 3
-        Me.btStats.Text = "Voir les statistiques"
-        Me.btStats.UseVisualStyleBackColor = True
+        Me.msAccueilAdmin.BackColor = System.Drawing.Color.Black
+        Me.msAccueilAdmin.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.msAccueilAdmin.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.msAccueilAdmin.Margin = New System.Windows.Forms.Padding(0, 0, 10, 0)
+        Me.msAccueilAdmin.Name = "msAccueilAdmin"
+        Me.msAccueilAdmin.Size = New System.Drawing.Size(157, 24)
+        Me.msAccueilAdmin.Text = "Accueil administratif"
         '
-        'Button1
+        'msGestionAdmins
         '
-        Me.Button1.Location = New System.Drawing.Point(349, 129)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(144, 52)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Gestion des admins"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.msGestionAdmins.BackColor = System.Drawing.Color.Black
+        Me.msGestionAdmins.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.msGestionAdmins.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.msGestionAdmins.Margin = New System.Windows.Forms.Padding(0, 0, 10, 0)
+        Me.msGestionAdmins.Name = "msGestionAdmins"
+        Me.msGestionAdmins.Size = New System.Drawing.Size(204, 24)
+        Me.msGestionAdmins.Text = "Gestion des administrateurs"
         '
-        'Button2
+        'msGestionEmprunteurs
         '
-        Me.Button2.Location = New System.Drawing.Point(349, 214)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(144, 52)
-        Me.Button2.TabIndex = 5
-        Me.Button2.Text = "Gestions des emprunteurs"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.msGestionEmprunteurs.BackColor = System.Drawing.Color.Black
+        Me.msGestionEmprunteurs.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.msGestionEmprunteurs.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.msGestionEmprunteurs.Margin = New System.Windows.Forms.Padding(0, 0, 10, 0)
+        Me.msGestionEmprunteurs.Name = "msGestionEmprunteurs"
+        Me.msGestionEmprunteurs.Size = New System.Drawing.Size(185, 24)
+        Me.msGestionEmprunteurs.Text = "Gestion des emprunteurs"
         '
-        'Button3
+        'msGestionPreteurs
         '
-        Me.Button3.Location = New System.Drawing.Point(87, 214)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(144, 52)
-        Me.Button3.TabIndex = 6
-        Me.Button3.Text = "Gestion des prêteurs"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.msGestionPreteurs.BackColor = System.Drawing.Color.Black
+        Me.msGestionPreteurs.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.msGestionPreteurs.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.msGestionPreteurs.Margin = New System.Windows.Forms.Padding(0, 0, 10, 0)
+        Me.msGestionPreteurs.Name = "msGestionPreteurs"
+        Me.msGestionPreteurs.Size = New System.Drawing.Size(156, 24)
+        Me.msGestionPreteurs.Text = "Gestion des prêteurs"
+        '
+        'msStatistiques
+        '
+        Me.msStatistiques.BackColor = System.Drawing.Color.Black
+        Me.msStatistiques.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.msStatistiques.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.msStatistiques.Name = "msStatistiques"
+        Me.msStatistiques.Size = New System.Drawing.Size(97, 24)
+        Me.msStatistiques.Text = "Statistiques"
         '
         'Administration
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(581, 292)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.btStats)
-        Me.Controls.Add(Me.lbRole)
-        Me.Controls.Add(Me.lbMessageRole)
-        Me.Controls.Add(Me.lbTitre)
+        Me.ClientSize = New System.Drawing.Size(1013, 501)
+        Me.Controls.Add(Me.pUserControls)
+        Me.Controls.Add(Me.msMenu)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Administration"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Administration"
+        Me.msMenu.ResumeLayout(False)
+        Me.msMenu.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents lbTitre As Label
-    Friend WithEvents lbMessageRole As Label
-    Friend WithEvents lbRole As Label
-    Friend WithEvents btStats As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents pUserControls As Panel
+    Friend WithEvents msMenu As MenuStrip
+    Friend WithEvents msRetourAccueil As ToolStripMenuItem
+    Friend WithEvents msAccueilAdmin As ToolStripMenuItem
+    Friend WithEvents msGestionAdmins As ToolStripMenuItem
+    Friend WithEvents msGestionEmprunteurs As ToolStripMenuItem
+    Friend WithEvents msGestionPreteurs As ToolStripMenuItem
+    Friend WithEvents msStatistiques As ToolStripMenuItem
 End Class
