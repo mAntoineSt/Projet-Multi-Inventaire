@@ -28,11 +28,11 @@ Partial Class Accueil_Administration
         Me.lTitreAcces = New System.Windows.Forms.Label()
         Me.lTitrePasAcces = New System.Windows.Forms.Label()
         Me.pAcces = New System.Windows.Forms.Panel()
-        Me.pPasAcces = New System.Windows.Forms.Panel()
-        Me.lAccesGestionEmprunteurs = New System.Windows.Forms.Label()
-        Me.lAccesGestionPreteurs = New System.Windows.Forms.Label()
-        Me.lAccesGestionAdmins = New System.Windows.Forms.Label()
         Me.lAccesStatistiques = New System.Windows.Forms.Label()
+        Me.lAccesGestionAdmins = New System.Windows.Forms.Label()
+        Me.lAccesGestionPreteurs = New System.Windows.Forms.Label()
+        Me.lAccesGestionEmprunteurs = New System.Windows.Forms.Label()
+        Me.pPasAcces = New System.Windows.Forms.Panel()
         Me.lPasAccesGestionStats = New System.Windows.Forms.Label()
         Me.lPasAccesGestionAdmins = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -105,35 +105,15 @@ Partial Class Accueil_Administration
         Me.pAcces.Size = New System.Drawing.Size(258, 242)
         Me.pAcces.TabIndex = 5
         '
-        'pPasAcces
+        'lAccesStatistiques
         '
-        Me.pPasAcces.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.pPasAcces.Controls.Add(Me.lPasAccesGestionStats)
-        Me.pPasAcces.Controls.Add(Me.lPasAccesGestionAdmins)
-        Me.pPasAcces.Location = New System.Drawing.Point(643, 219)
-        Me.pPasAcces.Name = "pPasAcces"
-        Me.pPasAcces.Size = New System.Drawing.Size(258, 242)
-        Me.pPasAcces.TabIndex = 6
-        '
-        'lAccesGestionEmprunteurs
-        '
-        Me.lAccesGestionEmprunteurs.AutoSize = True
-        Me.lAccesGestionEmprunteurs.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
-        Me.lAccesGestionEmprunteurs.Location = New System.Drawing.Point(14, 24)
-        Me.lAccesGestionEmprunteurs.Name = "lAccesGestionEmprunteurs"
-        Me.lAccesGestionEmprunteurs.Size = New System.Drawing.Size(209, 18)
-        Me.lAccesGestionEmprunteurs.TabIndex = 0
-        Me.lAccesGestionEmprunteurs.Text = "• À la gestion des emprunteurs"
-        '
-        'lAccesGestionPreteurs
-        '
-        Me.lAccesGestionPreteurs.AutoSize = True
-        Me.lAccesGestionPreteurs.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
-        Me.lAccesGestionPreteurs.Location = New System.Drawing.Point(14, 54)
-        Me.lAccesGestionPreteurs.Name = "lAccesGestionPreteurs"
-        Me.lAccesGestionPreteurs.Size = New System.Drawing.Size(180, 18)
-        Me.lAccesGestionPreteurs.TabIndex = 1
-        Me.lAccesGestionPreteurs.Text = "• À la gestion des prêteurs"
+        Me.lAccesStatistiques.AutoSize = True
+        Me.lAccesStatistiques.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
+        Me.lAccesStatistiques.Location = New System.Drawing.Point(14, 120)
+        Me.lAccesStatistiques.Name = "lAccesStatistiques"
+        Me.lAccesStatistiques.Size = New System.Drawing.Size(120, 18)
+        Me.lAccesStatistiques.TabIndex = 3
+        Me.lAccesStatistiques.Text = "• Aux statistiques"
         '
         'lAccesGestionAdmins
         '
@@ -145,15 +125,36 @@ Partial Class Accueil_Administration
         Me.lAccesGestionAdmins.TabIndex = 2
         Me.lAccesGestionAdmins.Text = "• À la gestion des administrateurs"
         '
-        'lAccesStatistiques
+        'lAccesGestionPreteurs
         '
-        Me.lAccesStatistiques.AutoSize = True
-        Me.lAccesStatistiques.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
-        Me.lAccesStatistiques.Location = New System.Drawing.Point(14, 120)
-        Me.lAccesStatistiques.Name = "lAccesStatistiques"
-        Me.lAccesStatistiques.Size = New System.Drawing.Size(120, 18)
-        Me.lAccesStatistiques.TabIndex = 3
-        Me.lAccesStatistiques.Text = "• Aux statistiques"
+        Me.lAccesGestionPreteurs.AutoSize = True
+        Me.lAccesGestionPreteurs.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
+        Me.lAccesGestionPreteurs.Location = New System.Drawing.Point(14, 54)
+        Me.lAccesGestionPreteurs.Name = "lAccesGestionPreteurs"
+        Me.lAccesGestionPreteurs.Size = New System.Drawing.Size(180, 18)
+        Me.lAccesGestionPreteurs.TabIndex = 1
+        Me.lAccesGestionPreteurs.Text = "• À la gestion des prêteurs"
+        '
+        'lAccesGestionEmprunteurs
+        '
+        Me.lAccesGestionEmprunteurs.AutoSize = True
+        Me.lAccesGestionEmprunteurs.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
+        Me.lAccesGestionEmprunteurs.Location = New System.Drawing.Point(14, 24)
+        Me.lAccesGestionEmprunteurs.Name = "lAccesGestionEmprunteurs"
+        Me.lAccesGestionEmprunteurs.Size = New System.Drawing.Size(209, 18)
+        Me.lAccesGestionEmprunteurs.TabIndex = 0
+        Me.lAccesGestionEmprunteurs.Text = "• À la gestion des emprunteurs"
+        '
+        'pPasAcces
+        '
+        Me.pPasAcces.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.pPasAcces.Controls.Add(Me.lPasAccesGestionStats)
+        Me.pPasAcces.Controls.Add(Me.lPasAccesGestionAdmins)
+        Me.pPasAcces.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.pPasAcces.Location = New System.Drawing.Point(643, 219)
+        Me.pPasAcces.Name = "pPasAcces"
+        Me.pPasAcces.Size = New System.Drawing.Size(258, 242)
+        Me.pPasAcces.TabIndex = 6
         '
         'lPasAccesGestionStats
         '
@@ -195,6 +196,7 @@ Partial Class Accueil_Administration
         Me.Controls.Add(Me.pAcces)
         Me.Controls.Add(Me.lTitrePasAcces)
         Me.Controls.Add(Me.lTitreAcces)
+        Me.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Name = "Accueil_Administration"
         Me.Size = New System.Drawing.Size(1013, 473)
         Me.pAcces.ResumeLayout(False)
