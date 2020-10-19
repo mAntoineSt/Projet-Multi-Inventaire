@@ -339,8 +339,17 @@
     <EmbeddedResource Include="Connexions\Forms\Connexion.resx">
       <DependentUpon>Connexion.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Gestion du Matériel\Controles Utilisateur\EnregistrementMateriel.resx">
+      <DependentUpon>EnregistrementMateriel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion du Matériel\Controles Utilisateur\FicheMateriel.resx">
+      <DependentUpon>FicheMateriel.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gestion du Matériel\Controles Utilisateur\ListeMateriel.resx">
       <DependentUpon>ListeMateriel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion du Matériel\Controles Utilisateur\PanneauAccueil.resx">
+      <DependentUpon>PanneauAccueil.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gestion du Matériel\Forms\GestionMateriel.resx">
       <DependentUpon>GestionMateriel.vb</DependentUpon>
