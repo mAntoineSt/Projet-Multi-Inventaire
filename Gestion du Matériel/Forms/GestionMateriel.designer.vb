@@ -32,6 +32,7 @@ Partial Class GestionMateriel
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.btnLogin_Materiel = New System.Windows.Forms.Button()
+        Me.EnregistrementMateriel1 = New Projet_Multi_Inventaire.EnregistrementMateriel()
         Me.Panel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -39,6 +40,7 @@ Partial Class GestionMateriel
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.EnregistrementMateriel1)
         Me.Panel1.Controls.Add(Me.TableLayoutPanel2)
         Me.Panel1.Controls.Add(Me.Panel4)
         Me.Panel1.Controls.Add(Me.Panel2)
@@ -46,7 +48,7 @@ Partial Class GestionMateriel
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1324, 795)
+        Me.Panel1.Size = New System.Drawing.Size(1173, 746)
         Me.Panel1.TabIndex = 0
         '
         'TableLayoutPanel2
@@ -67,17 +69,17 @@ Partial Class GestionMateriel
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(233, 711)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(233, 662)
         Me.TableLayoutPanel2.TabIndex = 3
         '
         'btnListe_Materiel
         '
         Me.btnListe_Materiel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnListe_Materiel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnListe_Materiel.Location = New System.Drawing.Point(20, 256)
+        Me.btnListe_Materiel.Location = New System.Drawing.Point(20, 240)
         Me.btnListe_Materiel.Margin = New System.Windows.Forms.Padding(20)
         Me.btnListe_Materiel.Name = "btnListe_Materiel"
-        Me.btnListe_Materiel.Size = New System.Drawing.Size(193, 78)
+        Me.btnListe_Materiel.Size = New System.Drawing.Size(193, 70)
         Me.btnListe_Materiel.TabIndex = 2
         Me.btnListe_Materiel.Text = "LISTE DU MATÉRIEL"
         Me.btnListe_Materiel.UseVisualStyleBackColor = True
@@ -86,10 +88,10 @@ Partial Class GestionMateriel
         '
         Me.btnAccueil_Materiel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnAccueil_Materiel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAccueil_Materiel.Location = New System.Drawing.Point(20, 138)
+        Me.btnAccueil_Materiel.Location = New System.Drawing.Point(20, 130)
         Me.btnAccueil_Materiel.Margin = New System.Windows.Forms.Padding(20)
         Me.btnAccueil_Materiel.Name = "btnAccueil_Materiel"
-        Me.btnAccueil_Materiel.Size = New System.Drawing.Size(193, 78)
+        Me.btnAccueil_Materiel.Size = New System.Drawing.Size(193, 70)
         Me.btnAccueil_Materiel.TabIndex = 0
         Me.btnAccueil_Materiel.Text = "ACCUEIL"
         Me.btnAccueil_Materiel.UseVisualStyleBackColor = True
@@ -98,10 +100,10 @@ Partial Class GestionMateriel
         '
         Me.btnFiche_Materiel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnFiche_Materiel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnFiche_Materiel.Location = New System.Drawing.Point(20, 374)
+        Me.btnFiche_Materiel.Location = New System.Drawing.Point(20, 350)
         Me.btnFiche_Materiel.Margin = New System.Windows.Forms.Padding(20)
         Me.btnFiche_Materiel.Name = "btnFiche_Materiel"
-        Me.btnFiche_Materiel.Size = New System.Drawing.Size(193, 78)
+        Me.btnFiche_Materiel.Size = New System.Drawing.Size(193, 70)
         Me.btnFiche_Materiel.TabIndex = 1
         Me.btnFiche_Materiel.Text = "FICHE DU MATÉRIEL"
         Me.btnFiche_Materiel.UseVisualStyleBackColor = True
@@ -110,10 +112,10 @@ Partial Class GestionMateriel
         '
         Me.btnLEnrModif_Materiel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnLEnrModif_Materiel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLEnrModif_Materiel.Location = New System.Drawing.Point(20, 492)
+        Me.btnLEnrModif_Materiel.Location = New System.Drawing.Point(20, 460)
         Me.btnLEnrModif_Materiel.Margin = New System.Windows.Forms.Padding(20)
         Me.btnLEnrModif_Materiel.Name = "btnLEnrModif_Materiel"
-        Me.btnLEnrModif_Materiel.Size = New System.Drawing.Size(193, 78)
+        Me.btnLEnrModif_Materiel.Size = New System.Drawing.Size(193, 70)
         Me.btnLEnrModif_Materiel.TabIndex = 3
         Me.btnLEnrModif_Materiel.Text = "ENREGISTREMENT" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ET " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "MODIFICATION"
         Me.btnLEnrModif_Materiel.UseVisualStyleBackColor = True
@@ -121,17 +123,17 @@ Partial Class GestionMateriel
         'Panel4
         '
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel4.Location = New System.Drawing.Point(0, 767)
+        Me.Panel4.Location = New System.Drawing.Point(0, 718)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(1301, 28)
+        Me.Panel4.Size = New System.Drawing.Size(1150, 28)
         Me.Panel4.TabIndex = 2
         '
         'Panel2
         '
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel2.Location = New System.Drawing.Point(1301, 56)
+        Me.Panel2.Location = New System.Drawing.Point(1150, 56)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(23, 739)
+        Me.Panel2.Size = New System.Drawing.Size(23, 690)
         Me.Panel2.TabIndex = 1
         '
         'TableLayoutPanel1
@@ -148,25 +150,32 @@ Partial Class GestionMateriel
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1324, 56)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1173, 56)
         Me.TableLayoutPanel1.TabIndex = 0
         '
         'btnLogin_Materiel
         '
         Me.btnLogin_Materiel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnLogin_Materiel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLogin_Materiel.Location = New System.Drawing.Point(980, 3)
+        Me.btnLogin_Materiel.Location = New System.Drawing.Point(829, 3)
         Me.btnLogin_Materiel.Name = "btnLogin_Materiel"
         Me.btnLogin_Materiel.Size = New System.Drawing.Size(236, 50)
         Me.btnLogin_Materiel.TabIndex = 0
         Me.btnLogin_Materiel.Text = "Connection"
         Me.btnLogin_Materiel.UseVisualStyleBackColor = True
         '
+        'EnregistrementMateriel1
+        '
+        Me.EnregistrementMateriel1.Location = New System.Drawing.Point(236, 56)
+        Me.EnregistrementMateriel1.Name = "EnregistrementMateriel1"
+        Me.EnregistrementMateriel1.Size = New System.Drawing.Size(857, 603)
+        Me.EnregistrementMateriel1.TabIndex = 4
+        '
         'GestionMateriel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1324, 795)
+        Me.ClientSize = New System.Drawing.Size(1173, 746)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "GestionMateriel"
         Me.Text = "GestionMateriel"
@@ -187,4 +196,5 @@ Partial Class GestionMateriel
     Friend WithEvents btnFiche_Materiel As Button
     Friend WithEvents btnLEnrModif_Materiel As Button
     Friend WithEvents btnLogin_Materiel As Button
+    Friend WithEvents EnregistrementMateriel1 As EnregistrementMateriel
 End Class
