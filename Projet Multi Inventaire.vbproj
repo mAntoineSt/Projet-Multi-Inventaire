@@ -218,10 +218,26 @@
     <Compile Include="Connexions\Forms\Creation comptes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Model1.Designer.vb">
+    <Compile Include="Entity\EntityTest.Designer.vb">
+      <DependentUpon>EntityTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\EntityTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entity\Model1.Context.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Model1.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Model1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -238,7 +254,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="poste.vb">
+    <Compile Include="Entity\poste.vb">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Prêts\Controles utilisateurs\PretAjout.Designer.vb">
@@ -289,7 +305,7 @@
     <Compile Include="Retours\Forms\Retours.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="user.vb">
+    <Compile Include="Entity\user.vb">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -309,6 +325,9 @@
     <EmbeddedResource Include="Connexions\Forms\Connexion.resx">
       <DependentUpon>Connexion.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Entity\EntityTest.resx">
+      <DependentUpon>EntityTest.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -317,13 +336,14 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="Model1.edmx">
+    <EntityDeploy Include="Entity\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.vb</LastGenOutput>
     </EntityDeploy>
-    <None Include="Model1.edmx.diagram">
+    <None Include="Entity\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>
+    <None Include="Entity\tuto.md" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -334,30 +354,20 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-    <None Include="mysql-connector-net-6.6.6.msi" />
-    <None Include="mysqlvs2019.vsix" />
+    <None Include="Entity\mysql-connector-net-6.6.6.msi" />
+    <None Include="Entity\mysqlvs2019.vsix" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Model1.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
-    </Content>
-    <Content Include="Model1.Context.tt">
+    <Content Include="Entity\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <LastGenOutput>Model1.Context.vb</LastGenOutput>
     </Content>
-    <Content Include="Model1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Content>
-    <Content Include="Model1.tt">
+    <Content Include="Entity\Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
+      <LastGenOutput>Model1.vb</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
