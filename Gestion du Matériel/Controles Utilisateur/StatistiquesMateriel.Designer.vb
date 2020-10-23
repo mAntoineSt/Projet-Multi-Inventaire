@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class PanneauAccueil
+Partial Class StatistiquesMateriel
     Inherits System.Windows.Forms.UserControl
 
     'UserControl remplace la méthode Dispose pour nettoyer la liste des composants.
@@ -27,19 +27,19 @@ Partial Class PanneauAccueil
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.Magenta
+        Me.Panel1.BackColor = System.Drawing.Color.Lime
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(978, 671)
         Me.Panel1.TabIndex = 0
         '
-        'PanneauAccueil
+        'StatistiquesMateriel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.Panel1)
-        Me.Name = "PanneauAccueil"
+        Me.Name = "StatistiquesMateriel"
         Me.Size = New System.Drawing.Size(978, 671)
         Me.ResumeLayout(False)
 

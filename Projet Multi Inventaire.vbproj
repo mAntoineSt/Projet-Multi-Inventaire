@@ -242,6 +242,12 @@
     <Compile Include="Gestion du Matériel\Controles Utilisateur\PanneauAccueil.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Gestion du Matériel\Controles Utilisateur\StatistiquesMateriel.Designer.vb">
+      <DependentUpon>StatistiquesMateriel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion du Matériel\Controles Utilisateur\StatistiquesMateriel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Gestion du Matériel\Forms\GestionMateriel.designer.vb">
       <DependentUpon>GestionMateriel.vb</DependentUpon>
     </Compile>
@@ -351,6 +357,9 @@
     <EmbeddedResource Include="Gestion du Matériel\Controles Utilisateur\PanneauAccueil.resx">
       <DependentUpon>PanneauAccueil.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Gestion du Matériel\Controles Utilisateur\StatistiquesMateriel.resx">
+      <DependentUpon>StatistiquesMateriel.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gestion du Matériel\Forms\GestionMateriel.resx">
       <DependentUpon>GestionMateriel.vb</DependentUpon>
     </EmbeddedResource>
@@ -404,6 +413,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\technology-785742_1920.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
