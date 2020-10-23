@@ -61,8 +61,6 @@ Partial Class EnregistrementMateriel
         Me.tem_Conditions = New System.Windows.Forms.TabPage()
         Me.tem_EtatMateriel = New System.Windows.Forms.TabPage()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Label15 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.RadioButton5 = New System.Windows.Forms.RadioButton()
@@ -73,12 +71,12 @@ Partial Class EnregistrementMateriel
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Label26 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
+        Me.Label26 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
@@ -86,6 +84,8 @@ Partial Class EnregistrementMateriel
         Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.tem_Reparation = New System.Windows.Forms.TabPage()
         Me.tem_Entretien = New System.Windows.Forms.TabPage()
         Me.Panel1.SuspendLayout()
@@ -97,9 +97,9 @@ Partial Class EnregistrementMateriel
         Me.Panel3.SuspendLayout()
         Me.tem_EtatMateriel.SuspendLayout()
         Me.Panel4.SuspendLayout()
-        Me.Panel5.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
         Me.TableLayoutPanel4.SuspendLayout()
+        Me.Panel5.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -108,33 +108,31 @@ Partial Class EnregistrementMateriel
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(978, 671)
+        Me.Panel1.Size = New System.Drawing.Size(993, 729)
         Me.Panel1.TabIndex = 0
         '
         'tbcEnrMat
         '
-        Me.tbcEnrMat.Appearance = System.Windows.Forms.TabAppearance.FlatButtons
         Me.tbcEnrMat.Controls.Add(Me.tem_Information)
         Me.tbcEnrMat.Controls.Add(Me.tem_Conditions)
         Me.tbcEnrMat.Controls.Add(Me.tem_EtatMateriel)
         Me.tbcEnrMat.Controls.Add(Me.tem_Reparation)
         Me.tbcEnrMat.Controls.Add(Me.tem_Entretien)
-        Me.tbcEnrMat.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tbcEnrMat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbcEnrMat.Location = New System.Drawing.Point(0, 0)
+        Me.tbcEnrMat.Location = New System.Drawing.Point(12, 17)
         Me.tbcEnrMat.Name = "tbcEnrMat"
         Me.tbcEnrMat.SelectedIndex = 0
-        Me.tbcEnrMat.Size = New System.Drawing.Size(978, 671)
+        Me.tbcEnrMat.Size = New System.Drawing.Size(955, 692)
         Me.tbcEnrMat.TabIndex = 0
         '
         'tem_Information
         '
         Me.tem_Information.Controls.Add(Me.Panel2)
         Me.tem_Information.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tem_Information.Location = New System.Drawing.Point(4, 32)
+        Me.tem_Information.Location = New System.Drawing.Point(4, 29)
         Me.tem_Information.Name = "tem_Information"
         Me.tem_Information.Padding = New System.Windows.Forms.Padding(3)
-        Me.tem_Information.Size = New System.Drawing.Size(970, 635)
+        Me.tem_Information.Size = New System.Drawing.Size(947, 659)
         Me.tem_Information.TabIndex = 0
         Me.tem_Information.Text = "Informations"
         Me.tem_Information.UseVisualStyleBackColor = True
@@ -144,9 +142,9 @@ Partial Class EnregistrementMateriel
         Me.Panel2.Controls.Add(Me.TableLayoutPanel2)
         Me.Panel2.Controls.Add(Me.TableLayoutPanel1)
         Me.Panel2.Controls.Add(Me.Panel3)
-        Me.Panel2.Location = New System.Drawing.Point(2, 3)
+        Me.Panel2.Location = New System.Drawing.Point(6, 6)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(942, 572)
+        Me.Panel2.Size = New System.Drawing.Size(938, 647)
         Me.Panel2.TabIndex = 0
         '
         'TableLayoutPanel2
@@ -178,7 +176,7 @@ Partial Class EnregistrementMateriel
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(450, 470)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(450, 500)
         Me.TableLayoutPanel2.TabIndex = 2
         '
         'Label16
@@ -186,10 +184,10 @@ Partial Class EnregistrementMateriel
         Me.Label16.AutoSize = True
         Me.Label16.Dock = System.Windows.Forms.DockStyle.Right
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(106, 422)
+        Me.Label16.Location = New System.Drawing.Point(106, 446)
         Me.Label16.Margin = New System.Windows.Forms.Padding(3, 20, 3, 20)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(45, 28)
+        Me.Label16.Size = New System.Drawing.Size(45, 34)
         Me.Label16.TabIndex = 16
         Me.Label16.Text = "Photo"
         Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -198,7 +196,7 @@ Partial Class EnregistrementMateriel
         '
         Me.TextBox9.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextBox9.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox9.Location = New System.Drawing.Point(157, 355)
+        Me.TextBox9.Location = New System.Drawing.Point(157, 375)
         Me.TextBox9.Margin = New System.Windows.Forms.Padding(3, 20, 3, 20)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(290, 24)
@@ -208,7 +206,7 @@ Partial Class EnregistrementMateriel
         '
         Me.TextBox8.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextBox8.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox8.Location = New System.Drawing.Point(157, 221)
+        Me.TextBox8.Location = New System.Drawing.Point(157, 233)
         Me.TextBox8.Margin = New System.Windows.Forms.Padding(3, 20, 3, 20)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(290, 24)
@@ -218,7 +216,7 @@ Partial Class EnregistrementMateriel
         '
         Me.TextBox7.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox7.Location = New System.Drawing.Point(157, 154)
+        Me.TextBox7.Location = New System.Drawing.Point(157, 162)
         Me.TextBox7.Margin = New System.Windows.Forms.Padding(3, 20, 3, 20)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(290, 24)
@@ -239,10 +237,10 @@ Partial Class EnregistrementMateriel
         Me.Label13.AutoSize = True
         Me.Label13.Dock = System.Windows.Forms.DockStyle.Right
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(63, 154)
+        Me.Label13.Location = New System.Drawing.Point(63, 162)
         Me.Label13.Margin = New System.Windows.Forms.Padding(3, 20, 3, 20)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(88, 27)
+        Me.Label13.Size = New System.Drawing.Size(88, 31)
         Me.Label13.TabIndex = 11
         Me.Label13.Text = "Coût d'Achat"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -252,10 +250,10 @@ Partial Class EnregistrementMateriel
         Me.Label11.AutoSize = True
         Me.Label11.Dock = System.Windows.Forms.DockStyle.Right
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(31, 87)
+        Me.Label11.Location = New System.Drawing.Point(31, 91)
         Me.Label11.Margin = New System.Windows.Forms.Padding(3, 20, 3, 20)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(120, 27)
+        Me.Label11.Size = New System.Drawing.Size(120, 31)
         Me.Label11.TabIndex = 9
         Me.Label11.Text = "Année acquisition"
         Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -268,7 +266,7 @@ Partial Class EnregistrementMateriel
         Me.Label9.Location = New System.Drawing.Point(68, 20)
         Me.Label9.Margin = New System.Windows.Forms.Padding(3, 20, 3, 20)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(83, 27)
+        Me.Label9.Size = New System.Drawing.Size(83, 31)
         Me.Label9.TabIndex = 7
         Me.Label9.Text = "Fournisseur"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -278,10 +276,10 @@ Partial Class EnregistrementMateriel
         Me.Label14.AutoSize = True
         Me.Label14.Dock = System.Windows.Forms.DockStyle.Right
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(37, 221)
+        Me.Label14.Location = New System.Drawing.Point(37, 233)
         Me.Label14.Margin = New System.Windows.Forms.Padding(3, 20, 3, 20)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(114, 27)
+        Me.Label14.Size = New System.Drawing.Size(114, 31)
         Me.Label14.TabIndex = 12
         Me.Label14.Text = "Valeur résiduelle"
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -291,10 +289,10 @@ Partial Class EnregistrementMateriel
         Me.Label10.AutoSize = True
         Me.Label10.Dock = System.Windows.Forms.DockStyle.Right
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(82, 288)
+        Me.Label10.Location = New System.Drawing.Point(82, 304)
         Me.Label10.Margin = New System.Windows.Forms.Padding(3, 20, 3, 20)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(69, 27)
+        Me.Label10.Size = New System.Drawing.Size(69, 31)
         Me.Label10.TabIndex = 8
         Me.Label10.Text = "Catégorie"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -304,10 +302,10 @@ Partial Class EnregistrementMateriel
         Me.Label12.AutoSize = True
         Me.Label12.Dock = System.Windows.Forms.DockStyle.Right
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(79, 355)
+        Me.Label12.Location = New System.Drawing.Point(79, 375)
         Me.Label12.Margin = New System.Windows.Forms.Padding(3, 20, 3, 20)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(72, 27)
+        Me.Label12.Size = New System.Drawing.Size(72, 31)
         Me.Label12.TabIndex = 10
         Me.Label12.Text = "No Antivol"
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -317,7 +315,7 @@ Partial Class EnregistrementMateriel
         Me.ComboBox1.Dock = System.Windows.Forms.DockStyle.Left
         Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(157, 288)
+        Me.ComboBox1.Location = New System.Drawing.Point(157, 304)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(3, 20, 3, 20)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(290, 26)
@@ -327,7 +325,7 @@ Partial Class EnregistrementMateriel
         '
         Me.DateTimePicker1.Dock = System.Windows.Forms.DockStyle.Left
         Me.DateTimePicker1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker1.Location = New System.Drawing.Point(157, 87)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(157, 91)
         Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(3, 20, 3, 20)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(290, 24)
@@ -336,10 +334,10 @@ Partial Class EnregistrementMateriel
         'Button1
         '
         Me.Button1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Button1.Location = New System.Drawing.Point(174, 417)
+        Me.Button1.Location = New System.Drawing.Point(174, 441)
         Me.Button1.Margin = New System.Windows.Forms.Padding(20, 15, 3, 15)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(139, 38)
+        Me.Button1.Size = New System.Drawing.Size(139, 44)
         Me.Button1.TabIndex = 17
         Me.Button1.Text = "Parcourir"
         Me.Button1.UseVisualStyleBackColor = True
@@ -373,14 +371,14 @@ Partial Class EnregistrementMateriel
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(450, 470)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(450, 500)
         Me.TableLayoutPanel1.TabIndex = 1
         '
         'TextBox5
         '
         Me.TextBox5.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(157, 288)
+        Me.TextBox5.Location = New System.Drawing.Point(157, 304)
         Me.TextBox5.Margin = New System.Windows.Forms.Padding(3, 20, 3, 20)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(290, 24)
@@ -390,7 +388,7 @@ Partial Class EnregistrementMateriel
         '
         Me.TextBox4.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(157, 221)
+        Me.TextBox4.Location = New System.Drawing.Point(157, 233)
         Me.TextBox4.Margin = New System.Windows.Forms.Padding(3, 20, 3, 20)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(290, 24)
@@ -400,7 +398,7 @@ Partial Class EnregistrementMateriel
         '
         Me.TextBox3.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(157, 154)
+        Me.TextBox3.Location = New System.Drawing.Point(157, 162)
         Me.TextBox3.Margin = New System.Windows.Forms.Padding(3, 20, 3, 20)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(290, 24)
@@ -410,7 +408,7 @@ Partial Class EnregistrementMateriel
         '
         Me.TextBox2.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(157, 87)
+        Me.TextBox2.Location = New System.Drawing.Point(157, 91)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(3, 20, 3, 20)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(290, 24)
@@ -421,10 +419,10 @@ Partial Class EnregistrementMateriel
         Me.Label8.AutoSize = True
         Me.Label8.Dock = System.Windows.Forms.DockStyle.Right
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(88, 221)
+        Me.Label8.Location = New System.Drawing.Point(88, 233)
         Me.Label8.Margin = New System.Windows.Forms.Padding(3, 20, 3, 20)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(63, 27)
+        Me.Label8.Size = New System.Drawing.Size(63, 31)
         Me.Label8.TabIndex = 6
         Me.Label8.Text = "No Série"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -434,10 +432,10 @@ Partial Class EnregistrementMateriel
         Me.Label6.AutoSize = True
         Me.Label6.Dock = System.Windows.Forms.DockStyle.Right
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(97, 154)
+        Me.Label6.Location = New System.Drawing.Point(97, 162)
         Me.Label6.Margin = New System.Windows.Forms.Padding(3, 20, 3, 20)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(54, 27)
+        Me.Label6.Size = New System.Drawing.Size(54, 31)
         Me.Label6.TabIndex = 4
         Me.Label6.Text = "Modèle"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -447,10 +445,10 @@ Partial Class EnregistrementMateriel
         Me.Label4.AutoSize = True
         Me.Label4.Dock = System.Windows.Forms.DockStyle.Right
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(95, 87)
+        Me.Label4.Location = New System.Drawing.Point(95, 91)
         Me.Label4.Margin = New System.Windows.Forms.Padding(3, 20, 3, 20)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(56, 27)
+        Me.Label4.Size = New System.Drawing.Size(56, 31)
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "Marque"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -463,7 +461,7 @@ Partial Class EnregistrementMateriel
         Me.Label2.Location = New System.Drawing.Point(82, 20)
         Me.Label2.Margin = New System.Windows.Forms.Padding(3, 20, 3, 20)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(69, 27)
+        Me.Label2.Size = New System.Drawing.Size(69, 31)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Identifiant"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -473,10 +471,10 @@ Partial Class EnregistrementMateriel
         Me.Label3.AutoSize = True
         Me.Label3.Dock = System.Windows.Forms.DockStyle.Right
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(84, 288)
+        Me.Label3.Location = New System.Drawing.Point(84, 304)
         Me.Label3.Margin = New System.Windows.Forms.Padding(3, 20, 3, 20)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(67, 27)
+        Me.Label3.Size = New System.Drawing.Size(67, 31)
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "Fabricant"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -486,10 +484,10 @@ Partial Class EnregistrementMateriel
         Me.Label5.AutoSize = True
         Me.Label5.Dock = System.Windows.Forms.DockStyle.Right
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(8, 355)
+        Me.Label5.Location = New System.Drawing.Point(8, 375)
         Me.Label5.Margin = New System.Windows.Forms.Padding(3, 20, 3, 20)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(143, 27)
+        Me.Label5.Size = New System.Drawing.Size(143, 31)
         Me.Label5.TabIndex = 3
         Me.Label5.Text = "Année de Fabrication"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -499,10 +497,10 @@ Partial Class EnregistrementMateriel
         Me.Label7.AutoSize = True
         Me.Label7.Dock = System.Windows.Forms.DockStyle.Right
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(72, 422)
+        Me.Label7.Location = New System.Drawing.Point(72, 446)
         Me.Label7.Margin = New System.Windows.Forms.Padding(3, 20, 3, 20)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(79, 28)
+        Me.Label7.Size = New System.Drawing.Size(79, 34)
         Me.Label7.TabIndex = 5
         Me.Label7.Text = "Description"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -521,7 +519,7 @@ Partial Class EnregistrementMateriel
         '
         Me.DateTimePicker2.Dock = System.Windows.Forms.DockStyle.Left
         Me.DateTimePicker2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker2.Location = New System.Drawing.Point(157, 355)
+        Me.DateTimePicker2.Location = New System.Drawing.Point(157, 375)
         Me.DateTimePicker2.Margin = New System.Windows.Forms.Padding(3, 20, 3, 20)
         Me.DateTimePicker2.Name = "DateTimePicker2"
         Me.DateTimePicker2.Size = New System.Drawing.Size(290, 24)
@@ -531,9 +529,9 @@ Partial Class EnregistrementMateriel
         '
         Me.RichTextBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RichTextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RichTextBox1.Location = New System.Drawing.Point(157, 405)
+        Me.RichTextBox1.Location = New System.Drawing.Point(157, 429)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(290, 62)
+        Me.RichTextBox1.Size = New System.Drawing.Size(290, 68)
         Me.RichTextBox1.TabIndex = 13
         Me.RichTextBox1.Text = ""
         '
@@ -543,16 +541,14 @@ Partial Class EnregistrementMateriel
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Padding = New System.Windows.Forms.Padding(60, 0, 0, 0)
-        Me.Panel3.Size = New System.Drawing.Size(942, 50)
+        Me.Panel3.Size = New System.Drawing.Size(938, 61)
         Me.Panel3.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(60, 26)
+        Me.Label1.Location = New System.Drawing.Point(153, 19)
         Me.Label1.Margin = New System.Windows.Forms.Padding(3)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(233, 24)
@@ -562,10 +558,10 @@ Partial Class EnregistrementMateriel
         'tem_Conditions
         '
         Me.tem_Conditions.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tem_Conditions.Location = New System.Drawing.Point(4, 32)
+        Me.tem_Conditions.Location = New System.Drawing.Point(4, 29)
         Me.tem_Conditions.Name = "tem_Conditions"
         Me.tem_Conditions.Padding = New System.Windows.Forms.Padding(3)
-        Me.tem_Conditions.Size = New System.Drawing.Size(970, 635)
+        Me.tem_Conditions.Size = New System.Drawing.Size(947, 659)
         Me.tem_Conditions.TabIndex = 1
         Me.tem_Conditions.Text = "Conditions d'emprunt"
         Me.tem_Conditions.UseVisualStyleBackColor = True
@@ -574,44 +570,22 @@ Partial Class EnregistrementMateriel
         '
         Me.tem_EtatMateriel.Controls.Add(Me.Panel4)
         Me.tem_EtatMateriel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tem_EtatMateriel.Location = New System.Drawing.Point(4, 32)
+        Me.tem_EtatMateriel.Location = New System.Drawing.Point(4, 29)
         Me.tem_EtatMateriel.Name = "tem_EtatMateriel"
-        Me.tem_EtatMateriel.Size = New System.Drawing.Size(970, 635)
+        Me.tem_EtatMateriel.Size = New System.Drawing.Size(947, 659)
         Me.tem_EtatMateriel.TabIndex = 2
         Me.tem_EtatMateriel.Text = "État du Matériel"
         Me.tem_EtatMateriel.UseVisualStyleBackColor = True
         '
         'Panel4
         '
-        Me.Panel4.Controls.Add(Me.Panel5)
         Me.Panel4.Controls.Add(Me.TableLayoutPanel3)
+        Me.Panel4.Controls.Add(Me.Panel5)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel4.Location = New System.Drawing.Point(0, -3)
+        Me.Panel4.Location = New System.Drawing.Point(0, 3)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(970, 638)
+        Me.Panel4.Size = New System.Drawing.Size(947, 656)
         Me.Panel4.TabIndex = 0
-        '
-        'Panel5
-        '
-        Me.Panel5.Controls.Add(Me.Label15)
-        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel5.Location = New System.Drawing.Point(0, 0)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Padding = New System.Windows.Forms.Padding(60, 0, 0, 0)
-        Me.Panel5.Size = New System.Drawing.Size(970, 50)
-        Me.Panel5.TabIndex = 3
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(60, 26)
-        Me.Label15.Margin = New System.Windows.Forms.Padding(3)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(223, 24)
-        Me.Label15.TabIndex = 0
-        Me.Label15.Text = "Rapport d'état du matériel" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'TableLayoutPanel3
         '
@@ -769,12 +743,12 @@ Partial Class EnregistrementMateriel
         Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.80537!))
         Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.6868!))
         Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.46309!))
-        Me.TableLayoutPanel4.Controls.Add(Me.Label26, 0, 0)
         Me.TableLayoutPanel4.Controls.Add(Me.Label18, 0, 1)
         Me.TableLayoutPanel4.Controls.Add(Me.Label19, 1, 1)
         Me.TableLayoutPanel4.Controls.Add(Me.Label20, 2, 1)
         Me.TableLayoutPanel4.Controls.Add(Me.Label21, 3, 1)
         Me.TableLayoutPanel4.Controls.Add(Me.Label22, 4, 1)
+        Me.TableLayoutPanel4.Controls.Add(Me.Label26, 0, 0)
         Me.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel4.Location = New System.Drawing.Point(169, 3)
         Me.TableLayoutPanel4.Margin = New System.Windows.Forms.Padding(3, 3, 3, 5)
@@ -784,18 +758,6 @@ Partial Class EnregistrementMateriel
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel4.Size = New System.Drawing.Size(199, 62)
         Me.TableLayoutPanel4.TabIndex = 10
-        '
-        'Label26
-        '
-        Me.Label26.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label26.AutoSize = True
-        Me.TableLayoutPanel4.SetColumnSpan(Me.Label26, 5)
-        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.Location = New System.Drawing.Point(25, 7)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(148, 17)
-        Me.Label26.TabIndex = 9
-        Me.Label26.Text = "Évaluation de l'état"
         '
         'Label18
         '
@@ -861,6 +823,18 @@ Partial Class EnregistrementMateriel
         Me.Label22.TabIndex = 5
         Me.Label22.Text = "5"
         Me.Label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label26
+        '
+        Me.Label26.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label26.AutoSize = True
+        Me.TableLayoutPanel4.SetColumnSpan(Me.Label26, 5)
+        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.Location = New System.Drawing.Point(25, 7)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(148, 17)
+        Me.Label26.TabIndex = 9
+        Me.Label26.Text = "Évaluation de l'état"
         '
         'Label25
         '
@@ -947,21 +921,41 @@ Partial Class EnregistrementMateriel
         Me.CheckBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
+        'Panel5
+        '
+        Me.Panel5.Controls.Add(Me.Label15)
+        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel5.Location = New System.Drawing.Point(0, 0)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(947, 61)
+        Me.Panel5.TabIndex = 1
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(153, 19)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(3)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(223, 24)
+        Me.Label15.TabIndex = 0
+        Me.Label15.Text = "Rapport d'état du matériel" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
         'tem_Reparation
         '
         Me.tem_Reparation.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tem_Reparation.Location = New System.Drawing.Point(4, 32)
+        Me.tem_Reparation.Location = New System.Drawing.Point(4, 29)
         Me.tem_Reparation.Name = "tem_Reparation"
-        Me.tem_Reparation.Size = New System.Drawing.Size(970, 635)
+        Me.tem_Reparation.Size = New System.Drawing.Size(947, 659)
         Me.tem_Reparation.TabIndex = 3
         Me.tem_Reparation.Text = "Réparations"
         Me.tem_Reparation.UseVisualStyleBackColor = True
         '
         'tem_Entretien
         '
-        Me.tem_Entretien.Location = New System.Drawing.Point(4, 32)
+        Me.tem_Entretien.Location = New System.Drawing.Point(4, 29)
         Me.tem_Entretien.Name = "tem_Entretien"
-        Me.tem_Entretien.Size = New System.Drawing.Size(970, 635)
+        Me.tem_Entretien.Size = New System.Drawing.Size(947, 659)
         Me.tem_Entretien.TabIndex = 4
         Me.tem_Entretien.Text = "Entretien"
         Me.tem_Entretien.UseVisualStyleBackColor = True
@@ -972,7 +966,7 @@ Partial Class EnregistrementMateriel
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.Panel1)
         Me.Name = "EnregistrementMateriel"
-        Me.Size = New System.Drawing.Size(978, 671)
+        Me.Size = New System.Drawing.Size(993, 729)
         Me.Panel1.ResumeLayout(False)
         Me.tbcEnrMat.ResumeLayout(False)
         Me.tem_Information.ResumeLayout(False)
@@ -985,12 +979,12 @@ Partial Class EnregistrementMateriel
         Me.Panel3.PerformLayout()
         Me.tem_EtatMateriel.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.TableLayoutPanel3.PerformLayout()
         Me.TableLayoutPanel4.ResumeLayout(False)
         Me.TableLayoutPanel4.PerformLayout()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1035,6 +1029,8 @@ Partial Class EnregistrementMateriel
     Friend WithEvents Label16 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Panel4 As Panel
+    Friend WithEvents Panel5 As Panel
+    Friend WithEvents Label15 As Label
     Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
     Friend WithEvents Label24 As Label
     Friend WithEvents Label23 As Label
@@ -1059,6 +1055,4 @@ Partial Class EnregistrementMateriel
     Friend WithEvents tem_Entretien As TabPage
     Friend WithEvents CheckBox2 As CheckBox
     Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents Panel5 As Panel
-    Friend WithEvents Label15 As Label
 End Class
