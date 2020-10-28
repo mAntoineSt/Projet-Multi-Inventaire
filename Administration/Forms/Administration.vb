@@ -18,6 +18,17 @@ Public Class Administration
         pUserControls.Controls.Add(ucGestionPreteur)
         pUserControls.Controls.Add(ucStatistiques)
         ucAccueilAdmin.BringToFront()
+
+        If droits_administratif = 1 Then
+            ucAccueilAdmin.lAccesGestionAdmins.Visible = False
+            ucAccueilAdmin.lAccesStatistiques.Visible = False
+            ucAccueilAdmin.lPasAccesGestionAdmins.Visible = True
+            ucAccueilAdmin.lPasAccesGestionStats.Visible = True
+        Else
+            ucAccueilAdmin.lPasAccesGestionAdmins.Visible = False
+            ucAccueilAdmin.lPasAccesGestionStats.Visible = False
+        End If
+
     End Sub
 
     'Quand la partie administration se ferme
@@ -29,7 +40,8 @@ Public Class Administration
 
     'Fermeture de la partie administration et retour à l'accueil
     Private Sub msRetourAccueil_Click(sender As Object, e As EventArgs) Handles msRetourAccueil.Click
-        'AJOUTER RETOUR COMME QUAND ON APPUIE SUR X
+        Accueil.Show() 'Enlever quand l'application sera ok
+        Me.Close()
     End Sub
 
     'Sert à ouvrir le userControl de l'accueil de l'administration (Tout le monde peut y avoir accès)
