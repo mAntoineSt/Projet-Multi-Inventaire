@@ -23,27 +23,27 @@ Partial Class Connexion
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Connexion))
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.tbMatricule = New System.Windows.Forms.TextBox()
+        Me.tbMdp = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.bConfirmer = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'tbMatricule
         '
-        Me.TextBox1.Location = New System.Drawing.Point(158, 30)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(223, 20)
-        Me.TextBox1.TabIndex = 0
+        Me.tbMatricule.Location = New System.Drawing.Point(158, 30)
+        Me.tbMatricule.Name = "tbMatricule"
+        Me.tbMatricule.Size = New System.Drawing.Size(223, 20)
+        Me.tbMatricule.TabIndex = 0
         '
-        'TextBox2
+        'tbMdp
         '
-        Me.TextBox2.Location = New System.Drawing.Point(158, 90)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(223, 20)
-        Me.TextBox2.TabIndex = 1
-        Me.TextBox2.UseSystemPasswordChar = True
+        Me.tbMdp.Location = New System.Drawing.Point(158, 90)
+        Me.tbMdp.Name = "tbMdp"
+        Me.tbMdp.Size = New System.Drawing.Size(223, 20)
+        Me.tbMdp.TabIndex = 1
+        Me.tbMdp.UseSystemPasswordChar = True
         '
         'Label1
         '
@@ -80,8 +80,8 @@ Partial Class Connexion
         Me.Controls.Add(Me.bConfirmer)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.tbMdp)
+        Me.Controls.Add(Me.tbMatricule)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
@@ -94,8 +94,8 @@ Partial Class Connexion
 
     End Sub
 
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents tbMatricule As TextBox
+    Friend WithEvents tbMdp As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents bConfirmer As Button
