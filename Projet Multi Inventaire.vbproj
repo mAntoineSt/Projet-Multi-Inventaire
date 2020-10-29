@@ -270,9 +270,7 @@
     <Compile Include="Prêts\Controles utilisateurs\PretAjout.Designer.vb">
       <DependentUpon>PretAjout.vb</DependentUpon>
     </Compile>
-    <Compile Include="Prêts\Controlesutilisateurs\PretAjout.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="Prêts\Controlesutilisateurs\PretAjout.vb" />
     <Compile Include="Prêts\Controlesutilisateurs\PretModification.Designer.vb">
       <DependentUpon>PretModification.vb</DependentUpon>
     </Compile>
