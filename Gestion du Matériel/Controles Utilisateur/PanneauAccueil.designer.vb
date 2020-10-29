@@ -27,7 +27,7 @@ Partial Class PanneauAccueil
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.Magenta
+        Me.Panel1.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
