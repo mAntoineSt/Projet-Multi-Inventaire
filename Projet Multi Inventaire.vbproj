@@ -227,12 +227,6 @@
       <DependentUpon>Connexion.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Connexions\Forms\Creation comptes.Designer.vb">
-      <DependentUpon>Creation comptes.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Connexions\Forms\Creation comptes.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Entity\EntityTest.Designer.vb">
       <DependentUpon>EntityTest.vb</DependentUpon>
     </Compile>
