@@ -163,7 +163,7 @@
       <DependentUpon>Gestion_Emprunteurs.vb</DependentUpon>
     </Compile>
     <Compile Include="Administration\Controles utilisateurs\Gestion_Emprunteurs.vb">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Administration\Controles utilisateurs\Gestion_Preteurs.Designer.vb">
       <DependentUpon>Gestion_Preteurs.vb</DependentUpon>
