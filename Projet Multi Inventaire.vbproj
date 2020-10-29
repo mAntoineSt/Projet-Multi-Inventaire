@@ -258,22 +258,22 @@
     <Compile Include="Entity\poste.vb">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Prêts\Controles utilisateurs\PretAjout.Designer.vb">
+    <Compile Include="Prêts\Controlesutilisateurs\PretAjout.Designer.vb">
       <DependentUpon>PretAjout.vb</DependentUpon>
     </Compile>
-    <Compile Include="Prêts\Controles utilisateurs\PretAjout.vb">
+    <Compile Include="Prêts\Controlesutilisateurs\PretAjout.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Prêts\Controles utilisateurs\PretModification.Designer.vb">
+    <Compile Include="Prêts\Controlesutilisateurs\PretModification.Designer.vb">
       <DependentUpon>PretModification.vb</DependentUpon>
     </Compile>
-    <Compile Include="Prêts\Controles utilisateurs\PretModification.vb">
+    <Compile Include="Prêts\Controlesutilisateurs\PretModification.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Prêts\Controles utilisateurs\PretSupression.Designer.vb">
+    <Compile Include="Prêts\Controlesutilisateurs\PretSupression.Designer.vb">
       <DependentUpon>PretSupression.vb</DependentUpon>
     </Compile>
-    <Compile Include="Prêts\Controles utilisateurs\PretSupression.vb">
+    <Compile Include="Prêts\Controlesutilisateurs\PretSupression.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Prêts\Forms\Prets.Designer.vb">
@@ -335,7 +335,7 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Prêts\Controles utilisateurs\PretAjout.resx">
+    <EmbeddedResource Include="Prêts\Controlesutilisateurs\PretAjout.resx">
       <DependentUpon>PretAjout.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
