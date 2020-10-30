@@ -41,6 +41,7 @@ Partial Class Accueil
         Me.HistoriqueDesRetoursToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DossiersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.btMateriel = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -82,36 +83,36 @@ Partial Class Accueil
         '
         'buttonFaireEmprunt
         '
-        Me.buttonFaireEmprunt.Location = New System.Drawing.Point(441, 99)
+        Me.buttonFaireEmprunt.Location = New System.Drawing.Point(460, 98)
         Me.buttonFaireEmprunt.Name = "buttonFaireEmprunt"
-        Me.buttonFaireEmprunt.Size = New System.Drawing.Size(232, 55)
+        Me.buttonFaireEmprunt.Size = New System.Drawing.Size(232, 42)
         Me.buttonFaireEmprunt.TabIndex = 4
         Me.buttonFaireEmprunt.Text = "Faire un emprunt"
         Me.buttonFaireEmprunt.UseVisualStyleBackColor = True
         '
         'buttonFaireRetour
         '
-        Me.buttonFaireRetour.Location = New System.Drawing.Point(441, 178)
+        Me.buttonFaireRetour.Location = New System.Drawing.Point(460, 157)
         Me.buttonFaireRetour.Name = "buttonFaireRetour"
-        Me.buttonFaireRetour.Size = New System.Drawing.Size(232, 55)
+        Me.buttonFaireRetour.Size = New System.Drawing.Size(232, 42)
         Me.buttonFaireRetour.TabIndex = 5
         Me.buttonFaireRetour.Text = "Faire un retour"
         Me.buttonFaireRetour.UseVisualStyleBackColor = True
         '
         'buttonHistEmprunt
         '
-        Me.buttonHistEmprunt.Location = New System.Drawing.Point(441, 258)
+        Me.buttonHistEmprunt.Location = New System.Drawing.Point(460, 219)
         Me.buttonHistEmprunt.Name = "buttonHistEmprunt"
-        Me.buttonHistEmprunt.Size = New System.Drawing.Size(232, 55)
+        Me.buttonHistEmprunt.Size = New System.Drawing.Size(232, 42)
         Me.buttonHistEmprunt.TabIndex = 6
         Me.buttonHistEmprunt.Text = "Historique des emprunts"
         Me.buttonHistEmprunt.UseVisualStyleBackColor = True
         '
         'buttonHistRetours
         '
-        Me.buttonHistRetours.Location = New System.Drawing.Point(441, 335)
+        Me.buttonHistRetours.Location = New System.Drawing.Point(460, 284)
         Me.buttonHistRetours.Name = "buttonHistRetours"
-        Me.buttonHistRetours.Size = New System.Drawing.Size(232, 55)
+        Me.buttonHistRetours.Size = New System.Drawing.Size(232, 42)
         Me.buttonHistRetours.TabIndex = 7
         Me.buttonHistRetours.Text = "Historique des retours"
         Me.buttonHistRetours.UseVisualStyleBackColor = True
@@ -188,11 +189,21 @@ Partial Class Accueil
         Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
         Me.OptionsToolStripMenuItem.Text = "Options"
         '
+        'btMateriel
+        '
+        Me.btMateriel.Location = New System.Drawing.Point(460, 346)
+        Me.btMateriel.Name = "btMateriel"
+        Me.btMateriel.Size = New System.Drawing.Size(232, 42)
+        Me.btMateriel.TabIndex = 9
+        Me.btMateriel.Text = "Gestion du matériel"
+        Me.btMateriel.UseVisualStyleBackColor = True
+        '
         'Accueil
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btMateriel)
         Me.Controls.Add(Me.buttonHistRetours)
         Me.Controls.Add(Me.buttonHistEmprunt)
         Me.Controls.Add(Me.buttonFaireRetour)
@@ -233,4 +244,5 @@ Partial Class Accueil
     Friend WithEvents HistoriqueDesRetoursToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents DossiersToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents OptionsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents btMateriel As Button
 End Class
