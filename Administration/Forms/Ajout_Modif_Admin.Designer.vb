@@ -282,6 +282,7 @@ Partial Class Ajout_Modif_Admin
         Me.Controls.Add(Me.lMdp)
         Me.Controls.Add(Me.tbMatricule)
         Me.Controls.Add(Me.lMatricule)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "Ajout_Modif_Admin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Ajout_Modif_Admin (NOM CHANGEMENTS)"

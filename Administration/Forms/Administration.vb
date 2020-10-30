@@ -40,7 +40,6 @@ Public Class Administration
 
     'Fermeture de la partie administration et retour à l'accueil
     Private Sub msRetourAccueil_Click(sender As Object, e As EventArgs) Handles msRetourAccueil.Click
-        Accueil.Show() 'Enlever quand l'application sera ok
         Me.Close()
     End Sub
 

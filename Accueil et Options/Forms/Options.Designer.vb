@@ -114,6 +114,7 @@ Partial Class Options
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.lbTitre)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MainMenuStrip = Me.MenuStrip1
         Me.MaximizeBox = False
         Me.MinimizeBox = False

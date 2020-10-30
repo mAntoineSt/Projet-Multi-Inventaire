@@ -267,9 +267,6 @@
     <Compile Include="Entity\poste.vb">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Prêts\Controles utilisateurs\PretAjout.Designer.vb">
-      <DependentUpon>PretAjout.vb</DependentUpon>
-    </Compile>
     <Compile Include="Prêts\Controlesutilisateurs\PretAjout.vb" />
     <Compile Include="Prêts\Controlesutilisateurs\PretModification.Designer.vb">
       <DependentUpon>PretModification.vb</DependentUpon>
@@ -402,6 +399,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Installer\" />
+    <Folder Include="Prêts\Controles utilisateurs\" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

@@ -40,8 +40,6 @@ Partial Class Accueil
         Me.FaireUnRetourToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HistoriqueDesRetoursToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DossiersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ConsulterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EmprunteurToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -66,6 +64,7 @@ Partial Class Accueil
         '
         'RichTextBox1
         '
+        Me.RichTextBox1.Enabled = False
         Me.RichTextBox1.Location = New System.Drawing.Point(34, 78)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.Size = New System.Drawing.Size(276, 334)
@@ -136,7 +135,7 @@ Partial Class Accueil
         'QuitterToolStripMenuItem
         '
         Me.QuitterToolStripMenuItem.Name = "QuitterToolStripMenuItem"
-        Me.QuitterToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.QuitterToolStripMenuItem.Size = New System.Drawing.Size(111, 22)
         Me.QuitterToolStripMenuItem.Text = "Quitter"
         '
         'EmpruntsToolStripMenuItem
@@ -179,23 +178,9 @@ Partial Class Accueil
         '
         'DossiersToolStripMenuItem
         '
-        Me.DossiersToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConsulterToolStripMenuItem})
         Me.DossiersToolStripMenuItem.Name = "DossiersToolStripMenuItem"
-        Me.DossiersToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
-        Me.DossiersToolStripMenuItem.Text = "Dossiers"
-        '
-        'ConsulterToolStripMenuItem
-        '
-        Me.ConsulterToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmprunteurToolStripMenuItem})
-        Me.ConsulterToolStripMenuItem.Name = "ConsulterToolStripMenuItem"
-        Me.ConsulterToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.ConsulterToolStripMenuItem.Text = "Consulter"
-        '
-        'EmprunteurToolStripMenuItem
-        '
-        Me.EmprunteurToolStripMenuItem.Name = "EmprunteurToolStripMenuItem"
-        Me.EmprunteurToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.EmprunteurToolStripMenuItem.Text = "Emprunteur"
+        Me.DossiersToolStripMenuItem.Size = New System.Drawing.Size(98, 20)
+        Me.DossiersToolStripMenuItem.Text = "Administration"
         '
         'OptionsToolStripMenuItem
         '
@@ -217,12 +202,15 @@ Partial Class Accueil
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Accueil"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Accueil"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -244,7 +232,5 @@ Partial Class Accueil
     Friend WithEvents FaireUnRetourToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HistoriqueDesRetoursToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents DossiersToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ConsulterToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents EmprunteurToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents OptionsToolStripMenuItem As ToolStripMenuItem
 End Class

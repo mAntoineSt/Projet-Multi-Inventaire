@@ -13,26 +13,26 @@ Option Explicit On
 
 
 Namespace My
-
+    
     'REMARQUE : Ce fichier étant généré automatiquement, ne le modifiez pas directement.  Pour apporter des modifications,
     ' ou si vous rencontrez des erreurs de build dans ce fichier, accédez au Concepteur de projets
     ' (allez dans les propriétés du projet ou double-cliquez sur le nœud My Project dans
     ' l'Explorateur de solutions), puis apportez vos modifications sous l'onglet Application.
     '
     Partial Friend Class MyApplication
-
-        <Global.System.Diagnostics.DebuggerStepThroughAttribute()>
+        
+        <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Public Sub New()
             MyBase.New(Global.Microsoft.VisualBasic.ApplicationServices.AuthenticationMode.Windows)
-            Me.IsSingleInstance = False
-            Me.EnableVisualStyles = True
-            Me.SaveMySettingsOnExit = True
+            Me.IsSingleInstance = false
+            Me.EnableVisualStyles = true
+            Me.SaveMySettingsOnExit = true
             Me.ShutDownStyle = Global.Microsoft.VisualBasic.ApplicationServices.ShutdownMode.AfterAllFormsClose
         End Sub
-
-        <Global.System.Diagnostics.DebuggerStepThroughAttribute()>
+        
+        <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Projet_Multi_Inventaire.Options
+            Me.MainForm = Global.Projet_Multi_Inventaire.Connexion
         End Sub
     End Class
 End Namespace
