@@ -221,9 +221,8 @@
     <Compile Include="Entity\EntityTest.Designer.vb">
       <DependentUpon>EntityTest.vb</DependentUpon>
     </Compile>
-<<<<<<< HEAD
+
     <Compile Include="Entity\EntityTest.vb">
-=======
     <Compile Include="Gestion du Matériel\Controles Utilisateur\EnregistrementMateriel.vb">
       <SubType>UserControl</SubType>
     </Compile>
@@ -249,7 +248,6 @@
       <DependentUpon>GestionMateriel.vb</DependentUpon>
     </Compile>
     <Compile Include="Gestion du Matériel\Forms\GestionMateriel.vb">
->>>>>>> parent of 9d2c86c... push matin 23 Octobre
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Entity\Model1.Context.vb">
@@ -353,10 +351,10 @@
     <EmbeddedResource Include="Connexions\Forms\Connexion.resx">
       <DependentUpon>Connexion.vb</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
+
     <EmbeddedResource Include="Entity\EntityTest.resx">
       <DependentUpon>EntityTest.vb</DependentUpon>
-=======
+     </EmbeddedResource>
     <EmbeddedResource Include="Gestion du Matériel\Controles Utilisateur\EnregistrementMateriel.resx">
       <DependentUpon>EnregistrementMateriel.vb</DependentUpon>
     </EmbeddedResource>
