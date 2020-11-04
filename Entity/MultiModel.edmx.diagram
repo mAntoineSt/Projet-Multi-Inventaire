@@ -16,6 +16,19 @@
         <EntityTypeShape EntityType="dbmultiModel.responsabilites_equipements" Width="1.5" PointX="4.625" PointY="8.125" IsExpanded="true" />
         <EntityTypeShape EntityType="dbmultiModel.retard" Width="1.5" PointX="7.375" PointY="7.875" IsExpanded="true" />
         <EntityTypeShape EntityType="dbmultiModel.retour" Width="1.5" PointX="2" PointY="7.875" IsExpanded="true" />
+        <AssociationConnector Association="dbmultiModel.individuemprunteur" />
+        <AssociationConnector Association="dbmultiModel.individupreteur" />
+        <AssociationConnector Association="dbmultiModel.emprunteurpret" />
+        <AssociationConnector Association="dbmultiModel.preteurpret" />
+        <AssociationConnector Association="dbmultiModel.equipementpret" />
+        <AssociationConnector Association="dbmultiModel.emprunteurretour" />
+        <AssociationConnector Association="dbmultiModel.preteurretour" />
+        <AssociationConnector Association="dbmultiModel.equipementretour" />
+        <AssociationConnector Association="dbmultiModel.conditions_equipementscondition" />
+        <AssociationConnector Association="dbmultiModel.conditions_equipementsequipement" />
+        <AssociationConnector Association="dbmultiModel.responsabilites_equipementsresponsabilite" />
+        <AssociationConnector Association="dbmultiModel.responsabilites_equipementsequipement" />
+        <AssociationConnector Association="dbmultiModel.retourretard" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

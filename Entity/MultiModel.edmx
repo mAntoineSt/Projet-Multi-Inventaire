@@ -129,6 +129,7 @@
           </Key>
           <Property Name="id_condition" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="conditions_equipements" Relationship="dbmultiModel.conditions_equipementscondition" FromRole="condition" ToRole="conditions_equipements" />
         </EntityType>
         <EntityType Name="conditions_equipements">
           <Key>
@@ -137,12 +138,17 @@
           </Key>
           <Property Name="id_equipement" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="id_condition" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="conditions" Relationship="dbmultiModel.conditions_equipementscondition" FromRole="conditions_equipements" ToRole="condition" />
+          <NavigationProperty Name="equipements" Relationship="dbmultiModel.conditions_equipementsequipement" FromRole="conditions_equipements" ToRole="equipement" />
         </EntityType>
         <EntityType Name="emprunteur">
           <Key>
             <PropertyRef Name="id_emprunteur" />
           </Key>
           <Property Name="id_emprunteur" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="individu" Relationship="dbmultiModel.individuemprunteur" FromRole="emprunteur" ToRole="individu" />
+          <NavigationProperty Name="prets" Relationship="dbmultiModel.emprunteurpret" FromRole="emprunteur" ToRole="pret" />
+          <NavigationProperty Name="retours" Relationship="dbmultiModel.emprunteurretour" FromRole="emprunteur" ToRole="retour" />
         </EntityType>
         <EntityType Name="equipement">
           <Key>
@@ -156,6 +162,10 @@
           <Property Name="date_enregistrement" Type="DateTime" />
           <Property Name="date_indisponible" Type="DateTime" />
           <Property Name="date_retrait" Type="DateTime" />
+          <NavigationProperty Name="prets" Relationship="dbmultiModel.equipementpret" FromRole="equipement" ToRole="pret" />
+          <NavigationProperty Name="retours" Relationship="dbmultiModel.equipementretour" FromRole="equipement" ToRole="retour" />
+          <NavigationProperty Name="conditions_equipements" Relationship="dbmultiModel.conditions_equipementsequipement" FromRole="equipement" ToRole="conditions_equipements" />
+          <NavigationProperty Name="responsabilites_equipements" Relationship="dbmultiModel.responsabilites_equipementsequipement" FromRole="equipement" ToRole="responsabilites_equipements" />
         </EntityType>
         <EntityType Name="individu">
           <Key>
@@ -170,12 +180,17 @@
           <Property Name="telephone" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="courriel" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="motdepasse" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="emprunteurs" Relationship="dbmultiModel.individuemprunteur" FromRole="individu" ToRole="emprunteur" />
+          <NavigationProperty Name="preteurs" Relationship="dbmultiModel.individupreteur" FromRole="individu" ToRole="preteur" />
         </EntityType>
         <EntityType Name="preteur">
           <Key>
             <PropertyRef Name="id_preteur" />
           </Key>
           <Property Name="id_preteur" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="individu" Relationship="dbmultiModel.individupreteur" FromRole="preteur" ToRole="individu" />
+          <NavigationProperty Name="prets" Relationship="dbmultiModel.preteurpret" FromRole="preteur" ToRole="pret" />
+          <NavigationProperty Name="retours" Relationship="dbmultiModel.preteurretour" FromRole="preteur" ToRole="retour" />
         </EntityType>
         <EntityType Name="pret">
           <Key>
@@ -187,6 +202,9 @@
           <Property Name="id_equipement" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <Property Name="date_emprunt" Type="DateTime" />
           <Property Name="date_retour" Type="DateTime" />
+          <NavigationProperty Name="emprunteur" Relationship="dbmultiModel.emprunteurpret" FromRole="pret" ToRole="emprunteur" />
+          <NavigationProperty Name="preteur" Relationship="dbmultiModel.preteurpret" FromRole="pret" ToRole="preteur" />
+          <NavigationProperty Name="equipement" Relationship="dbmultiModel.equipementpret" FromRole="pret" ToRole="equipement" />
         </EntityType>
         <EntityType Name="responsabilite">
           <Key>
@@ -194,6 +212,7 @@
           </Key>
           <Property Name="id_responsabilite" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="responsabilites_equipements" Relationship="dbmultiModel.responsabilites_equipementsresponsabilite" FromRole="responsabilite" ToRole="responsabilites_equipements" />
         </EntityType>
         <EntityType Name="responsabilites_equipements">
           <Key>
@@ -202,6 +221,8 @@
           </Key>
           <Property Name="id_equipement" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="id_responsabilite" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="responsabilites" Relationship="dbmultiModel.responsabilites_equipementsresponsabilite" FromRole="responsabilites_equipements" ToRole="responsabilite" />
+          <NavigationProperty Name="equipements" Relationship="dbmultiModel.responsabilites_equipementsequipement" FromRole="responsabilites_equipements" ToRole="equipement" />
         </EntityType>
         <EntityType Name="retard">
           <Key>
@@ -211,6 +232,7 @@
           <Property Name="id_retour" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="constat" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
           <Property Name="montant_dommages" Type="Double" />
+          <NavigationProperty Name="retour" Relationship="dbmultiModel.retourretard" FromRole="retard" ToRole="retour" />
         </EntityType>
         <EntityType Name="retour">
           <Key>
@@ -222,6 +244,10 @@
           <Property Name="id_equipement" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <Property Name="date_retour_prevue" Type="DateTime" />
           <Property Name="date_retour" Type="DateTime" />
+          <NavigationProperty Name="emprunteur" Relationship="dbmultiModel.emprunteurretour" FromRole="retour" ToRole="emprunteur" />
+          <NavigationProperty Name="preteur" Relationship="dbmultiModel.preteurretour" FromRole="retour" ToRole="preteur" />
+          <NavigationProperty Name="equipement" Relationship="dbmultiModel.equipementretour" FromRole="retour" ToRole="equipement" />
+          <NavigationProperty Name="retards" Relationship="dbmultiModel.retourretard" FromRole="retour" ToRole="retard" />
         </EntityType>
         <EntityContainer Name="dbmultiEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="conditions" EntityType="Self.condition" />
@@ -235,7 +261,111 @@
           <EntitySet Name="responsabilites_equipements" EntityType="Self.responsabilites_equipements" />
           <EntitySet Name="retards" EntityType="Self.retard" />
           <EntitySet Name="retours" EntityType="Self.retour" />
+          <AssociationSet Name="individuemprunteur" Association="dbmultiModel.individuemprunteur">
+            <End Role="individu" EntitySet="individus" />
+            <End Role="emprunteur" EntitySet="emprunteurs" />
+          </AssociationSet>
+          <AssociationSet Name="individupreteur" Association="dbmultiModel.individupreteur">
+            <End Role="individu" EntitySet="individus" />
+            <End Role="preteur" EntitySet="preteurs" />
+          </AssociationSet>
+          <AssociationSet Name="emprunteurpret" Association="dbmultiModel.emprunteurpret">
+            <End Role="emprunteur" EntitySet="emprunteurs" />
+            <End Role="pret" EntitySet="prets" />
+          </AssociationSet>
+          <AssociationSet Name="preteurpret" Association="dbmultiModel.preteurpret">
+            <End Role="preteur" EntitySet="preteurs" />
+            <End Role="pret" EntitySet="prets" />
+          </AssociationSet>
+          <AssociationSet Name="equipementpret" Association="dbmultiModel.equipementpret">
+            <End Role="equipement" EntitySet="equipements" />
+            <End Role="pret" EntitySet="prets" />
+          </AssociationSet>
+          <AssociationSet Name="emprunteurretour" Association="dbmultiModel.emprunteurretour">
+            <End Role="emprunteur" EntitySet="emprunteurs" />
+            <End Role="retour" EntitySet="retours" />
+          </AssociationSet>
+          <AssociationSet Name="preteurretour" Association="dbmultiModel.preteurretour">
+            <End Role="preteur" EntitySet="preteurs" />
+            <End Role="retour" EntitySet="retours" />
+          </AssociationSet>
+          <AssociationSet Name="equipementretour" Association="dbmultiModel.equipementretour">
+            <End Role="equipement" EntitySet="equipements" />
+            <End Role="retour" EntitySet="retours" />
+          </AssociationSet>
+          <AssociationSet Name="conditions_equipementscondition" Association="dbmultiModel.conditions_equipementscondition">
+            <End Role="conditions_equipements" EntitySet="conditions_equipements" />
+            <End Role="condition" EntitySet="conditions" />
+          </AssociationSet>
+          <AssociationSet Name="conditions_equipementsequipement" Association="dbmultiModel.conditions_equipementsequipement">
+            <End Role="conditions_equipements" EntitySet="conditions_equipements" />
+            <End Role="equipement" EntitySet="equipements" />
+          </AssociationSet>
+          <AssociationSet Name="responsabilites_equipementsresponsabilite" Association="dbmultiModel.responsabilites_equipementsresponsabilite">
+            <End Role="responsabilites_equipements" EntitySet="responsabilites_equipements" />
+            <End Role="responsabilite" EntitySet="responsabilites" />
+          </AssociationSet>
+          <AssociationSet Name="responsabilites_equipementsequipement" Association="dbmultiModel.responsabilites_equipementsequipement">
+            <End Role="responsabilites_equipements" EntitySet="responsabilites_equipements" />
+            <End Role="equipement" EntitySet="equipements" />
+          </AssociationSet>
+          <AssociationSet Name="retourretard" Association="dbmultiModel.retourretard">
+            <End Role="retour" EntitySet="retours" />
+            <End Role="retard" EntitySet="retards" />
+          </AssociationSet>
         </EntityContainer>
+        <Association Name="individuemprunteur">
+          <End Type="dbmultiModel.individu" Role="individu" Multiplicity="1" />
+          <End Type="dbmultiModel.emprunteur" Role="emprunteur" Multiplicity="1" />
+        </Association>
+        <Association Name="individupreteur">
+          <End Type="dbmultiModel.individu" Role="individu" Multiplicity="1" />
+          <End Type="dbmultiModel.preteur" Role="preteur" Multiplicity="1" />
+        </Association>
+        <Association Name="emprunteurpret">
+          <End Type="dbmultiModel.emprunteur" Role="emprunteur" Multiplicity="1" />
+          <End Type="dbmultiModel.pret" Role="pret" Multiplicity="*" />
+        </Association>
+        <Association Name="preteurpret">
+          <End Type="dbmultiModel.preteur" Role="preteur" Multiplicity="1" />
+          <End Type="dbmultiModel.pret" Role="pret" Multiplicity="*" />
+        </Association>
+        <Association Name="equipementpret">
+          <End Type="dbmultiModel.equipement" Role="equipement" Multiplicity="1" />
+          <End Type="dbmultiModel.pret" Role="pret" Multiplicity="*" />
+        </Association>
+        <Association Name="emprunteurretour">
+          <End Type="dbmultiModel.emprunteur" Role="emprunteur" Multiplicity="1" />
+          <End Type="dbmultiModel.retour" Role="retour" Multiplicity="*" />
+        </Association>
+        <Association Name="preteurretour">
+          <End Type="dbmultiModel.preteur" Role="preteur" Multiplicity="1" />
+          <End Type="dbmultiModel.retour" Role="retour" Multiplicity="*" />
+        </Association>
+        <Association Name="equipementretour">
+          <End Type="dbmultiModel.equipement" Role="equipement" Multiplicity="1" />
+          <End Type="dbmultiModel.retour" Role="retour" Multiplicity="*" />
+        </Association>
+        <Association Name="conditions_equipementscondition">
+          <End Type="dbmultiModel.conditions_equipements" Role="conditions_equipements" Multiplicity="1" />
+          <End Type="dbmultiModel.condition" Role="condition" Multiplicity="*" />
+        </Association>
+        <Association Name="conditions_equipementsequipement">
+          <End Type="dbmultiModel.conditions_equipements" Role="conditions_equipements" Multiplicity="1" />
+          <End Type="dbmultiModel.equipement" Role="equipement" Multiplicity="*" />
+        </Association>
+        <Association Name="responsabilites_equipementsresponsabilite">
+          <End Type="dbmultiModel.responsabilites_equipements" Role="responsabilites_equipements" Multiplicity="1" />
+          <End Type="dbmultiModel.responsabilite" Role="responsabilite" Multiplicity="*" />
+        </Association>
+        <Association Name="responsabilites_equipementsequipement">
+          <End Type="dbmultiModel.responsabilites_equipements" Role="responsabilites_equipements" Multiplicity="1" />
+          <End Type="dbmultiModel.equipement" Role="equipement" Multiplicity="*" />
+        </Association>
+        <Association Name="retourretard">
+          <End Type="dbmultiModel.retour" Role="retour" Multiplicity="1" />
+          <End Type="dbmultiModel.retard" Role="retard" Multiplicity="1" />
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
