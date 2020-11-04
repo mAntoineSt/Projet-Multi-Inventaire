@@ -218,11 +218,26 @@
     <Compile Include="Connexions\Forms\Creation comptes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Entity\condition.vb">
+      <DependentUpon>MultiModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\conditions_equipements.vb">
+      <DependentUpon>MultiModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\emprunteur.vb">
+      <DependentUpon>MultiModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entity\EntityTest.Designer.vb">
       <DependentUpon>EntityTest.vb</DependentUpon>
     </Compile>
     <Compile Include="Entity\EntityTest.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entity\equipement.vb">
+      <DependentUpon>MultiModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\individu.vb">
+      <DependentUpon>MultiModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\Model1.Context.vb">
       <AutoGen>True</AutoGen>
@@ -238,6 +253,39 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\MultiModel.Context.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MultiModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\MultiModel.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MultiModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\MultiModel.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MultiModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\pret.vb">
+      <DependentUpon>MultiModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\preteur.vb">
+      <DependentUpon>MultiModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\responsabilite.vb">
+      <DependentUpon>MultiModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\responsabilites_equipements.vb">
+      <DependentUpon>MultiModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\retard.vb">
+      <DependentUpon>MultiModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\retour.vb">
+      <DependentUpon>MultiModel.tt</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -338,6 +386,9 @@
     <EmbeddedResource Include="Prêts\Controlesutilisateurs\PretAjout.resx">
       <DependentUpon>PretAjout.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Prêts\Forms\Prets.resx">
+      <DependentUpon>Prets.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="Entity\Model1.edmx">
@@ -346,6 +397,13 @@
     </EntityDeploy>
     <None Include="Entity\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="Entity\MultiModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MultiModel.Designer.vb</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Entity\MultiModel.edmx.diagram">
+      <DependentUpon>MultiModel.edmx</DependentUpon>
     </None>
     <None Include="Entity\tuto.md" />
     <None Include="My Project\Application.myapp">
@@ -373,6 +431,17 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.vb</LastGenOutput>
     </Content>
+    <Content Include="Entity\MultiModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>MultiModel.Context.vb</LastGenOutput>
+      <DependentUpon>MultiModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Entity\MultiModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MultiModel.edmx</DependentUpon>
+      <LastGenOutput>MultiModel.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entity\systeme-prets_versionMYSQL.sql" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
