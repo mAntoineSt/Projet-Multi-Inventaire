@@ -29,7 +29,7 @@ Public Class Connexion
         Try
             'Connexion et commande
             commande.Connection = con
-            commande.CommandText = "select motdepasse from individus where id_individu='test';"
+            commande.CommandText = "select motdepasse, statut from individus where id_individu='test';"
             con.Open()
             reader = commande.ExecuteReader
             While (reader.Read)
@@ -50,14 +50,15 @@ Public Class Connexion
                 Return
             End If
 
+            'Appelle la fonction de la page d'accueil
+            Accueil.role(reader(1))
+
             'Referme la connexion pour que cela ne cause pas de problèmes pour la prochaine demande
             con.Close()
 
-            commande.CommandText = "select motdepasse from individus where id_individu='test';"
-
-
         Catch ex As Exception
             MessageBox.Show(ex.Message)
+            Return
         End Try
 
 

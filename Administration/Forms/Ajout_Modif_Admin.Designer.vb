@@ -43,10 +43,8 @@ Partial Class Ajout_Modif_Admin
         Me.lCellulaire = New System.Windows.Forms.Label()
         Me.tbCourriel = New System.Windows.Forms.TextBox()
         Me.lCourriel = New System.Windows.Forms.Label()
-        Me.tbAdresse = New System.Windows.Forms.TextBox()
-        Me.lAdresse = New System.Windows.Forms.Label()
-        Me.tbVille = New System.Windows.Forms.TextBox()
-        Me.lVille = New System.Windows.Forms.Label()
+        Me.tbTelephoneBureau = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lMatricule
@@ -84,7 +82,7 @@ Partial Class Ajout_Modif_Admin
         '
         'bConfirmer
         '
-        Me.bConfirmer.Location = New System.Drawing.Point(93, 403)
+        Me.bConfirmer.Location = New System.Drawing.Point(93, 370)
         Me.bConfirmer.Name = "bConfirmer"
         Me.bConfirmer.Size = New System.Drawing.Size(151, 37)
         Me.bConfirmer.TabIndex = 4
@@ -174,7 +172,7 @@ Partial Class Ajout_Modif_Admin
         '
         'tbPosteTelephonique
         '
-        Me.tbPosteTelephonique.Location = New System.Drawing.Point(108, 248)
+        Me.tbPosteTelephonique.Location = New System.Drawing.Point(108, 273)
         Me.tbPosteTelephonique.Name = "tbPosteTelephonique"
         Me.tbPosteTelephonique.Size = New System.Drawing.Size(206, 20)
         Me.tbPosteTelephonique.TabIndex = 16
@@ -182,7 +180,7 @@ Partial Class Ajout_Modif_Admin
         'lPosteTelephonique
         '
         Me.lPosteTelephonique.AutoSize = True
-        Me.lPosteTelephonique.Location = New System.Drawing.Point(27, 239)
+        Me.lPosteTelephonique.Location = New System.Drawing.Point(27, 264)
         Me.lPosteTelephonique.Name = "lPosteTelephonique"
         Me.lPosteTelephonique.Size = New System.Drawing.Size(78, 26)
         Me.lPosteTelephonique.TabIndex = 15
@@ -190,7 +188,7 @@ Partial Class Ajout_Modif_Admin
         '
         'tbCellulaire
         '
-        Me.tbCellulaire.Location = New System.Drawing.Point(109, 282)
+        Me.tbCellulaire.Location = New System.Drawing.Point(109, 307)
         Me.tbCellulaire.Name = "tbCellulaire"
         Me.tbCellulaire.Size = New System.Drawing.Size(206, 20)
         Me.tbCellulaire.TabIndex = 18
@@ -198,7 +196,7 @@ Partial Class Ajout_Modif_Admin
         'lCellulaire
         '
         Me.lCellulaire.AutoSize = True
-        Me.lCellulaire.Location = New System.Drawing.Point(47, 286)
+        Me.lCellulaire.Location = New System.Drawing.Point(47, 311)
         Me.lCellulaire.Name = "lCellulaire"
         Me.lCellulaire.Size = New System.Drawing.Size(55, 13)
         Me.lCellulaire.TabIndex = 17
@@ -206,7 +204,7 @@ Partial Class Ajout_Modif_Admin
         '
         'tbCourriel
         '
-        Me.tbCourriel.Location = New System.Drawing.Point(108, 308)
+        Me.tbCourriel.Location = New System.Drawing.Point(108, 333)
         Me.tbCourriel.Name = "tbCourriel"
         Me.tbCourriel.Size = New System.Drawing.Size(206, 20)
         Me.tbCourriel.TabIndex = 20
@@ -214,53 +212,35 @@ Partial Class Ajout_Modif_Admin
         'lCourriel
         '
         Me.lCourriel.AutoSize = True
-        Me.lCourriel.Location = New System.Drawing.Point(54, 312)
+        Me.lCourriel.Location = New System.Drawing.Point(54, 337)
         Me.lCourriel.Name = "lCourriel"
         Me.lCourriel.Size = New System.Drawing.Size(48, 13)
         Me.lCourriel.TabIndex = 19
         Me.lCourriel.Text = "Courriel :"
         '
-        'tbAdresse
+        'tbTelephoneBureau
         '
-        Me.tbAdresse.Location = New System.Drawing.Point(108, 334)
-        Me.tbAdresse.Name = "tbAdresse"
-        Me.tbAdresse.Size = New System.Drawing.Size(206, 20)
-        Me.tbAdresse.TabIndex = 22
+        Me.tbTelephoneBureau.Location = New System.Drawing.Point(108, 241)
+        Me.tbTelephoneBureau.Name = "tbTelephoneBureau"
+        Me.tbTelephoneBureau.Size = New System.Drawing.Size(206, 20)
+        Me.tbTelephoneBureau.TabIndex = 22
         '
-        'lAdresse
+        'Label1
         '
-        Me.lAdresse.AutoSize = True
-        Me.lAdresse.Location = New System.Drawing.Point(54, 338)
-        Me.lAdresse.Name = "lAdresse"
-        Me.lAdresse.Size = New System.Drawing.Size(51, 13)
-        Me.lAdresse.TabIndex = 21
-        Me.lAdresse.Text = "Adresse :"
-        '
-        'tbVille
-        '
-        Me.tbVille.Location = New System.Drawing.Point(108, 360)
-        Me.tbVille.Name = "tbVille"
-        Me.tbVille.Size = New System.Drawing.Size(206, 20)
-        Me.tbVille.TabIndex = 24
-        '
-        'lVille
-        '
-        Me.lVille.AutoSize = True
-        Me.lVille.Location = New System.Drawing.Point(71, 363)
-        Me.lVille.Name = "lVille"
-        Me.lVille.Size = New System.Drawing.Size(32, 13)
-        Me.lVille.TabIndex = 23
-        Me.lVille.Text = "Ville :"
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(30, 233)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(73, 26)
+        Me.Label1.TabIndex = 21
+        Me.Label1.Text = "Téléphone de" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "         bureau :"
         '
         'Ajout_Modif_Admin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(337, 453)
-        Me.Controls.Add(Me.tbVille)
-        Me.Controls.Add(Me.lVille)
-        Me.Controls.Add(Me.tbAdresse)
-        Me.Controls.Add(Me.lAdresse)
+        Me.ClientSize = New System.Drawing.Size(337, 419)
+        Me.Controls.Add(Me.tbTelephoneBureau)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.tbCourriel)
         Me.Controls.Add(Me.lCourriel)
         Me.Controls.Add(Me.tbCellulaire)
@@ -311,8 +291,6 @@ Partial Class Ajout_Modif_Admin
     Friend WithEvents lCellulaire As Label
     Friend WithEvents tbCourriel As TextBox
     Friend WithEvents lCourriel As Label
-    Friend WithEvents tbAdresse As TextBox
-    Friend WithEvents lAdresse As Label
-    Friend WithEvents tbVille As TextBox
-    Friend WithEvents lVille As Label
+    Friend WithEvents tbTelephoneBureau As TextBox
+    Friend WithEvents Label1 As Label
 End Class
