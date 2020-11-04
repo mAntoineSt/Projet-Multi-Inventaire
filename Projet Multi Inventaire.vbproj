@@ -254,20 +254,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entity\MultiModel.Context.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MultiModel.Context.tt</DependentUpon>
-    </Compile>
     <Compile Include="Entity\MultiModel.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MultiModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Entity\MultiModel.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MultiModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\pret.vb">
       <DependentUpon>MultiModel.tt</DependentUpon>
@@ -434,15 +424,25 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.vb</LastGenOutput>
     </Content>
+    <Content Include="Entity\MultiModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MultiModel.Context.tt</DependentUpon>
+    </Content>
     <Content Include="Entity\MultiModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>MultiModel.Context.vb</LastGenOutput>
       <DependentUpon>MultiModel.edmx</DependentUpon>
+      <LastGenOutput>MultiModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Entity\MultiModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MultiModel.tt</DependentUpon>
     </Content>
     <Content Include="Entity\MultiModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>MultiModel.edmx</DependentUpon>
-      <LastGenOutput>MultiModel.vb</LastGenOutput>
+      <LastGenOutput>MultiModel.cs</LastGenOutput>
     </Content>
     <Content Include="Entity\systeme-prets_versionMYSQL.sql" />
   </ItemGroup>
