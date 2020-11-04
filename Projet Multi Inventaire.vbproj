@@ -386,6 +386,9 @@
     <EmbeddedResource Include="Prêts\Controlesutilisateurs\PretAjout.resx">
       <DependentUpon>PretAjout.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Prêts\Controlesutilisateurs\PretModification.resx">
+      <DependentUpon>PretModification.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Prêts\Forms\Prets.resx">
       <DependentUpon>Prets.vb</DependentUpon>
     </EmbeddedResource>

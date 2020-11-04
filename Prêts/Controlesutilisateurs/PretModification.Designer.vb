@@ -22,8 +22,16 @@ Partial Class PretModification
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.SuspendLayout()
+        '
+        'PretModification
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.Name = "PretModification"
+        Me.Size = New System.Drawing.Size(640, 366)
+        Me.ResumeLayout(False)
+
     End Sub
 
 End Class

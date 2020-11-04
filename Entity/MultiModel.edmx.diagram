@@ -4,15 +4,15 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="6da2054c0c5f43f786ab299ef027539b" Name="Diagram1">
+      <Diagram DiagramId="6da2054c0c5f43f786ab299ef027539b" Name="Diagram1" ZoomLevel="68">
         <EntityTypeShape EntityType="dbmultiModel.condition" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="dbmultiModel.conditions_equipements" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="dbmultiModel.emprunteur" Width="1.5" PointX="1.625" PointY="5" IsExpanded="true" />
         <EntityTypeShape EntityType="dbmultiModel.equipement" Width="1.5" PointX="4.625" PointY="4.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbmultiModel.individu" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbmultiModel.individu" Width="1.5" PointX="5.75" PointY="0.875" IsExpanded="true" />
         <EntityTypeShape EntityType="dbmultiModel.preteur" Width="1.5" PointX="7.875" PointY="5.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbmultiModel.pret" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbmultiModel.responsabilite" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbmultiModel.pret" Width="1.5" PointX="8.375" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbmultiModel.responsabilite" Width="1.5" PointX="8.75" PointY="4.125" IsExpanded="true" />
         <EntityTypeShape EntityType="dbmultiModel.responsabilites_equipements" Width="1.5" PointX="4.625" PointY="8.125" IsExpanded="true" />
         <EntityTypeShape EntityType="dbmultiModel.retard" Width="1.5" PointX="7.375" PointY="7.875" IsExpanded="true" />
         <EntityTypeShape EntityType="dbmultiModel.retour" Width="1.5" PointX="2" PointY="7.875" IsExpanded="true" />
