@@ -110,7 +110,7 @@ Partial Class Accueil
         '
         'buttonHistRetours
         '
-        Me.buttonHistRetours.Location = New System.Drawing.Point(441, 335)
+        Me.buttonHistRetours.Location = New System.Drawing.Point(441, 339)
         Me.buttonHistRetours.Name = "buttonHistRetours"
         Me.buttonHistRetours.Size = New System.Drawing.Size(232, 55)
         Me.buttonHistRetours.TabIndex = 7
@@ -136,7 +136,7 @@ Partial Class Accueil
         'QuitterToolStripMenuItem
         '
         Me.QuitterToolStripMenuItem.Name = "QuitterToolStripMenuItem"
-        Me.QuitterToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.QuitterToolStripMenuItem.Size = New System.Drawing.Size(111, 22)
         Me.QuitterToolStripMenuItem.Text = "Quitter"
         '
         'EmpruntsToolStripMenuItem
@@ -188,13 +188,13 @@ Partial Class Accueil
         '
         Me.ConsulterToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmprunteurToolStripMenuItem})
         Me.ConsulterToolStripMenuItem.Name = "ConsulterToolStripMenuItem"
-        Me.ConsulterToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ConsulterToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.ConsulterToolStripMenuItem.Text = "Consulter"
         '
         'EmprunteurToolStripMenuItem
         '
         Me.EmprunteurToolStripMenuItem.Name = "EmprunteurToolStripMenuItem"
-        Me.EmprunteurToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EmprunteurToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.EmprunteurToolStripMenuItem.Text = "Emprunteur"
         '
         'OptionsToolStripMenuItem
@@ -223,6 +223,7 @@ Partial Class Accueil
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 

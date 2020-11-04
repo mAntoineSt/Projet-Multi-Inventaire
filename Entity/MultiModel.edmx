@@ -481,6 +481,22 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <AssociationSetMapping Name="equipementretour" TypeName="dbmultiModel.equipementretour" StoreEntitySet="conditions" >
+            <EndProperty Name="retour">
+              <ScalarProperty Name="id_retour" ColumnName="id_condition" />
+            </EndProperty>
+            <EndProperty Name="equipement">
+              <ScalarProperty Name="id_equipement" ColumnName="id_condition" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="preteurretour" TypeName="dbmultiModel.preteurretour" StoreEntitySet="retours">
+            <EndProperty Name="retour">
+              <ScalarProperty Name="id_retour" ColumnName="id_retour" />
+            </EndProperty>
+            <EndProperty Name="preteur">
+              <ScalarProperty Name="id_preteur" ColumnName="id_preteur" />
+            </EndProperty>
+          </AssociationSetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

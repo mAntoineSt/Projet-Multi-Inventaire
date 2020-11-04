@@ -5,7 +5,7 @@
     End Sub
 
     Private Sub buttonFaireEmprunt_Click(sender As Object, e As EventArgs) Handles buttonFaireEmprunt.Click
-        Dim emprunt As New PretAjout()
+        Dim emprunt As New Prets()
         emprunt.Show()
     End Sub
 

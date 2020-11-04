@@ -49,10 +49,10 @@ Partial Class PretAjout
         Me.CustomInstaller1 = New MySql.Data.MySqlClient.CustomInstaller()
         Me.SauvegarderBtn = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.dateEmprunt = New System.Windows.Forms.DateTimePicker()
         Me.dateRetour = New System.Windows.Forms.DateTimePicker()
         Me.Label12 = New System.Windows.Forms.Label()
+        Me.dateEmprunt = New System.Windows.Forms.DateTimePicker()
+        Me.Label11 = New System.Windows.Forms.Label()
         CType(Me.EquipmentDGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -295,22 +295,6 @@ Partial Class PretAjout
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Dates"
         '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(6, 27)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(71, 13)
-        Me.Label11.TabIndex = 11
-        Me.Label11.Text = "Date emprunt"
-        '
-        'dateEmprunt
-        '
-        Me.dateEmprunt.Location = New System.Drawing.Point(6, 43)
-        Me.dateEmprunt.Name = "dateEmprunt"
-        Me.dateEmprunt.Size = New System.Drawing.Size(191, 20)
-        Me.dateEmprunt.TabIndex = 12
-        '
         'dateRetour
         '
         Me.dateRetour.Location = New System.Drawing.Point(6, 82)
@@ -327,6 +311,22 @@ Partial Class PretAjout
         Me.Label12.TabIndex = 13
         Me.Label12.Text = "Date retour"
         '
+        'dateEmprunt
+        '
+        Me.dateEmprunt.Location = New System.Drawing.Point(6, 43)
+        Me.dateEmprunt.Name = "dateEmprunt"
+        Me.dateEmprunt.Size = New System.Drawing.Size(191, 20)
+        Me.dateEmprunt.TabIndex = 12
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(6, 27)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(71, 13)
+        Me.Label11.TabIndex = 11
+        Me.Label11.Text = "Date emprunt"
+        '
         'PretAjout
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -338,7 +338,7 @@ Partial Class PretAjout
         Me.Controls.Add(Me.RechercheTB)
         Me.Controls.Add(Me.EquipmentDGV)
         Me.Name = "PretAjout"
-        Me.Size = New System.Drawing.Size(713, 417)
+        Me.Size = New System.Drawing.Size(708, 420)
         CType(Me.EquipmentDGV, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
