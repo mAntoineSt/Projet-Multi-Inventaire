@@ -1,8 +1,8 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class PretAjout
-    Inherits System.Windows.Forms.UserControl
+Partial Class Gestion_Preteurs
+    Inherits System.Windows.Forms.Form
 
-    'UserControl remplace la méthode Dispose pour nettoyer la liste des composants.
+    'Form remplace la méthode Dispose pour nettoyer la liste des composants.
     <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
@@ -22,8 +22,9 @@ Partial Class PretAjout
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        components = New System.ComponentModel.Container
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Text = "Gestion_Preteurs"
     End Sub
-
 End Class
