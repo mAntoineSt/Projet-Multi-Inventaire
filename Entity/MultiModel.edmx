@@ -481,20 +481,112 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <AssociationSetMapping Name="equipementretour" TypeName="dbmultiModel.equipementretour" StoreEntitySet="conditions" >
-            <EndProperty Name="retour">
-              <ScalarProperty Name="id_retour" ColumnName="id_condition" />
-            </EndProperty>
-            <EndProperty Name="equipement">
-              <ScalarProperty Name="id_equipement" ColumnName="id_condition" />
-            </EndProperty>
-          </AssociationSetMapping>
           <AssociationSetMapping Name="preteurretour" TypeName="dbmultiModel.preteurretour" StoreEntitySet="retours">
             <EndProperty Name="retour">
               <ScalarProperty Name="id_retour" ColumnName="id_retour" />
             </EndProperty>
             <EndProperty Name="preteur">
               <ScalarProperty Name="id_preteur" ColumnName="id_preteur" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="retourretard" TypeName="dbmultiModel.retourretard" StoreEntitySet="retards">
+            <EndProperty Name="retard">
+              <ScalarProperty Name="id_retard" ColumnName="id_retard" />
+            </EndProperty>
+            <EndProperty Name="retour">
+              <ScalarProperty Name="id_retour" ColumnName="id_retour" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="responsabilites_equipementsresponsabilite" TypeName="dbmultiModel.responsabilites_equipementsresponsabilite" StoreEntitySet="responsabilites_equipements">
+            <EndProperty Name="responsabilite">
+              <ScalarProperty Name="id_responsabilite" ColumnName="id_responsabilite" />
+            </EndProperty>
+            <EndProperty Name="responsabilites_equipements">
+              <ScalarProperty Name="id_responsabilite" ColumnName="id_responsabilite" />
+              <ScalarProperty Name="id_equipement" ColumnName="id_equipement" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="responsabilites_equipementsequipement" TypeName="dbmultiModel.responsabilites_equipementsequipement" StoreEntitySet="responsabilites_equipements">
+            <EndProperty Name="equipement">
+              <ScalarProperty Name="id_equipement" ColumnName="id_equipement" />
+            </EndProperty>
+            <EndProperty Name="responsabilites_equipements">
+              <ScalarProperty Name="id_responsabilite" ColumnName="id_responsabilite" />
+              <ScalarProperty Name="id_equipement" ColumnName="id_equipement" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="equipementretour" TypeName="dbmultiModel.equipementretour" StoreEntitySet="retours">
+            <EndProperty Name="retour">
+              <ScalarProperty Name="id_retour" ColumnName="id_retour" />
+            </EndProperty>
+            <EndProperty Name="equipement">
+              <ScalarProperty Name="id_equipement" ColumnName="id_equipement" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="emprunteurretour" TypeName="dbmultiModel.emprunteurretour" StoreEntitySet="retours">
+            <EndProperty Name="retour">
+              <ScalarProperty Name="id_retour" ColumnName="id_retour" />
+            </EndProperty>
+            <EndProperty Name="emprunteur">
+              <ScalarProperty Name="id_emprunteur" ColumnName="id_emprunteur" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="emprunteurpret" TypeName="dbmultiModel.emprunteurpret" StoreEntitySet="prets">
+            <EndProperty Name="pret">
+              <ScalarProperty Name="id_pret" ColumnName="id_pret" />
+            </EndProperty>
+            <EndProperty Name="emprunteur">
+              <ScalarProperty Name="id_emprunteur" ColumnName="id_emprunteur" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="individuemprunteur" TypeName="dbmultiModel.individuemprunteur" StoreEntitySet="individus">
+            <EndProperty Name="emprunteur">
+              <ScalarProperty Name="id_emprunteur" ColumnName="id_individu" />
+            </EndProperty>
+            <EndProperty Name="individu">
+              <ScalarProperty Name="id_individu" ColumnName="id_individu" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="individupreteur" TypeName="dbmultiModel.individupreteur" StoreEntitySet="individus">
+            <EndProperty Name="preteur">
+              <ScalarProperty Name="id_preteur" ColumnName="id_individu" />
+            </EndProperty>
+            <EndProperty Name="individu">
+              <ScalarProperty Name="id_individu" ColumnName="id_individu" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="preteurpret" TypeName="dbmultiModel.preteurpret" StoreEntitySet="prets">
+            <EndProperty Name="pret">
+              <ScalarProperty Name="id_pret" ColumnName="id_pret" />
+            </EndProperty>
+            <EndProperty Name="preteur">
+              <ScalarProperty Name="id_preteur" ColumnName="id_preteur" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="conditions_equipementsequipement" TypeName="dbmultiModel.conditions_equipementsequipement" StoreEntitySet="conditions_equipements">
+            <EndProperty Name="equipement">
+              <ScalarProperty Name="id_equipement" ColumnName="id_equipement" />
+            </EndProperty>
+            <EndProperty Name="conditions_equipements">
+              <ScalarProperty Name="id_condition" ColumnName="id_condition" />
+              <ScalarProperty Name="id_equipement" ColumnName="id_equipement" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="conditions_equipementscondition" TypeName="dbmultiModel.conditions_equipementscondition" StoreEntitySet="conditions_equipements">
+            <EndProperty Name="condition">
+              <ScalarProperty Name="id_condition" ColumnName="id_condition" />
+            </EndProperty>
+            <EndProperty Name="conditions_equipements">
+              <ScalarProperty Name="id_condition" ColumnName="id_condition" />
+              <ScalarProperty Name="id_equipement" ColumnName="id_equipement" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="equipementpret" TypeName="dbmultiModel.equipementpret" StoreEntitySet="prets">
+            <EndProperty Name="pret">
+              <ScalarProperty Name="id_pret" ColumnName="id_pret" />
+            </EndProperty>
+            <EndProperty Name="equipement">
+              <ScalarProperty Name="id_equipement" ColumnName="id_equipement" />
             </EndProperty>
           </AssociationSetMapping>
         </EntityContainerMapping>
