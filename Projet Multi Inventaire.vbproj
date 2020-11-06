@@ -173,7 +173,7 @@
       <DependentUpon>Gestion_Emprunteurs.vb</DependentUpon>
     </Compile>
     <Compile Include="Administration\Controles utilisateurs\Gestion_Emprunteurs.vb">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Administration\Controles utilisateurs\Gestion_Preteurs.Designer.vb">
       <DependentUpon>Gestion_Preteurs.vb</DependentUpon>
@@ -235,6 +235,24 @@
     </Compile>
     <Compile Include="Connexions\Forms\Connexion.Designer.vb">
       <DependentUpon>Connexion.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Materiel\Controles utilisateurs\EnregistrementMateriel.Designer.vb">
+      <DependentUpon>EnregistrementMateriel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Materiel\Controles utilisateurs\EnregistrementMateriel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Materiel\Controles utilisateurs\FicheMateriel.Designer.vb">
+      <DependentUpon>FicheMateriel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Materiel\Controles utilisateurs\FicheMateriel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Materiel\Forms\GestionMateriel.Designer.vb">
+      <DependentUpon>GestionMateriel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Materiel\Forms\GestionMateriel.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Model1.Designer.vb">
@@ -343,6 +361,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Connexions\Forms\Connexion.resx">
       <DependentUpon>Connexion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Materiel\Controles utilisateurs\EnregistrementMateriel.resx">
+      <DependentUpon>EnregistrementMateriel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Materiel\Controles utilisateurs\FicheMateriel.resx">
+      <DependentUpon>FicheMateriel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Materiel\Forms\GestionMateriel.resx">
+      <DependentUpon>GestionMateriel.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
