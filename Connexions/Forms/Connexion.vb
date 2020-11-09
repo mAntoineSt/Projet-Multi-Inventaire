@@ -3,7 +3,7 @@ Imports MySql.Data.MySqlClient
 
 Public Class Connexion
     'Variables nécessaires
-    Dim con As MySqlConnection = New MySqlConnection("Server=localhost;Database=projet_multi;Uid=root;Pwd='';Port=3308")
+    Dim con As MySqlConnection = New MySqlConnection("Server=localhost;Database=projet_multi;Uid=root;Pwd='';Port=3308;")
     Dim reader As MySqlDataReader
     Dim commande As New MySqlCommand
     Dim mdp As String
@@ -27,11 +27,13 @@ Public Class Connexion
         'Recherche dans la BD pour voir si le prêteur ou l'administrateur est là.
         mdp = ""
         Try
+
             'Connexion et commande
             commande.Connection = con
-            commande.CommandText = "select motdepasse, statut from individus where id_individu='test';"
+            commande.CommandText = "Select motdepasse, statut from individus where id_individu='1843395';"
             con.Open()
             reader = commande.ExecuteReader
+            MessageBox.Show("passe icit")
             While (reader.Read)
                 mdp = reader(0)
             End While
@@ -50,6 +52,8 @@ Public Class Connexion
                 Return
             End If
 
+
+
             'Appelle la fonction de la page d'accueil
             Accueil.role(reader(1))
 
@@ -58,6 +62,7 @@ Public Class Connexion
 
         Catch ex As Exception
             MessageBox.Show(ex.Message)
+            con.Close()
             Return
         End Try
 
