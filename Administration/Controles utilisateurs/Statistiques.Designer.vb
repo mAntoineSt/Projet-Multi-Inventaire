@@ -111,19 +111,23 @@ Partial Class Statistiques
         Me.bAdminsPDF = New System.Windows.Forms.Button()
         Me.bAdminsDOCS = New System.Windows.Forms.Button()
         Me.bAdminsXLSX = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lTitreAdministrateur = New System.Windows.Forms.Label()
         Me.cbAdminsChoixAnnee = New System.Windows.Forms.ComboBox()
         Me.cbAdminsChoixMois = New System.Windows.Forms.ComboBox()
         Me.lAdminsTitreChoixAnnee = New System.Windows.Forms.Label()
         Me.lAdminsTitreChoixMois = New System.Windows.Forms.Label()
+        Me.pCategories = New System.Windows.Forms.Panel()
         Me.gbGlobale.SuspendLayout()
         Me.gbPartieEmprunteurs.SuspendLayout()
         Me.gbPartiePreteurs.SuspendLayout()
         Me.gbPartieAdministrateur.SuspendLayout()
+        Me.pCategories.SuspendLayout()
         Me.SuspendLayout()
         '
         'bPartieGlobale
         '
+        Me.bPartieGlobale.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bPartieGlobale.ForeColor = System.Drawing.Color.White
         Me.bPartieGlobale.Location = New System.Drawing.Point(51, 39)
         Me.bPartieGlobale.Name = "bPartieGlobale"
         Me.bPartieGlobale.Size = New System.Drawing.Size(167, 66)
@@ -133,6 +137,9 @@ Partial Class Statistiques
         '
         'bEmprunteurs
         '
+        Me.bEmprunteurs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.bEmprunteurs.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bEmprunteurs.ForeColor = System.Drawing.Color.White
         Me.bEmprunteurs.Location = New System.Drawing.Point(51, 134)
         Me.bEmprunteurs.Name = "bEmprunteurs"
         Me.bEmprunteurs.Size = New System.Drawing.Size(167, 66)
@@ -142,6 +149,8 @@ Partial Class Statistiques
         '
         'bPreteurs
         '
+        Me.bPreteurs.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bPreteurs.ForeColor = System.Drawing.Color.White
         Me.bPreteurs.Location = New System.Drawing.Point(51, 239)
         Me.bPreteurs.Name = "bPreteurs"
         Me.bPreteurs.Size = New System.Drawing.Size(167, 66)
@@ -151,6 +160,8 @@ Partial Class Statistiques
         '
         'bAdministrateurs
         '
+        Me.bAdministrateurs.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bAdministrateurs.ForeColor = System.Drawing.Color.White
         Me.bAdministrateurs.Location = New System.Drawing.Point(51, 343)
         Me.bAdministrateurs.Name = "bAdministrateurs"
         Me.bAdministrateurs.Size = New System.Drawing.Size(167, 66)
@@ -190,7 +201,8 @@ Partial Class Statistiques
         Me.gbGlobale.Controls.Add(Me.cbGlobaleChoixMois)
         Me.gbGlobale.Controls.Add(Me.lGlobaleChoixAnnee)
         Me.gbGlobale.Controls.Add(Me.lGlobaleChoixMois)
-        Me.gbGlobale.Location = New System.Drawing.Point(302, 39)
+        Me.gbGlobale.ForeColor = System.Drawing.Color.White
+        Me.gbGlobale.Location = New System.Drawing.Point(12, 13)
         Me.gbGlobale.Name = "gbGlobale"
         Me.gbGlobale.Size = New System.Drawing.Size(697, 396)
         Me.gbGlobale.TabIndex = 4
@@ -217,7 +229,8 @@ Partial Class Statistiques
         '
         'bGlobalePDF
         '
-        Me.bGlobalePDF.Location = New System.Drawing.Point(496, 296)
+        Me.bGlobalePDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bGlobalePDF.Location = New System.Drawing.Point(508, 276)
         Me.bGlobalePDF.Name = "bGlobalePDF"
         Me.bGlobalePDF.Size = New System.Drawing.Size(164, 71)
         Me.bGlobalePDF.TabIndex = 6
@@ -226,7 +239,8 @@ Partial Class Statistiques
         '
         'bGlobaleDOCS
         '
-        Me.bGlobaleDOCS.Location = New System.Drawing.Point(496, 181)
+        Me.bGlobaleDOCS.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bGlobaleDOCS.Location = New System.Drawing.Point(508, 184)
         Me.bGlobaleDOCS.Name = "bGlobaleDOCS"
         Me.bGlobaleDOCS.Size = New System.Drawing.Size(164, 71)
         Me.bGlobaleDOCS.TabIndex = 7
@@ -235,7 +249,8 @@ Partial Class Statistiques
         '
         'bGlobaleXLSX
         '
-        Me.bGlobaleXLSX.Location = New System.Drawing.Point(496, 70)
+        Me.bGlobaleXLSX.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bGlobaleXLSX.Location = New System.Drawing.Point(508, 93)
         Me.bGlobaleXLSX.Name = "bGlobaleXLSX"
         Me.bGlobaleXLSX.Size = New System.Drawing.Size(164, 71)
         Me.bGlobaleXLSX.TabIndex = 8
@@ -426,7 +441,7 @@ Partial Class Statistiques
         '
         Me.lTitreGlobale.AutoSize = True
         Me.lTitreGlobale.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.lTitreGlobale.Location = New System.Drawing.Point(19, 23)
+        Me.lTitreGlobale.Location = New System.Drawing.Point(9, 24)
         Me.lTitreGlobale.Name = "lTitreGlobale"
         Me.lTitreGlobale.Size = New System.Drawing.Size(313, 20)
         Me.lTitreGlobale.TabIndex = 5
@@ -436,7 +451,7 @@ Partial Class Statistiques
         '
         Me.cbGlobaleChoixAnnee.FormattingEnabled = True
         Me.cbGlobaleChoixAnnee.Items.AddRange(New Object() {"Aucunes"})
-        Me.cbGlobaleChoixAnnee.Location = New System.Drawing.Point(406, 19)
+        Me.cbGlobaleChoixAnnee.Location = New System.Drawing.Point(581, 20)
         Me.cbGlobaleChoixAnnee.Name = "cbGlobaleChoixAnnee"
         Me.cbGlobaleChoixAnnee.Size = New System.Drawing.Size(110, 21)
         Me.cbGlobaleChoixAnnee.TabIndex = 4
@@ -445,7 +460,7 @@ Partial Class Statistiques
         '
         Me.cbGlobaleChoixMois.FormattingEnabled = True
         Me.cbGlobaleChoixMois.Items.AddRange(New Object() {"Aucunes"})
-        Me.cbGlobaleChoixMois.Location = New System.Drawing.Point(581, 19)
+        Me.cbGlobaleChoixMois.Location = New System.Drawing.Point(406, 20)
         Me.cbGlobaleChoixMois.Name = "cbGlobaleChoixMois"
         Me.cbGlobaleChoixMois.Size = New System.Drawing.Size(110, 21)
         Me.cbGlobaleChoixMois.TabIndex = 3
@@ -453,7 +468,7 @@ Partial Class Statistiques
         'lGlobaleChoixAnnee
         '
         Me.lGlobaleChoixAnnee.AutoSize = True
-        Me.lGlobaleChoixAnnee.Location = New System.Drawing.Point(362, 23)
+        Me.lGlobaleChoixAnnee.Location = New System.Drawing.Point(537, 24)
         Me.lGlobaleChoixAnnee.Name = "lGlobaleChoixAnnee"
         Me.lGlobaleChoixAnnee.Size = New System.Drawing.Size(38, 13)
         Me.lGlobaleChoixAnnee.TabIndex = 2
@@ -462,7 +477,7 @@ Partial Class Statistiques
         'lGlobaleChoixMois
         '
         Me.lGlobaleChoixMois.AutoSize = True
-        Me.lGlobaleChoixMois.Location = New System.Drawing.Point(546, 23)
+        Me.lGlobaleChoixMois.Location = New System.Drawing.Point(371, 24)
         Me.lGlobaleChoixMois.Name = "lGlobaleChoixMois"
         Me.lGlobaleChoixMois.Size = New System.Drawing.Size(29, 13)
         Me.lGlobaleChoixMois.TabIndex = 1
@@ -492,9 +507,10 @@ Partial Class Statistiques
         Me.gbPartieEmprunteurs.Controls.Add(Me.bEmprunteursPDF)
         Me.gbPartieEmprunteurs.Controls.Add(Me.bEmprunteursDOCS)
         Me.gbPartieEmprunteurs.Controls.Add(Me.bEmprunteursXLSX)
-        Me.gbPartieEmprunteurs.Location = New System.Drawing.Point(302, 41)
+        Me.gbPartieEmprunteurs.ForeColor = System.Drawing.Color.White
+        Me.gbPartieEmprunteurs.Location = New System.Drawing.Point(12, 13)
         Me.gbPartieEmprunteurs.Name = "gbPartieEmprunteurs"
-        Me.gbPartieEmprunteurs.Size = New System.Drawing.Size(697, 394)
+        Me.gbPartieEmprunteurs.Size = New System.Drawing.Size(697, 396)
         Me.gbPartieEmprunteurs.TabIndex = 5
         Me.gbPartieEmprunteurs.TabStop = False
         Me.gbPartieEmprunteurs.Text = "Partie emprunteurs"
@@ -524,7 +540,7 @@ Partial Class Statistiques
         '
         Me.lEmprunteursNbrPretsActifs.AutoSize = True
         Me.lEmprunteursNbrPretsActifs.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.lEmprunteursNbrPretsActifs.Location = New System.Drawing.Point(238, 242)
+        Me.lEmprunteursNbrPretsActifs.Location = New System.Drawing.Point(238, 245)
         Me.lEmprunteursNbrPretsActifs.Name = "lEmprunteursNbrPretsActifs"
         Me.lEmprunteursNbrPretsActifs.Size = New System.Drawing.Size(20, 22)
         Me.lEmprunteursNbrPretsActifs.TabIndex = 28
@@ -574,7 +590,7 @@ Partial Class Statistiques
         '
         Me.lEmprunteursTitreNbrRetoursAttentes.AutoSize = True
         Me.lEmprunteursTitreNbrRetoursAttentes.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.lEmprunteursTitreNbrRetoursAttentes.Location = New System.Drawing.Point(31, 328)
+        Me.lEmprunteursTitreNbrRetoursAttentes.Location = New System.Drawing.Point(28, 328)
         Me.lEmprunteursTitreNbrRetoursAttentes.Name = "lEmprunteursTitreNbrRetoursAttentes"
         Me.lEmprunteursTitreNbrRetoursAttentes.Size = New System.Drawing.Size(259, 22)
         Me.lEmprunteursTitreNbrRetoursAttentes.TabIndex = 23
@@ -604,7 +620,7 @@ Partial Class Statistiques
         '
         Me.lEmprunteursTitreNbrRetoursEffectuees.AutoSize = True
         Me.lEmprunteursTitreNbrRetoursEffectuees.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.lEmprunteursTitreNbrRetoursEffectuees.Location = New System.Drawing.Point(31, 284)
+        Me.lEmprunteursTitreNbrRetoursEffectuees.Location = New System.Drawing.Point(28, 284)
         Me.lEmprunteursTitreNbrRetoursEffectuees.Name = "lEmprunteursTitreNbrRetoursEffectuees"
         Me.lEmprunteursTitreNbrRetoursEffectuees.Size = New System.Drawing.Size(262, 22)
         Me.lEmprunteursTitreNbrRetoursEffectuees.TabIndex = 20
@@ -614,7 +630,7 @@ Partial Class Statistiques
         '
         Me.lEmprunteursTitreNbrPretsActifs.AutoSize = True
         Me.lEmprunteursTitreNbrPretsActifs.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.lEmprunteursTitreNbrPretsActifs.Location = New System.Drawing.Point(31, 242)
+        Me.lEmprunteursTitreNbrPretsActifs.Location = New System.Drawing.Point(28, 244)
         Me.lEmprunteursTitreNbrPretsActifs.Name = "lEmprunteursTitreNbrPretsActifs"
         Me.lEmprunteursTitreNbrPretsActifs.Size = New System.Drawing.Size(205, 22)
         Me.lEmprunteursTitreNbrPretsActifs.TabIndex = 19
@@ -644,7 +660,7 @@ Partial Class Statistiques
         '
         Me.lTitrePartieEmprunteurs.AutoSize = True
         Me.lTitrePartieEmprunteurs.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.lTitrePartieEmprunteurs.Location = New System.Drawing.Point(4, 20)
+        Me.lTitrePartieEmprunteurs.Location = New System.Drawing.Point(9, 24)
         Me.lTitrePartieEmprunteurs.Name = "lTitrePartieEmprunteurs"
         Me.lTitrePartieEmprunteurs.Size = New System.Drawing.Size(352, 20)
         Me.lTitrePartieEmprunteurs.TabIndex = 16
@@ -654,7 +670,7 @@ Partial Class Statistiques
         '
         Me.cbEmprunteurChoixAnnee.FormattingEnabled = True
         Me.cbEmprunteurChoixAnnee.Items.AddRange(New Object() {"Aucunes"})
-        Me.cbEmprunteurChoixAnnee.Location = New System.Drawing.Point(406, 19)
+        Me.cbEmprunteurChoixAnnee.Location = New System.Drawing.Point(581, 20)
         Me.cbEmprunteurChoixAnnee.Name = "cbEmprunteurChoixAnnee"
         Me.cbEmprunteurChoixAnnee.Size = New System.Drawing.Size(110, 21)
         Me.cbEmprunteurChoixAnnee.TabIndex = 15
@@ -663,7 +679,7 @@ Partial Class Statistiques
         '
         Me.cbEmprunteurChoixMois.FormattingEnabled = True
         Me.cbEmprunteurChoixMois.Items.AddRange(New Object() {"Aucunes"})
-        Me.cbEmprunteurChoixMois.Location = New System.Drawing.Point(581, 19)
+        Me.cbEmprunteurChoixMois.Location = New System.Drawing.Point(406, 20)
         Me.cbEmprunteurChoixMois.Name = "cbEmprunteurChoixMois"
         Me.cbEmprunteurChoixMois.Size = New System.Drawing.Size(110, 21)
         Me.cbEmprunteurChoixMois.TabIndex = 14
@@ -671,7 +687,7 @@ Partial Class Statistiques
         'lEmprunteurTitreChoixAnnee
         '
         Me.lEmprunteurTitreChoixAnnee.AutoSize = True
-        Me.lEmprunteurTitreChoixAnnee.Location = New System.Drawing.Point(362, 23)
+        Me.lEmprunteurTitreChoixAnnee.Location = New System.Drawing.Point(537, 24)
         Me.lEmprunteurTitreChoixAnnee.Name = "lEmprunteurTitreChoixAnnee"
         Me.lEmprunteurTitreChoixAnnee.Size = New System.Drawing.Size(38, 13)
         Me.lEmprunteurTitreChoixAnnee.TabIndex = 13
@@ -680,7 +696,7 @@ Partial Class Statistiques
         'lEmprunteurTitreChoixMois
         '
         Me.lEmprunteurTitreChoixMois.AutoSize = True
-        Me.lEmprunteurTitreChoixMois.Location = New System.Drawing.Point(546, 23)
+        Me.lEmprunteurTitreChoixMois.Location = New System.Drawing.Point(371, 24)
         Me.lEmprunteurTitreChoixMois.Name = "lEmprunteurTitreChoixMois"
         Me.lEmprunteurTitreChoixMois.Size = New System.Drawing.Size(29, 13)
         Me.lEmprunteurTitreChoixMois.TabIndex = 12
@@ -688,7 +704,8 @@ Partial Class Statistiques
         '
         'bEmprunteursPDF
         '
-        Me.bEmprunteursPDF.Location = New System.Drawing.Point(508, 291)
+        Me.bEmprunteursPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bEmprunteursPDF.Location = New System.Drawing.Point(508, 276)
         Me.bEmprunteursPDF.Name = "bEmprunteursPDF"
         Me.bEmprunteursPDF.Size = New System.Drawing.Size(164, 71)
         Me.bEmprunteursPDF.TabIndex = 9
@@ -697,7 +714,8 @@ Partial Class Statistiques
         '
         'bEmprunteursDOCS
         '
-        Me.bEmprunteursDOCS.Location = New System.Drawing.Point(508, 176)
+        Me.bEmprunteursDOCS.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bEmprunteursDOCS.Location = New System.Drawing.Point(508, 184)
         Me.bEmprunteursDOCS.Name = "bEmprunteursDOCS"
         Me.bEmprunteursDOCS.Size = New System.Drawing.Size(164, 71)
         Me.bEmprunteursDOCS.TabIndex = 10
@@ -706,7 +724,8 @@ Partial Class Statistiques
         '
         'bEmprunteursXLSX
         '
-        Me.bEmprunteursXLSX.Location = New System.Drawing.Point(508, 65)
+        Me.bEmprunteursXLSX.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bEmprunteursXLSX.Location = New System.Drawing.Point(508, 93)
         Me.bEmprunteursXLSX.Name = "bEmprunteursXLSX"
         Me.bEmprunteursXLSX.Size = New System.Drawing.Size(164, 71)
         Me.bEmprunteursXLSX.TabIndex = 11
@@ -735,7 +754,8 @@ Partial Class Statistiques
         Me.gbPartiePreteurs.Controls.Add(Me.cbPreteursChoixMois)
         Me.gbPartiePreteurs.Controls.Add(Me.lPreteursTitreChoixAnnee)
         Me.gbPartiePreteurs.Controls.Add(Me.lPreteursTitreChoixMois)
-        Me.gbPartiePreteurs.Location = New System.Drawing.Point(302, 39)
+        Me.gbPartiePreteurs.ForeColor = System.Drawing.Color.White
+        Me.gbPartiePreteurs.Location = New System.Drawing.Point(12, 10)
         Me.gbPartiePreteurs.Name = "gbPartiePreteurs"
         Me.gbPartiePreteurs.Size = New System.Drawing.Size(697, 396)
         Me.gbPartiePreteurs.TabIndex = 5
@@ -747,7 +767,7 @@ Partial Class Statistiques
         '
         Me.lPreteursNbrRetoursAttentesAutorisation.AutoSize = True
         Me.lPreteursNbrRetoursAttentesAutorisation.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.lPreteursNbrRetoursAttentesAutorisation.Location = New System.Drawing.Point(361, 300)
+        Me.lPreteursNbrRetoursAttentesAutorisation.Location = New System.Drawing.Point(356, 281)
         Me.lPreteursNbrRetoursAttentesAutorisation.Name = "lPreteursNbrRetoursAttentesAutorisation"
         Me.lPreteursNbrRetoursAttentesAutorisation.Size = New System.Drawing.Size(18, 20)
         Me.lPreteursNbrRetoursAttentesAutorisation.TabIndex = 36
@@ -757,7 +777,7 @@ Partial Class Statistiques
         '
         Me.lPreteursNbrRetoursAutorisees.AutoSize = True
         Me.lPreteursNbrRetoursAutorisees.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.lPreteursNbrRetoursAutorisees.Location = New System.Drawing.Point(247, 255)
+        Me.lPreteursNbrRetoursAutorisees.Location = New System.Drawing.Point(238, 241)
         Me.lPreteursNbrRetoursAutorisees.Name = "lPreteursNbrRetoursAutorisees"
         Me.lPreteursNbrRetoursAutorisees.Size = New System.Drawing.Size(18, 20)
         Me.lPreteursNbrRetoursAutorisees.TabIndex = 35
@@ -767,7 +787,7 @@ Partial Class Statistiques
         '
         Me.lPreteursNbrPretsAutorisees.AutoSize = True
         Me.lPreteursNbrPretsAutorisees.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.lPreteursNbrPretsAutorisees.Location = New System.Drawing.Point(228, 209)
+        Me.lPreteursNbrPretsAutorisees.Location = New System.Drawing.Point(228, 202)
         Me.lPreteursNbrPretsAutorisees.Name = "lPreteursNbrPretsAutorisees"
         Me.lPreteursNbrPretsAutorisees.Size = New System.Drawing.Size(18, 20)
         Me.lPreteursNbrPretsAutorisees.TabIndex = 34
@@ -777,7 +797,7 @@ Partial Class Statistiques
         '
         Me.lPreteursNbrPreteursSuspendues.AutoSize = True
         Me.lPreteursNbrPreteursSuspendues.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.lPreteursNbrPreteursSuspendues.Location = New System.Drawing.Point(276, 167)
+        Me.lPreteursNbrPreteursSuspendues.Location = New System.Drawing.Point(272, 163)
         Me.lPreteursNbrPreteursSuspendues.Name = "lPreteursNbrPreteursSuspendues"
         Me.lPreteursNbrPreteursSuspendues.Size = New System.Drawing.Size(18, 20)
         Me.lPreteursNbrPreteursSuspendues.TabIndex = 33
@@ -787,7 +807,7 @@ Partial Class Statistiques
         '
         Me.lPreteursNbrPreteursActifs.AutoSize = True
         Me.lPreteursNbrPreteursActifs.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.lPreteursNbrPreteursActifs.Location = New System.Drawing.Point(228, 131)
+        Me.lPreteursNbrPreteursActifs.Location = New System.Drawing.Point(223, 130)
         Me.lPreteursNbrPreteursActifs.Name = "lPreteursNbrPreteursActifs"
         Me.lPreteursNbrPreteursActifs.Size = New System.Drawing.Size(18, 20)
         Me.lPreteursNbrPreteursActifs.TabIndex = 32
@@ -797,7 +817,7 @@ Partial Class Statistiques
         '
         Me.lPreteursNbrPreteurs.AutoSize = True
         Me.lPreteursNbrPreteurs.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.lPreteursNbrPreteurs.Location = New System.Drawing.Point(187, 100)
+        Me.lPreteursNbrPreteurs.Location = New System.Drawing.Point(176, 100)
         Me.lPreteursNbrPreteurs.Name = "lPreteursNbrPreteurs"
         Me.lPreteursNbrPreteurs.Size = New System.Drawing.Size(18, 20)
         Me.lPreteursNbrPreteurs.TabIndex = 31
@@ -807,7 +827,7 @@ Partial Class Statistiques
         '
         Me.lPreteursTitreNbrRetoursAttentesAutorisation.AutoSize = True
         Me.lPreteursTitreNbrRetoursAttentesAutorisation.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.lPreteursTitreNbrRetoursAttentesAutorisation.Location = New System.Drawing.Point(25, 299)
+        Me.lPreteursTitreNbrRetoursAttentesAutorisation.Location = New System.Drawing.Point(23, 281)
         Me.lPreteursTitreNbrRetoursAttentesAutorisation.Name = "lPreteursTitreNbrRetoursAttentesAutorisation"
         Me.lPreteursTitreNbrRetoursAttentesAutorisation.Size = New System.Drawing.Size(333, 20)
         Me.lPreteursTitreNbrRetoursAttentesAutorisation.TabIndex = 30
@@ -817,7 +837,7 @@ Partial Class Statistiques
         '
         Me.lPreteursTitreNbrRetoursAutorisees.AutoSize = True
         Me.lPreteursTitreNbrRetoursAutorisees.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.lPreteursTitreNbrRetoursAutorisees.Location = New System.Drawing.Point(25, 255)
+        Me.lPreteursTitreNbrRetoursAutorisees.Location = New System.Drawing.Point(23, 241)
         Me.lPreteursTitreNbrRetoursAutorisees.Name = "lPreteursTitreNbrRetoursAutorisees"
         Me.lPreteursTitreNbrRetoursAutorisees.Size = New System.Drawing.Size(218, 20)
         Me.lPreteursTitreNbrRetoursAutorisees.TabIndex = 29
@@ -827,7 +847,7 @@ Partial Class Statistiques
         '
         Me.lPreteursTitreNbrPretsAutorisees.AutoSize = True
         Me.lPreteursTitreNbrPretsAutorisees.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.lPreteursTitreNbrPretsAutorisees.Location = New System.Drawing.Point(25, 209)
+        Me.lPreteursTitreNbrPretsAutorisees.Location = New System.Drawing.Point(23, 201)
         Me.lPreteursTitreNbrPretsAutorisees.Name = "lPreteursTitreNbrPretsAutorisees"
         Me.lPreteursTitreNbrPretsAutorisees.Size = New System.Drawing.Size(204, 20)
         Me.lPreteursTitreNbrPretsAutorisees.TabIndex = 28
@@ -837,7 +857,7 @@ Partial Class Statistiques
         '
         Me.lPreteursTitreNbrPreteursSuspendues.AutoSize = True
         Me.lPreteursTitreNbrPreteursSuspendues.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.lPreteursTitreNbrPreteursSuspendues.Location = New System.Drawing.Point(25, 166)
+        Me.lPreteursTitreNbrPreteursSuspendues.Location = New System.Drawing.Point(22, 164)
         Me.lPreteursTitreNbrPreteursSuspendues.Name = "lPreteursTitreNbrPreteursSuspendues"
         Me.lPreteursTitreNbrPreteursSuspendues.Size = New System.Drawing.Size(249, 20)
         Me.lPreteursTitreNbrPreteursSuspendues.TabIndex = 27
@@ -847,7 +867,7 @@ Partial Class Statistiques
         '
         Me.lPreteursTitreNbrPreteursActifs.AutoSize = True
         Me.lPreteursTitreNbrPreteursActifs.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.lPreteursTitreNbrPreteursActifs.Location = New System.Drawing.Point(25, 131)
+        Me.lPreteursTitreNbrPreteursActifs.Location = New System.Drawing.Point(22, 129)
         Me.lPreteursTitreNbrPreteursActifs.Name = "lPreteursTitreNbrPreteursActifs"
         Me.lPreteursTitreNbrPreteursActifs.Size = New System.Drawing.Size(200, 20)
         Me.lPreteursTitreNbrPreteursActifs.TabIndex = 26
@@ -857,7 +877,7 @@ Partial Class Statistiques
         '
         Me.lPreteursTitreNbrPreteurs.AutoSize = True
         Me.lPreteursTitreNbrPreteurs.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.lPreteursTitreNbrPreteurs.Location = New System.Drawing.Point(26, 98)
+        Me.lPreteursTitreNbrPreteurs.Location = New System.Drawing.Point(21, 99)
         Me.lPreteursTitreNbrPreteurs.Name = "lPreteursTitreNbrPreteurs"
         Me.lPreteursTitreNbrPreteurs.Size = New System.Drawing.Size(158, 20)
         Me.lPreteursTitreNbrPreteurs.TabIndex = 25
@@ -865,6 +885,7 @@ Partial Class Statistiques
         '
         'bPreteursPDF
         '
+        Me.bPreteursPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bPreteursPDF.Location = New System.Drawing.Point(508, 276)
         Me.bPreteursPDF.Name = "bPreteursPDF"
         Me.bPreteursPDF.Size = New System.Drawing.Size(164, 71)
@@ -874,6 +895,7 @@ Partial Class Statistiques
         '
         'bPreteursDOCS
         '
+        Me.bPreteursDOCS.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bPreteursDOCS.Location = New System.Drawing.Point(508, 184)
         Me.bPreteursDOCS.Name = "bPreteursDOCS"
         Me.bPreteursDOCS.Size = New System.Drawing.Size(164, 71)
@@ -883,6 +905,7 @@ Partial Class Statistiques
         '
         'bPreteursXLSX
         '
+        Me.bPreteursXLSX.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bPreteursXLSX.Location = New System.Drawing.Point(508, 93)
         Me.bPreteursXLSX.Name = "bPreteursXLSX"
         Me.bPreteursXLSX.Size = New System.Drawing.Size(164, 71)
@@ -947,24 +970,25 @@ Partial Class Statistiques
         Me.gbPartieAdministrateur.Controls.Add(Me.bAdminsPDF)
         Me.gbPartieAdministrateur.Controls.Add(Me.bAdminsDOCS)
         Me.gbPartieAdministrateur.Controls.Add(Me.bAdminsXLSX)
-        Me.gbPartieAdministrateur.Controls.Add(Me.Label1)
+        Me.gbPartieAdministrateur.Controls.Add(Me.lTitreAdministrateur)
         Me.gbPartieAdministrateur.Controls.Add(Me.cbAdminsChoixAnnee)
         Me.gbPartieAdministrateur.Controls.Add(Me.cbAdminsChoixMois)
         Me.gbPartieAdministrateur.Controls.Add(Me.lAdminsTitreChoixAnnee)
         Me.gbPartieAdministrateur.Controls.Add(Me.lAdminsTitreChoixMois)
-        Me.gbPartieAdministrateur.Location = New System.Drawing.Point(302, 41)
+        Me.gbPartieAdministrateur.ForeColor = System.Drawing.Color.White
+        Me.gbPartieAdministrateur.Location = New System.Drawing.Point(12, 10)
         Me.gbPartieAdministrateur.Name = "gbPartieAdministrateur"
-        Me.gbPartieAdministrateur.Size = New System.Drawing.Size(697, 394)
+        Me.gbPartieAdministrateur.Size = New System.Drawing.Size(697, 396)
         Me.gbPartieAdministrateur.TabIndex = 5
         Me.gbPartieAdministrateur.TabStop = False
-        Me.gbPartieAdministrateur.Text = "Partie administrateur"
+        Me.gbPartieAdministrateur.Text = "Partie administrateurs"
         Me.gbPartieAdministrateur.Visible = False
         '
         'lAdminsNbrAdminsSuspendues
         '
         Me.lAdminsNbrAdminsSuspendues.AutoSize = True
         Me.lAdminsNbrAdminsSuspendues.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
-        Me.lAdminsNbrAdminsSuspendues.Location = New System.Drawing.Point(310, 246)
+        Me.lAdminsNbrAdminsSuspendues.Location = New System.Drawing.Point(310, 244)
         Me.lAdminsNbrAdminsSuspendues.Name = "lAdminsNbrAdminsSuspendues"
         Me.lAdminsNbrAdminsSuspendues.Size = New System.Drawing.Size(20, 24)
         Me.lAdminsNbrAdminsSuspendues.TabIndex = 38
@@ -994,7 +1018,7 @@ Partial Class Statistiques
         '
         Me.lAdminsTitreNbrAdminsSuspendues.AutoSize = True
         Me.lAdminsTitreNbrAdminsSuspendues.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
-        Me.lAdminsTitreNbrAdminsSuspendues.Location = New System.Drawing.Point(25, 246)
+        Me.lAdminsTitreNbrAdminsSuspendues.Location = New System.Drawing.Point(25, 243)
         Me.lAdminsTitreNbrAdminsSuspendues.Name = "lAdminsTitreNbrAdminsSuspendues"
         Me.lAdminsTitreNbrAdminsSuspendues.Size = New System.Drawing.Size(279, 24)
         Me.lAdminsTitreNbrAdminsSuspendues.TabIndex = 35
@@ -1022,7 +1046,8 @@ Partial Class Statistiques
         '
         'bAdminsPDF
         '
-        Me.bAdminsPDF.Location = New System.Drawing.Point(506, 290)
+        Me.bAdminsPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bAdminsPDF.Location = New System.Drawing.Point(508, 276)
         Me.bAdminsPDF.Name = "bAdminsPDF"
         Me.bAdminsPDF.Size = New System.Drawing.Size(164, 71)
         Me.bAdminsPDF.TabIndex = 30
@@ -1031,7 +1056,8 @@ Partial Class Statistiques
         '
         'bAdminsDOCS
         '
-        Me.bAdminsDOCS.Location = New System.Drawing.Point(506, 198)
+        Me.bAdminsDOCS.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bAdminsDOCS.Location = New System.Drawing.Point(508, 184)
         Me.bAdminsDOCS.Name = "bAdminsDOCS"
         Me.bAdminsDOCS.Size = New System.Drawing.Size(164, 71)
         Me.bAdminsDOCS.TabIndex = 31
@@ -1040,28 +1066,29 @@ Partial Class Statistiques
         '
         'bAdminsXLSX
         '
-        Me.bAdminsXLSX.Location = New System.Drawing.Point(506, 107)
+        Me.bAdminsXLSX.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bAdminsXLSX.Location = New System.Drawing.Point(508, 93)
         Me.bAdminsXLSX.Name = "bAdminsXLSX"
         Me.bAdminsXLSX.Size = New System.Drawing.Size(164, 71)
         Me.bAdminsXLSX.TabIndex = 32
         Me.bAdminsXLSX.Text = "Exporter en .XLSX"
         Me.bAdminsXLSX.UseVisualStyleBackColor = True
         '
-        'Label1
+        'lTitreAdministrateur
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label1.Location = New System.Drawing.Point(-4, 31)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(367, 20)
-        Me.Label1.TabIndex = 29
-        Me.Label1.Text = "Toutes les infos de l'administrations de l'application"
+        Me.lTitreAdministrateur.AutoSize = True
+        Me.lTitreAdministrateur.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
+        Me.lTitreAdministrateur.Location = New System.Drawing.Point(9, 24)
+        Me.lTitreAdministrateur.Name = "lTitreAdministrateur"
+        Me.lTitreAdministrateur.Size = New System.Drawing.Size(346, 18)
+        Me.lTitreAdministrateur.TabIndex = 29
+        Me.lTitreAdministrateur.Text = "Toutes les infos des administrateurs de l'application"
         '
         'cbAdminsChoixAnnee
         '
         Me.cbAdminsChoixAnnee.FormattingEnabled = True
         Me.cbAdminsChoixAnnee.Items.AddRange(New Object() {"Aucunes"})
-        Me.cbAdminsChoixAnnee.Location = New System.Drawing.Point(579, 34)
+        Me.cbAdminsChoixAnnee.Location = New System.Drawing.Point(581, 20)
         Me.cbAdminsChoixAnnee.Name = "cbAdminsChoixAnnee"
         Me.cbAdminsChoixAnnee.Size = New System.Drawing.Size(110, 21)
         Me.cbAdminsChoixAnnee.TabIndex = 28
@@ -1070,7 +1097,7 @@ Partial Class Statistiques
         '
         Me.cbAdminsChoixMois.FormattingEnabled = True
         Me.cbAdminsChoixMois.Items.AddRange(New Object() {"Aucunes"})
-        Me.cbAdminsChoixMois.Location = New System.Drawing.Point(404, 34)
+        Me.cbAdminsChoixMois.Location = New System.Drawing.Point(406, 20)
         Me.cbAdminsChoixMois.Name = "cbAdminsChoixMois"
         Me.cbAdminsChoixMois.Size = New System.Drawing.Size(110, 21)
         Me.cbAdminsChoixMois.TabIndex = 27
@@ -1078,7 +1105,7 @@ Partial Class Statistiques
         'lAdminsTitreChoixAnnee
         '
         Me.lAdminsTitreChoixAnnee.AutoSize = True
-        Me.lAdminsTitreChoixAnnee.Location = New System.Drawing.Point(535, 38)
+        Me.lAdminsTitreChoixAnnee.Location = New System.Drawing.Point(537, 24)
         Me.lAdminsTitreChoixAnnee.Name = "lAdminsTitreChoixAnnee"
         Me.lAdminsTitreChoixAnnee.Size = New System.Drawing.Size(38, 13)
         Me.lAdminsTitreChoixAnnee.TabIndex = 26
@@ -1087,20 +1114,28 @@ Partial Class Statistiques
         'lAdminsTitreChoixMois
         '
         Me.lAdminsTitreChoixMois.AutoSize = True
-        Me.lAdminsTitreChoixMois.Location = New System.Drawing.Point(369, 38)
+        Me.lAdminsTitreChoixMois.Location = New System.Drawing.Point(371, 24)
         Me.lAdminsTitreChoixMois.Name = "lAdminsTitreChoixMois"
         Me.lAdminsTitreChoixMois.Size = New System.Drawing.Size(29, 13)
         Me.lAdminsTitreChoixMois.TabIndex = 25
         Me.lAdminsTitreChoixMois.Text = "Mois"
         '
+        'pCategories
+        '
+        Me.pCategories.Controls.Add(Me.gbPartiePreteurs)
+        Me.pCategories.Controls.Add(Me.gbPartieEmprunteurs)
+        Me.pCategories.Controls.Add(Me.gbGlobale)
+        Me.pCategories.Controls.Add(Me.gbPartieAdministrateur)
+        Me.pCategories.Location = New System.Drawing.Point(290, 29)
+        Me.pCategories.Name = "pCategories"
+        Me.pCategories.Size = New System.Drawing.Size(715, 427)
+        Me.pCategories.TabIndex = 6
+        '
         'Statistiques
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.gbPartiePreteurs)
-        Me.Controls.Add(Me.gbPartieEmprunteurs)
-        Me.Controls.Add(Me.gbPartieAdministrateur)
-        Me.Controls.Add(Me.gbGlobale)
+        Me.Controls.Add(Me.pCategories)
         Me.Controls.Add(Me.bAdministrateurs)
         Me.Controls.Add(Me.bPreteurs)
         Me.Controls.Add(Me.bEmprunteurs)
@@ -1115,6 +1150,7 @@ Partial Class Statistiques
         Me.gbPartiePreteurs.PerformLayout()
         Me.gbPartieAdministrateur.ResumeLayout(False)
         Me.gbPartieAdministrateur.PerformLayout()
+        Me.pCategories.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1202,7 +1238,7 @@ Partial Class Statistiques
     Friend WithEvents bAdminsPDF As Button
     Friend WithEvents bAdminsDOCS As Button
     Friend WithEvents bAdminsXLSX As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lTitreAdministrateur As Label
     Friend WithEvents cbAdminsChoixAnnee As ComboBox
     Friend WithEvents cbAdminsChoixMois As ComboBox
     Friend WithEvents lAdminsTitreChoixAnnee As Label
@@ -1213,4 +1249,5 @@ Partial Class Statistiques
     Friend WithEvents lAdminsTitreNbrAdminsSuspendues As Label
     Friend WithEvents lAdminsTitreNbrAdminsActifs As Label
     Friend WithEvents lAdminsTitreNombreAdmins As Label
+    Friend WithEvents pCategories As Panel
 End Class

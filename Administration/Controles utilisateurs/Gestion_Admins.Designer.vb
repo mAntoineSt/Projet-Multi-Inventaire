@@ -64,37 +64,49 @@ Partial Class Gestion_Admins
         '
         'bAjoutAdmin
         '
+        Me.bAjoutAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bAjoutAdmin.ForeColor = System.Drawing.Color.White
         Me.bAjoutAdmin.Location = New System.Drawing.Point(776, 138)
         Me.bAjoutAdmin.Name = "bAjoutAdmin"
         Me.bAjoutAdmin.Size = New System.Drawing.Size(142, 56)
         Me.bAjoutAdmin.TabIndex = 3
+        Me.bAjoutAdmin.TabStop = False
         Me.bAjoutAdmin.Text = "Ajouter un nouvel administrateur"
         Me.bAjoutAdmin.UseVisualStyleBackColor = True
         '
         'bModifAdmin
         '
+        Me.bModifAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bModifAdmin.ForeColor = System.Drawing.Color.White
         Me.bModifAdmin.Location = New System.Drawing.Point(776, 211)
         Me.bModifAdmin.Name = "bModifAdmin"
         Me.bModifAdmin.Size = New System.Drawing.Size(142, 56)
         Me.bModifAdmin.TabIndex = 4
+        Me.bModifAdmin.TabStop = False
         Me.bModifAdmin.Text = "Modifier un administrateur"
         Me.bModifAdmin.UseVisualStyleBackColor = True
         '
         'bSuppressionAdmin
         '
+        Me.bSuppressionAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bSuppressionAdmin.ForeColor = System.Drawing.Color.White
         Me.bSuppressionAdmin.Location = New System.Drawing.Point(776, 283)
         Me.bSuppressionAdmin.Name = "bSuppressionAdmin"
         Me.bSuppressionAdmin.Size = New System.Drawing.Size(142, 56)
         Me.bSuppressionAdmin.TabIndex = 5
+        Me.bSuppressionAdmin.TabStop = False
         Me.bSuppressionAdmin.Text = "Supprimer un administrateur"
         Me.bSuppressionAdmin.UseVisualStyleBackColor = True
         '
         'bDroitsAdmins
         '
+        Me.bDroitsAdmins.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bDroitsAdmins.ForeColor = System.Drawing.Color.White
         Me.bDroitsAdmins.Location = New System.Drawing.Point(776, 357)
         Me.bDroitsAdmins.Name = "bDroitsAdmins"
         Me.bDroitsAdmins.Size = New System.Drawing.Size(142, 56)
         Me.bDroitsAdmins.TabIndex = 6
+        Me.bDroitsAdmins.TabStop = False
         Me.bDroitsAdmins.Text = "Enlever/Remettre les droits d'un administrateur"
         Me.bDroitsAdmins.UseVisualStyleBackColor = True
         '

@@ -22,7 +22,6 @@ Partial Class Accueil_Administration
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.lTitre = New System.Windows.Forms.Label()
         Me.lTitreRole = New System.Windows.Forms.Label()
         Me.lRole = New System.Windows.Forms.Label()
         Me.lTitreAcces = New System.Windows.Forms.Label()
@@ -35,39 +34,29 @@ Partial Class Accueil_Administration
         Me.pPasAcces = New System.Windows.Forms.Panel()
         Me.lPasAccesGestionStats = New System.Windows.Forms.Label()
         Me.lPasAccesGestionAdmins = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.pRole = New System.Windows.Forms.Panel()
         Me.pAcces.SuspendLayout()
         Me.pPasAcces.SuspendLayout()
-        Me.Panel1.SuspendLayout()
+        Me.pRole.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'lTitre
-        '
-        Me.lTitre.AutoSize = True
-        Me.lTitre.Font = New System.Drawing.Font("Perpetua Titling MT", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lTitre.Location = New System.Drawing.Point(83, 17)
-        Me.lTitre.Name = "lTitre"
-        Me.lTitre.Size = New System.Drawing.Size(381, 32)
-        Me.lTitre.TabIndex = 0
-        Me.lTitre.Text = "Partie administrative"
         '
         'lTitreRole
         '
         Me.lTitreRole.AutoSize = True
-        Me.lTitreRole.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.lTitreRole.Location = New System.Drawing.Point(187, 91)
+        Me.lTitreRole.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!)
+        Me.lTitreRole.Location = New System.Drawing.Point(59, 28)
         Me.lTitreRole.Name = "lTitreRole"
-        Me.lTitreRole.Size = New System.Drawing.Size(112, 25)
+        Me.lTitreRole.Size = New System.Drawing.Size(148, 28)
         Me.lTitreRole.TabIndex = 1
         Me.lTitreRole.Text = "Votre rôle : "
         '
         'lRole
         '
         Me.lRole.AutoSize = True
-        Me.lRole.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lRole.Location = New System.Drawing.Point(303, 95)
+        Me.lRole.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!)
+        Me.lRole.Location = New System.Drawing.Point(213, 28)
         Me.lRole.Name = "lRole"
-        Me.lRole.Size = New System.Drawing.Size(57, 20)
+        Me.lRole.Size = New System.Drawing.Size(78, 28)
         Me.lRole.TabIndex = 2
         Me.lRole.Text = "ROLE"
         '
@@ -75,10 +64,10 @@ Partial Class Accueil_Administration
         '
         Me.lTitreAcces.AutoSize = True
         Me.lTitreAcces.BackColor = System.Drawing.Color.Lime
-        Me.lTitreAcces.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold)
-        Me.lTitreAcces.Location = New System.Drawing.Point(107, 192)
+        Me.lTitreAcces.Font = New System.Drawing.Font("Arial Rounded MT Bold", 15.0!)
+        Me.lTitreAcces.Location = New System.Drawing.Point(104, 192)
         Me.lTitreAcces.Name = "lTitreAcces"
-        Me.lTitreAcces.Size = New System.Drawing.Size(238, 24)
+        Me.lTitreAcces.Size = New System.Drawing.Size(244, 23)
         Me.lTitreAcces.TabIndex = 3
         Me.lTitreAcces.Text = "Ce que vous avez accès"
         '
@@ -86,10 +75,10 @@ Partial Class Accueil_Administration
         '
         Me.lTitrePasAcces.AutoSize = True
         Me.lTitrePasAcces.BackColor = System.Drawing.Color.Red
-        Me.lTitrePasAcces.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold)
-        Me.lTitrePasAcces.Location = New System.Drawing.Point(622, 192)
+        Me.lTitrePasAcces.Font = New System.Drawing.Font("Arial Rounded MT Bold", 15.0!)
+        Me.lTitrePasAcces.Location = New System.Drawing.Point(619, 192)
         Me.lTitrePasAcces.Name = "lTitrePasAcces"
-        Me.lTitrePasAcces.Size = New System.Drawing.Size(294, 24)
+        Me.lTitrePasAcces.Size = New System.Drawing.Size(302, 23)
         Me.lTitrePasAcces.TabIndex = 4
         Me.lTitrePasAcces.Text = "Ce que vous n'avez pas accès"
         '
@@ -108,40 +97,40 @@ Partial Class Accueil_Administration
         'lAccesStatistiques
         '
         Me.lAccesStatistiques.AutoSize = True
-        Me.lAccesStatistiques.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
+        Me.lAccesStatistiques.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!)
         Me.lAccesStatistiques.Location = New System.Drawing.Point(14, 120)
         Me.lAccesStatistiques.Name = "lAccesStatistiques"
-        Me.lAccesStatistiques.Size = New System.Drawing.Size(120, 18)
+        Me.lAccesStatistiques.Size = New System.Drawing.Size(126, 16)
         Me.lAccesStatistiques.TabIndex = 3
         Me.lAccesStatistiques.Text = "• Aux statistiques"
         '
         'lAccesGestionAdmins
         '
         Me.lAccesGestionAdmins.AutoSize = True
-        Me.lAccesGestionAdmins.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
+        Me.lAccesGestionAdmins.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!)
         Me.lAccesGestionAdmins.Location = New System.Drawing.Point(14, 84)
         Me.lAccesGestionAdmins.Name = "lAccesGestionAdmins"
-        Me.lAccesGestionAdmins.Size = New System.Drawing.Size(227, 18)
+        Me.lAccesGestionAdmins.Size = New System.Drawing.Size(237, 16)
         Me.lAccesGestionAdmins.TabIndex = 2
         Me.lAccesGestionAdmins.Text = "• À la gestion des administrateurs"
         '
         'lAccesGestionPreteurs
         '
         Me.lAccesGestionPreteurs.AutoSize = True
-        Me.lAccesGestionPreteurs.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
+        Me.lAccesGestionPreteurs.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!)
         Me.lAccesGestionPreteurs.Location = New System.Drawing.Point(14, 54)
         Me.lAccesGestionPreteurs.Name = "lAccesGestionPreteurs"
-        Me.lAccesGestionPreteurs.Size = New System.Drawing.Size(180, 18)
+        Me.lAccesGestionPreteurs.Size = New System.Drawing.Size(188, 16)
         Me.lAccesGestionPreteurs.TabIndex = 1
         Me.lAccesGestionPreteurs.Text = "• À la gestion des prêteurs"
         '
         'lAccesGestionEmprunteurs
         '
         Me.lAccesGestionEmprunteurs.AutoSize = True
-        Me.lAccesGestionEmprunteurs.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
+        Me.lAccesGestionEmprunteurs.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!)
         Me.lAccesGestionEmprunteurs.Location = New System.Drawing.Point(14, 24)
         Me.lAccesGestionEmprunteurs.Name = "lAccesGestionEmprunteurs"
-        Me.lAccesGestionEmprunteurs.Size = New System.Drawing.Size(209, 18)
+        Me.lAccesGestionEmprunteurs.Size = New System.Drawing.Size(216, 16)
         Me.lAccesGestionEmprunteurs.TabIndex = 0
         Me.lAccesGestionEmprunteurs.Text = "• À la gestion des emprunteurs"
         '
@@ -159,39 +148,38 @@ Partial Class Accueil_Administration
         'lPasAccesGestionStats
         '
         Me.lPasAccesGestionStats.AutoSize = True
-        Me.lPasAccesGestionStats.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
+        Me.lPasAccesGestionStats.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!)
         Me.lPasAccesGestionStats.Location = New System.Drawing.Point(14, 60)
         Me.lPasAccesGestionStats.Name = "lPasAccesGestionStats"
-        Me.lPasAccesGestionStats.Size = New System.Drawing.Size(120, 18)
+        Me.lPasAccesGestionStats.Size = New System.Drawing.Size(126, 16)
         Me.lPasAccesGestionStats.TabIndex = 5
         Me.lPasAccesGestionStats.Text = "• Aux statistiques"
         '
         'lPasAccesGestionAdmins
         '
         Me.lPasAccesGestionAdmins.AutoSize = True
-        Me.lPasAccesGestionAdmins.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
+        Me.lPasAccesGestionAdmins.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.0!)
         Me.lPasAccesGestionAdmins.Location = New System.Drawing.Point(14, 24)
         Me.lPasAccesGestionAdmins.Name = "lPasAccesGestionAdmins"
-        Me.lPasAccesGestionAdmins.Size = New System.Drawing.Size(227, 18)
+        Me.lPasAccesGestionAdmins.Size = New System.Drawing.Size(237, 16)
         Me.lPasAccesGestionAdmins.TabIndex = 4
         Me.lPasAccesGestionAdmins.Text = "• À la gestion des administrateurs"
         '
-        'Panel1
+        'pRole
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Panel1.Controls.Add(Me.lTitre)
-        Me.Panel1.Controls.Add(Me.lTitreRole)
-        Me.Panel1.Controls.Add(Me.lRole)
-        Me.Panel1.Location = New System.Drawing.Point(233, 13)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(547, 150)
-        Me.Panel1.TabIndex = 7
+        Me.pRole.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.pRole.Controls.Add(Me.lTitreRole)
+        Me.pRole.Controls.Add(Me.lRole)
+        Me.pRole.Location = New System.Drawing.Point(322, 13)
+        Me.pRole.Name = "pRole"
+        Me.pRole.Size = New System.Drawing.Size(368, 85)
+        Me.pRole.TabIndex = 7
         '
         'Accueil_Administration
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.pRole)
         Me.Controls.Add(Me.pPasAcces)
         Me.Controls.Add(Me.pAcces)
         Me.Controls.Add(Me.lTitrePasAcces)
@@ -203,14 +191,12 @@ Partial Class Accueil_Administration
         Me.pAcces.PerformLayout()
         Me.pPasAcces.ResumeLayout(False)
         Me.pPasAcces.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.pRole.ResumeLayout(False)
+        Me.pRole.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents lTitre As Label
     Friend WithEvents lTitreRole As Label
     Friend WithEvents lRole As Label
     Friend WithEvents lTitreAcces As Label
@@ -223,5 +209,5 @@ Partial Class Accueil_Administration
     Friend WithEvents lAccesStatistiques As Label
     Friend WithEvents lPasAccesGestionStats As Label
     Friend WithEvents lPasAccesGestionAdmins As Label
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents pRole As Panel
 End Class
