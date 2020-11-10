@@ -9,32 +9,32 @@ Public Class Connexion
     Dim mdp As String
     Dim styleVisuel As Integer = 0
 
+    'PARTIE FORM--------------------------------------------------------------------------------------------------------------------
+
     'Lors de l'ouverture de l'application
     Private Sub Connexion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Recherche dans les documents de l'ordi pour voir quel style visuel il avait avant sa fermeture
+        '...
 
         If styleVisuel = 0 Then
+            'Si le visuel choisie avant est le clair
             pHaut.BackColor = ColorTranslator.FromHtml("#4b6584")
             pBas.BackColor = ColorTranslator.FromHtml("#4b6584")
             Me.BackColor = ColorTranslator.FromHtml("#d1d8e0")
             bConfirmer.ForeColor = Color.White
-            bConfirmer.BackColor = ColorTranslator.FromHtml("#4b6584")
-            lTitrePage.ForeColor = Color.White
-            LQuitter.ForeColor = Color.White
+            bConfirmer.BackColor = ColorTranslator.FromHtml("#4d73a1")
             lMdpOublie.ForeColor = Color.Black
-            lMessageCreationCompte.ForeColor = Color.White
         Else
+            'Si le visuel choisie avant est le sombre
             pHaut.BackColor = ColorTranslator.FromHtml("#252926")
             pBas.BackColor = ColorTranslator.FromHtml("#252926")
             Me.BackColor = ColorTranslator.FromHtml("#3c403d")
             bConfirmer.ForeColor = Color.White
             bConfirmer.BackColor = ColorTranslator.FromHtml("#747d8c")
-            lTitrePage.ForeColor = Color.White
-            LQuitter.ForeColor = Color.White
             lMdpOublie.ForeColor = Color.White
-            lMessageCreationCompte.ForeColor = Color.White
         End If
 
+        'Les objets à changer manuellement et qui seront toujours pareil même si le mode visuel change
         tbMatricule.AutoSize = False
         tbMatricule.Height = 30
         tbMdp.AutoSize = False
@@ -42,10 +42,10 @@ Public Class Connexion
         LCreationCompte.BackColor = ColorTranslator.FromHtml("#69db63")
     End Sub
 
+    'PARTIE BOUTONS------------------------------------------------------------------------------------------------------------
 
     'Sert à vérifier si le matricule et le mot de passe est correct pour se connecter
     Private Sub bConfirmer_Click(sender As Object, e As EventArgs) Handles bConfirmer.Click
-
 
         'Vérifie si tous les champs ont étés remplis
         If (tbMatricule.Text = "Utilisateur" And tbMatricule.ForeColor = Color.LightGray) Or (tbMdp.Text = "Mot de passe" And tbMdp.ForeColor = Color.LightGray) Then
