@@ -55,6 +55,7 @@ Partial Class Connexion
         Me.tbMdp.Font = New System.Drawing.Font("Arial Rounded MT Bold", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbMdp.ForeColor = System.Drawing.Color.LightGray
         Me.tbMdp.Location = New System.Drawing.Point(12, 144)
+        Me.tbMdp.MaxLength = 25
         Me.tbMdp.Name = "tbMdp"
         Me.tbMdp.Size = New System.Drawing.Size(325, 31)
         Me.tbMdp.TabIndex = 1
