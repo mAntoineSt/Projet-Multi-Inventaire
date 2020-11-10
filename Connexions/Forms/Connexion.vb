@@ -57,7 +57,7 @@ Public Class Connexion
             'Appelle la fonction de la page d'accueil
             Accueil.role(reader(1))
 
-            'Referme la connexion pour que cela ne cause pas de problèmes pour la prochaine demande
+            'Referme la connexion pour que cela ne cause pas de problèmes pour la prochaine demande de connexion à la bd
             con.Close()
 
         Catch ex As Exception
