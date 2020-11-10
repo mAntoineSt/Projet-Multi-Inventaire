@@ -74,6 +74,24 @@ Public Class Administration
             ucStatistiques.bGlobaleXLSX.BackColor = ColorTranslator.FromHtml("#d1d8e0")
             ucStatistiques.bPreteursXLSX.BackColor = ColorTranslator.FromHtml("#d1d8e0")
             ucStatistiques.pCategories.BackColor = ColorTranslator.FromHtml("#4d73a1")
+
+            ucStatistiques.bPartieGlobale.ForeColor = Color.Black
+            ucStatistiques.bEmprunteurs.ForeColor = Color.Black
+            ucStatistiques.bPreteurs.ForeColor = Color.Black
+            ucStatistiques.bAdministrateurs.ForeColor = Color.Black
+            ucStatistiques.bAdminsDOCS.ForeColor = Color.Black
+            ucStatistiques.bEmprunteursDOCS.ForeColor = Color.Black
+            ucStatistiques.bGlobaleDOCS.ForeColor = Color.Black
+            ucStatistiques.bPreteursDOCS.ForeColor = Color.Black
+            ucStatistiques.bAdminsPDF.ForeColor = Color.Black
+            ucStatistiques.bEmprunteursPDF.ForeColor = Color.Black
+            ucStatistiques.bGlobalePDF.ForeColor = Color.Black
+            ucStatistiques.bPreteursPDF.ForeColor = Color.Black
+            ucStatistiques.bAdminsXLSX.ForeColor = Color.Black
+            ucStatistiques.bEmprunteursXLSX.ForeColor = Color.Black
+            ucStatistiques.bGlobaleXLSX.ForeColor = Color.Black
+            ucStatistiques.bPreteursXLSX.ForeColor = Color.Black
+            ucStatistiques.pCategories.ForeColor = Color.Black
         Else
             pHaut.BackColor = ColorTranslator.FromHtml("#252926")
             pBas.BackColor = ColorTranslator.FromHtml("#252926")
@@ -113,6 +131,24 @@ Public Class Administration
             ucStatistiques.bGlobaleXLSX.BackColor = ColorTranslator.FromHtml("#3c403d")
             ucStatistiques.bPreteursXLSX.BackColor = ColorTranslator.FromHtml("#3c403d")
             ucStatistiques.pCategories.BackColor = ColorTranslator.FromHtml("#747d8c")
+
+            ucStatistiques.bPartieGlobale.ForeColor = Color.White
+            ucStatistiques.bEmprunteurs.ForeColor = Color.White
+            ucStatistiques.bPreteurs.ForeColor = Color.White
+            ucStatistiques.bAdministrateurs.ForeColor = Color.White
+            ucStatistiques.bAdminsDOCS.ForeColor = Color.White
+            ucStatistiques.bEmprunteursDOCS.ForeColor = Color.White
+            ucStatistiques.bGlobaleDOCS.ForeColor = Color.White
+            ucStatistiques.bPreteursDOCS.ForeColor = Color.White
+            ucStatistiques.bAdminsPDF.ForeColor = Color.White
+            ucStatistiques.bEmprunteursPDF.ForeColor = Color.White
+            ucStatistiques.bGlobalePDF.ForeColor = Color.White
+            ucStatistiques.bPreteursPDF.ForeColor = Color.White
+            ucStatistiques.bAdminsXLSX.ForeColor = Color.White
+            ucStatistiques.bEmprunteursXLSX.ForeColor = Color.White
+            ucStatistiques.bGlobaleXLSX.ForeColor = Color.White
+            ucStatistiques.bPreteursXLSX.ForeColor = Color.White
+            ucStatistiques.pCategories.ForeColor = Color.White
         End If
 
     End Sub
