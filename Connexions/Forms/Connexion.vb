@@ -129,6 +129,7 @@ Public Class Connexion
         If tbMdp.Text = "Mot de passe" And tbMdp.ForeColor = Color.LightGray Then
             tbMdp.ResetText()
             tbMdp.ForeColor = Color.Black
+            tbMdp.UseSystemPasswordChar = True
         End If
     End Sub
 
@@ -137,6 +138,7 @@ Public Class Connexion
         If String.IsNullOrWhiteSpace(tbMdp.Text) Then
             tbMdp.Text = "Mot de passe"
             tbMdp.ForeColor = Color.LightGray
+            tbMdp.UseSystemPasswordChar = False
         End If
     End Sub
 
@@ -157,6 +159,9 @@ Public Class Connexion
         messageCommunicationAdmin()
     End Sub
 
+    'PARTIE DES FONCTIONS-------------------------------------------------------------------------------------------------------
+
+    'Envoie un message à l'utilisateur pour lui dire de communiquer avec un administrateur ou un prêteur autorisé pour effectuer l'action
     Private Sub messageCommunicationAdmin()
         MessageBox.Show("Veuillez communiquer avec un prêteur ou un administrateur autorisé pour effectuer cette action.", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub

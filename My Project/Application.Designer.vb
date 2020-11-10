@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Projet_Multi_Inventaire.Connexion
+            Me.MainForm = Global.Projet_Multi_Inventaire.Ajout_Modif_Admin
         End Sub
     End Class
 End Namespace
