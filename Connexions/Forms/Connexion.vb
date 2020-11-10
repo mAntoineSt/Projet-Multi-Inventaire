@@ -7,6 +7,40 @@ Public Class Connexion
     Dim reader As MySqlDataReader
     Dim commande As New MySqlCommand
     Dim mdp As String
+    Dim styleVisuel As Integer = 0
+
+    'Lors de l'ouverture de l'application
+    Private Sub Connexion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Recherche dans les documents de l'ordi pour voir quel style visuel il avait avant sa fermeture
+
+        If styleVisuel = 0 Then
+            pHaut.BackColor = ColorTranslator.FromHtml("#4b6584")
+            pBas.BackColor = ColorTranslator.FromHtml("#4b6584")
+            Me.BackColor = ColorTranslator.FromHtml("#d1d8e0")
+            bConfirmer.ForeColor = Color.White
+            bConfirmer.BackColor = ColorTranslator.FromHtml("#4b6584")
+            lTitrePage.ForeColor = Color.White
+            LQuitter.ForeColor = Color.White
+            lMdpOublie.ForeColor = Color.Black
+            lMessageCreationCompte.ForeColor = Color.White
+        Else
+            pHaut.BackColor = ColorTranslator.FromHtml("#252926")
+            pBas.BackColor = ColorTranslator.FromHtml("#252926")
+            Me.BackColor = ColorTranslator.FromHtml("#3c403d")
+            bConfirmer.ForeColor = Color.White
+            bConfirmer.BackColor = ColorTranslator.FromHtml("#747d8c")
+            lTitrePage.ForeColor = Color.White
+            LQuitter.ForeColor = Color.White
+            lMdpOublie.ForeColor = Color.White
+            lMessageCreationCompte.ForeColor = Color.White
+        End If
+
+        tbMatricule.AutoSize = False
+        tbMatricule.Height = 30
+        tbMdp.AutoSize = False
+        tbMdp.Height = 30
+        LCreationCompte.BackColor = ColorTranslator.FromHtml("#69db63")
+    End Sub
 
 
     'Sert à vérifier si le matricule et le mot de passe est correct pour se connecter
@@ -14,12 +48,13 @@ Public Class Connexion
 
 
         'Vérifie si tous les champs ont étés remplis
-        If String.IsNullOrWhiteSpace(tbMatricule.Text) Or String.IsNullOrWhiteSpace(tbMdp.Text) Then
+        If (tbMatricule.Text = "Utilisateur" And tbMatricule.ForeColor = Color.LightGray) Or (tbMdp.Text = "Mot de passe" And tbMdp.ForeColor = Color.LightGray) Then
             MessageBox.Show("Vous devez remplir tous les champs demandés", "ERREUR", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Return
         End If
 
-        If tbMatricule.Text.Length <> 7 Then
+        'Vérifie si la taille des champs est de 7 caractères
+        If tbMatricule.Text.Length < 7 Then
             MessageBox.Show("Le matricule n'est pas au bon format (7 chiffres)", "ERREUR", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Return
         End If
@@ -52,8 +87,6 @@ Public Class Connexion
                 Return
             End If
 
-
-
             'Appelle la fonction de la page d'accueil
             Accueil.role(reader(1))
 
@@ -70,5 +103,61 @@ Public Class Connexion
         'Si tout est correct
         Accueil.Show()
         Me.Close()
+    End Sub
+
+
+    'PARTIE DES TEXTBOXS DU FORM-------------------------------------------------------------------------------------------------
+
+    'Quand on appuie sur le textbox de matricule
+    Private Sub tbMatricule_Enter(sender As Object, e As EventArgs) Handles tbMatricule.Enter
+        If tbMatricule.Text = "Utilisateur" And tbMatricule.ForeColor = Color.LightGray Then
+            tbMatricule.ResetText()
+            tbMatricule.ForeColor = Color.Black
+        End If
+    End Sub
+
+    'Quand on déselectionne le textbox de mot de passe
+    Private Sub tbMatricule_Leave(sender As Object, e As EventArgs) Handles tbMatricule.Leave
+        If String.IsNullOrWhiteSpace(tbMatricule.Text) Then
+            tbMatricule.Text = "Utilisateur"
+            tbMatricule.ForeColor = Color.LightGray
+        End If
+    End Sub
+
+    'Quand on appuie sur le textbox de mot de passe
+    Private Sub tbMdp_Enter(sender As Object, e As EventArgs) Handles tbMdp.Enter
+        If tbMdp.Text = "Mot de passe" And tbMdp.ForeColor = Color.LightGray Then
+            tbMdp.ResetText()
+            tbMdp.ForeColor = Color.Black
+        End If
+    End Sub
+
+    'Quand on déselectionne le textbox de mot de passe
+    Private Sub tbMdp_Leave(sender As Object, e As EventArgs) Handles tbMdp.Leave
+        If String.IsNullOrWhiteSpace(tbMdp.Text) Then
+            tbMdp.Text = "Mot de passe"
+            tbMdp.ForeColor = Color.LightGray
+        End If
+    End Sub
+
+    'PARTIE DES LABELS DU FORM---------------------------------------------------------------------------------------------------
+
+    'Quand on appuie sur le X en haut à droite du form
+    Private Sub LQuitter_Click(sender As Object, e As EventArgs) Handles LQuitter.Click
+        End
+    End Sub
+
+    'Quand on appuie sur "Mot de passe oublié?" au centre
+    Private Sub lMdpOublie_Click(sender As Object, e As EventArgs) Handles lMdpOublie.Click
+        messageCommunicationAdmin()
+    End Sub
+
+    'Quand on appuie sur le label de création de comptes en bas à droite
+    Private Sub LCreationCompte_Click(sender As Object, e As EventArgs) Handles LCreationCompte.Click
+        messageCommunicationAdmin()
+    End Sub
+
+    Private Sub messageCommunicationAdmin()
+        MessageBox.Show("Veuillez communiquer avec un prêteur ou un administrateur autorisé pour effectuer cette action.", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
 End Class
