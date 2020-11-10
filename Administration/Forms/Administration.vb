@@ -8,6 +8,9 @@ Public Class Administration
     Dim ucGestionPreteur As New Gestion_Preteurs
     Dim ucStatistiques As New Statistiques
 
+    'Variables nécessaires
+    Dim styleVisuel As Integer = 0
+
     'Variables utiles pour la Form
     Dim droits_administratif As Integer = 2
 
@@ -29,48 +32,39 @@ Public Class Administration
             ucAccueilAdmin.lPasAccesGestionStats.Visible = False
         End If
 
+        If styleVisuel = 0 Then
+            pHaut.BackColor = ColorTranslator.FromHtml("#4b6584")
+            pBas.BackColor = ColorTranslator.FromHtml("#4b6584")
+            Me.BackColor = ColorTranslator.FromHtml("#d1d8e0")
+        Else
+            pHaut.BackColor = ColorTranslator.FromHtml("#252926")
+            pBas.BackColor = ColorTranslator.FromHtml("#252926")
+            Me.BackColor = ColorTranslator.FromHtml("#3c403d")
+        End If
+
     End Sub
 
-    'Quand la partie administration se ferme
-    Private Sub Administration_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        'NE FONCTIONNE PAS ENCORE
-        'Accueil.ShowDialog()
-        'Me.Close()
-    End Sub
-
-    'Fermeture de la partie administration et retour à l'accueil
-    Private Sub msRetourAccueil_Click(sender As Object, e As EventArgs) Handles msRetourAccueil.Click
-        Accueil.Show() 'Enlever quand l'application sera ok
+    Private Sub lQuitter_Click(sender As Object, e As EventArgs) Handles lQuitter.Click
         Me.Close()
     End Sub
 
-    'Sert à ouvrir le userControl de l'accueil de l'administration (Tout le monde peut y avoir accès)
-    Private Sub msAccueilAdmin_Click(sender As Object, e As EventArgs) Handles msAccueilAdmin.Click
+    Private Sub lAccueilAdministratif_Click(sender As Object, e As EventArgs) Handles lAccueilAdministratif.Click
         ucAccueilAdmin.BringToFront()
     End Sub
 
-    'Sert à ouvrir le userControl de la gestion des administrateurs (Seul les administrateurs y ont accès)
-    Private Sub msGestionAdmins_Click(sender As Object, e As EventArgs) Handles msGestionAdmins.Click
-        If droits_administratif <> 2 Then
-            MessageBox.Show("Vous n'avez pas accès à cette partie administrative.", "AVERTISSEMENT", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            Return
-        End If
+    Private Sub lGestionAdmins_Click(sender As Object, e As EventArgs) Handles lGestionAdmins.Click
         ucGestionAdmin.BringToFront()
     End Sub
 
-    'Sert à ouvrir le userControl de la gestion des emprunteurs (Tout le monde peut y avoir accès)
-
-    Private Sub msGestionEmprunteurs_Click(sender As Object, e As EventArgs) Handles msGestionEmprunteurs.Click
+    Private Sub lGestionEmpreuteurs_Click(sender As Object, e As EventArgs) Handles lGestionEmprunteurs.Click
         ucGestionEmprunteurs.BringToFront()
     End Sub
 
-    'Sert à ouvrir le userControl de la gestion des prêteurs (Tout le monde peut y avoir accès)
-    Private Sub msGestionPreteurs_Click(sender As Object, e As EventArgs) Handles msGestionPreteurs.Click
+    Private Sub lGestionPreteurs_Click(sender As Object, e As EventArgs) Handles lGestionPreteurs.Click
         ucGestionPreteur.BringToFront()
     End Sub
 
-    'Sert à ouvrir le userControl des statistiques (Seul les administrateurs y ont accès)
-    Private Sub msStatistiques_Click(sender As Object, e As EventArgs) Handles msStatistiques.Click
+    Private Sub lStatistiques_Click(sender As Object, e As EventArgs) Handles lStatistiques.Click
         If droits_administratif <> 2 Then
             MessageBox.Show("Vous n'avez pas accès à cette partie administrative.", "AVERTISSEMENT", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Return

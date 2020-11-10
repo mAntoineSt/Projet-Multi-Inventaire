@@ -24,119 +24,162 @@ Partial Class Administration
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Administration))
         Me.pUserControls = New System.Windows.Forms.Panel()
-        Me.msMenu = New System.Windows.Forms.MenuStrip()
-        Me.msRetourAccueil = New System.Windows.Forms.ToolStripMenuItem()
-        Me.msAccueilAdmin = New System.Windows.Forms.ToolStripMenuItem()
-        Me.msGestionAdmins = New System.Windows.Forms.ToolStripMenuItem()
-        Me.msGestionEmprunteurs = New System.Windows.Forms.ToolStripMenuItem()
-        Me.msGestionPreteurs = New System.Windows.Forms.ToolStripMenuItem()
-        Me.msStatistiques = New System.Windows.Forms.ToolStripMenuItem()
-        Me.msMenu.SuspendLayout()
+        Me.pHaut = New System.Windows.Forms.Panel()
+        Me.lQuitter = New System.Windows.Forms.Label()
+        Me.lTitreHaut = New System.Windows.Forms.Label()
+        Me.pBas = New System.Windows.Forms.Panel()
+        Me.lAccueilAdministratif = New System.Windows.Forms.Label()
+        Me.lGestionAdmins = New System.Windows.Forms.Label()
+        Me.lGestionEmprunteurs = New System.Windows.Forms.Label()
+        Me.lGestionPreteurs = New System.Windows.Forms.Label()
+        Me.lStatistiques = New System.Windows.Forms.Label()
+        Me.pHaut.SuspendLayout()
         Me.SuspendLayout()
         '
         'pUserControls
         '
-        Me.pUserControls.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pUserControls.Location = New System.Drawing.Point(0, 28)
+        Me.pUserControls.Location = New System.Drawing.Point(0, 70)
         Me.pUserControls.Name = "pUserControls"
         Me.pUserControls.Size = New System.Drawing.Size(1013, 473)
         Me.pUserControls.TabIndex = 1
         '
-        'msMenu
+        'pHaut
         '
-        Me.msMenu.BackColor = System.Drawing.Color.Transparent
-        Me.msMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.msRetourAccueil, Me.msAccueilAdmin, Me.msGestionAdmins, Me.msGestionEmprunteurs, Me.msGestionPreteurs, Me.msStatistiques})
-        Me.msMenu.Location = New System.Drawing.Point(0, 0)
-        Me.msMenu.Name = "msMenu"
-        Me.msMenu.Size = New System.Drawing.Size(1013, 28)
-        Me.msMenu.TabIndex = 2
-        Me.msMenu.Text = "msMenu"
+        Me.pHaut.Controls.Add(Me.lQuitter)
+        Me.pHaut.Controls.Add(Me.lTitreHaut)
+        Me.pHaut.Location = New System.Drawing.Point(0, 0)
+        Me.pHaut.Name = "pHaut"
+        Me.pHaut.Size = New System.Drawing.Size(1013, 28)
+        Me.pHaut.TabIndex = 2
         '
-        'msRetourAccueil
+        'lQuitter
         '
-        Me.msRetourAccueil.BackColor = System.Drawing.Color.Black
-        Me.msRetourAccueil.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.msRetourAccueil.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.msRetourAccueil.Margin = New System.Windows.Forms.Padding(10, 0, 10, 0)
-        Me.msRetourAccueil.Name = "msRetourAccueil"
-        Me.msRetourAccueil.Size = New System.Drawing.Size(134, 24)
-        Me.msRetourAccueil.Text = "Retour à l'accueil"
+        Me.lQuitter.AutoSize = True
+        Me.lQuitter.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.0!)
+        Me.lQuitter.ForeColor = System.Drawing.Color.White
+        Me.lQuitter.Location = New System.Drawing.Point(992, 3)
+        Me.lQuitter.Name = "lQuitter"
+        Me.lQuitter.Size = New System.Drawing.Size(21, 22)
+        Me.lQuitter.TabIndex = 1
+        Me.lQuitter.Text = "X"
         '
-        'msAccueilAdmin
+        'lTitreHaut
         '
-        Me.msAccueilAdmin.BackColor = System.Drawing.Color.Black
-        Me.msAccueilAdmin.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.msAccueilAdmin.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.msAccueilAdmin.Margin = New System.Windows.Forms.Padding(0, 0, 10, 0)
-        Me.msAccueilAdmin.Name = "msAccueilAdmin"
-        Me.msAccueilAdmin.Size = New System.Drawing.Size(157, 24)
-        Me.msAccueilAdmin.Text = "Accueil administratif"
+        Me.lTitreHaut.AutoSize = True
+        Me.lTitreHaut.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!)
+        Me.lTitreHaut.ForeColor = System.Drawing.Color.White
+        Me.lTitreHaut.Location = New System.Drawing.Point(8, 5)
+        Me.lTitreHaut.Name = "lTitreHaut"
+        Me.lTitreHaut.Size = New System.Drawing.Size(154, 18)
+        Me.lTitreHaut.TabIndex = 0
+        Me.lTitreHaut.Text = "Menu administratif"
         '
-        'msGestionAdmins
+        'pBas
         '
-        Me.msGestionAdmins.BackColor = System.Drawing.Color.Black
-        Me.msGestionAdmins.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.msGestionAdmins.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.msGestionAdmins.Margin = New System.Windows.Forms.Padding(0, 0, 10, 0)
-        Me.msGestionAdmins.Name = "msGestionAdmins"
-        Me.msGestionAdmins.Size = New System.Drawing.Size(204, 24)
-        Me.msGestionAdmins.Text = "Gestion des administrateurs"
+        Me.pBas.Location = New System.Drawing.Point(0, 544)
+        Me.pBas.Name = "pBas"
+        Me.pBas.Size = New System.Drawing.Size(1013, 28)
+        Me.pBas.TabIndex = 3
         '
-        'msGestionEmprunteurs
+        'lAccueilAdministratif
         '
-        Me.msGestionEmprunteurs.BackColor = System.Drawing.Color.Black
-        Me.msGestionEmprunteurs.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.msGestionEmprunteurs.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.msGestionEmprunteurs.Margin = New System.Windows.Forms.Padding(0, 0, 10, 0)
-        Me.msGestionEmprunteurs.Name = "msGestionEmprunteurs"
-        Me.msGestionEmprunteurs.Size = New System.Drawing.Size(185, 24)
-        Me.msGestionEmprunteurs.Text = "Gestion des emprunteurs"
+        Me.lAccueilAdministratif.AutoSize = True
+        Me.lAccueilAdministratif.BackColor = System.Drawing.Color.Black
+        Me.lAccueilAdministratif.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!)
+        Me.lAccueilAdministratif.ForeColor = System.Drawing.Color.White
+        Me.lAccueilAdministratif.Location = New System.Drawing.Point(26, 36)
+        Me.lAccueilAdministratif.Name = "lAccueilAdministratif"
+        Me.lAccueilAdministratif.Padding = New System.Windows.Forms.Padding(4)
+        Me.lAccueilAdministratif.Size = New System.Drawing.Size(179, 26)
+        Me.lAccueilAdministratif.TabIndex = 4
+        Me.lAccueilAdministratif.Text = "Accueil administratif"
         '
-        'msGestionPreteurs
+        'lGestionAdmins
         '
-        Me.msGestionPreteurs.BackColor = System.Drawing.Color.Black
-        Me.msGestionPreteurs.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.msGestionPreteurs.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.msGestionPreteurs.Margin = New System.Windows.Forms.Padding(0, 0, 10, 0)
-        Me.msGestionPreteurs.Name = "msGestionPreteurs"
-        Me.msGestionPreteurs.Size = New System.Drawing.Size(156, 24)
-        Me.msGestionPreteurs.Text = "Gestion des prêteurs"
+        Me.lGestionAdmins.AutoSize = True
+        Me.lGestionAdmins.BackColor = System.Drawing.Color.Black
+        Me.lGestionAdmins.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!)
+        Me.lGestionAdmins.ForeColor = System.Drawing.Color.White
+        Me.lGestionAdmins.Location = New System.Drawing.Point(212, 36)
+        Me.lGestionAdmins.Name = "lGestionAdmins"
+        Me.lGestionAdmins.Padding = New System.Windows.Forms.Padding(4)
+        Me.lGestionAdmins.Size = New System.Drawing.Size(241, 26)
+        Me.lGestionAdmins.TabIndex = 5
+        Me.lGestionAdmins.Text = "Gestion des administrateurs"
         '
-        'msStatistiques
+        'lGestionEmprunteurs
         '
-        Me.msStatistiques.BackColor = System.Drawing.Color.Black
-        Me.msStatistiques.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.msStatistiques.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.msStatistiques.Name = "msStatistiques"
-        Me.msStatistiques.Size = New System.Drawing.Size(97, 24)
-        Me.msStatistiques.Text = "Statistiques"
+        Me.lGestionEmprunteurs.AutoSize = True
+        Me.lGestionEmprunteurs.BackColor = System.Drawing.Color.Black
+        Me.lGestionEmprunteurs.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!)
+        Me.lGestionEmprunteurs.ForeColor = System.Drawing.Color.White
+        Me.lGestionEmprunteurs.Location = New System.Drawing.Point(460, 36)
+        Me.lGestionEmprunteurs.Name = "lGestionEmprunteurs"
+        Me.lGestionEmprunteurs.Padding = New System.Windows.Forms.Padding(4)
+        Me.lGestionEmprunteurs.Size = New System.Drawing.Size(218, 26)
+        Me.lGestionEmprunteurs.TabIndex = 6
+        Me.lGestionEmprunteurs.Text = "Gestion des emprunteurs"
+        '
+        'lGestionPreteurs
+        '
+        Me.lGestionPreteurs.AutoSize = True
+        Me.lGestionPreteurs.BackColor = System.Drawing.Color.Black
+        Me.lGestionPreteurs.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!)
+        Me.lGestionPreteurs.ForeColor = System.Drawing.Color.White
+        Me.lGestionPreteurs.Location = New System.Drawing.Point(685, 36)
+        Me.lGestionPreteurs.Name = "lGestionPreteurs"
+        Me.lGestionPreteurs.Padding = New System.Windows.Forms.Padding(4)
+        Me.lGestionPreteurs.Size = New System.Drawing.Size(184, 26)
+        Me.lGestionPreteurs.TabIndex = 7
+        Me.lGestionPreteurs.Text = "Gestion des prêteurs"
+        '
+        'lStatistiques
+        '
+        Me.lStatistiques.AutoSize = True
+        Me.lStatistiques.BackColor = System.Drawing.Color.Black
+        Me.lStatistiques.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!)
+        Me.lStatistiques.ForeColor = System.Drawing.Color.White
+        Me.lStatistiques.Location = New System.Drawing.Point(876, 36)
+        Me.lStatistiques.Name = "lStatistiques"
+        Me.lStatistiques.Padding = New System.Windows.Forms.Padding(4)
+        Me.lStatistiques.Size = New System.Drawing.Size(111, 26)
+        Me.lStatistiques.TabIndex = 8
+        Me.lStatistiques.Text = "Statistiques"
         '
         'Administration
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1013, 501)
+        Me.ClientSize = New System.Drawing.Size(1013, 572)
+        Me.Controls.Add(Me.lStatistiques)
+        Me.Controls.Add(Me.lGestionPreteurs)
+        Me.Controls.Add(Me.lGestionEmprunteurs)
+        Me.Controls.Add(Me.lGestionAdmins)
+        Me.Controls.Add(Me.lAccueilAdministratif)
+        Me.Controls.Add(Me.pBas)
+        Me.Controls.Add(Me.pHaut)
         Me.Controls.Add(Me.pUserControls)
-        Me.Controls.Add(Me.msMenu)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Administration"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Administration"
-        Me.msMenu.ResumeLayout(False)
-        Me.msMenu.PerformLayout()
+        Me.pHaut.ResumeLayout(False)
+        Me.pHaut.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents pUserControls As Panel
-    Friend WithEvents msMenu As MenuStrip
-    Friend WithEvents msRetourAccueil As ToolStripMenuItem
-    Friend WithEvents msAccueilAdmin As ToolStripMenuItem
-    Friend WithEvents msGestionAdmins As ToolStripMenuItem
-    Friend WithEvents msGestionEmprunteurs As ToolStripMenuItem
-    Friend WithEvents msGestionPreteurs As ToolStripMenuItem
-    Friend WithEvents msStatistiques As ToolStripMenuItem
+    Friend WithEvents pHaut As Panel
+    Friend WithEvents pBas As Panel
+    Friend WithEvents lQuitter As Label
+    Friend WithEvents lTitreHaut As Label
+    Friend WithEvents lAccueilAdministratif As Label
+    Friend WithEvents lGestionAdmins As Label
+    Friend WithEvents lGestionEmprunteurs As Label
+    Friend WithEvents lGestionPreteurs As Label
+    Friend WithEvents lStatistiques As Label
 End Class
