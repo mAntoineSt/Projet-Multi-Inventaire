@@ -51,7 +51,7 @@ Public Class Connexion
             End If
 
             'Appelle la fonction de la page d'accueil
-            Accueil.role(reader(1))
+            'Accueil.role(reader(1))
 
             'Referme la connexion pour que cela ne cause pas de problèmes pour la prochaine demande
             con.Close()
