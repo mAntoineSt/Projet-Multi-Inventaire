@@ -8,7 +8,10 @@ Public Class Connexion
     Dim commande As New MySqlCommand
     Dim mdp As String
     Dim styleVisuel As Integer = 1
+    Dim langue As Integer = 0
     Dim emplacement As Point
+    Dim pressetMatricule As String
+    Dim pressetMdp As String
 
     'PARTIE FORM--------------------------------------------------------------------------------------------------------------------
 
@@ -17,6 +20,7 @@ Public Class Connexion
         'Recherche dans les documents de l'ordi pour voir quel style visuel il avait avant sa fermeture
         '...
 
+        'Définit le visuel de l'application
         If styleVisuel = 0 Then
             'Si le visuel choisie avant est le clair
             pHaut.BackColor = ColorTranslator.FromHtml("#4b6584")
@@ -35,11 +39,32 @@ Public Class Connexion
             lMdpOublie.ForeColor = Color.White
         End If
 
+        'Définit la langue de l'application
+        If langue = 0 Then
+            lTitrePage.Text = "Connexion"
+            pressetMatricule = "Utilisateur"
+            pressetMdp = "Mot de passe"
+            lMdpOublie.Text = "Mot de passe oublié?"
+            bConfirmer.Text = "CONFIRMER"
+            lMessageCreationCompte.Text = "Votre compte n'a pas été créé?"
+            LCreationCompte.Text = "Cliquez ici"
+        Else
+            lTitrePage.Text = "Connection"
+            pressetMatricule = "User"
+            pressetMdp = "Password"
+            lMdpOublie.Text = "Forgot your password?"
+            bConfirmer.Text = "CONFIRM"
+            lMessageCreationCompte.Text = "Your account has not been created?"
+            LCreationCompte.Text = "Click here"
+        End If
+
         'Les objets à changer manuellement et qui seront toujours pareil même si le mode visuel change
         tbMatricule.AutoSize = False
         tbMatricule.Height = 30
+        tbMatricule.Text = pressetMatricule
         tbMdp.AutoSize = False
         tbMdp.Height = 30
+        tbMdp.Text = pressetMdp
         LCreationCompte.BackColor = ColorTranslator.FromHtml("#69db63")
     End Sub
 
@@ -49,7 +74,7 @@ Public Class Connexion
     Private Sub bConfirmer_Click(sender As Object, e As EventArgs) Handles bConfirmer.Click
 
         'Vérifie si tous les champs ont étés remplis
-        If (tbMatricule.Text = "Utilisateur" And tbMatricule.ForeColor = Color.LightGray) Or (tbMdp.Text = "Mot de passe" And tbMdp.ForeColor = Color.LightGray) Then
+        If (tbMatricule.Text = pressetMatricule And tbMatricule.ForeColor = Color.LightGray) Or (tbMdp.Text = pressetMdp And tbMdp.ForeColor = Color.LightGray) Then
             MessageBox.Show("Vous devez remplir tous les champs demandés", "ERREUR", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Return
         End If
@@ -116,7 +141,7 @@ Public Class Connexion
 
     'Quand on appuie sur le textbox de matricule
     Private Sub tbMatricule_Enter(sender As Object, e As EventArgs) Handles tbMatricule.Enter
-        If tbMatricule.Text = "Utilisateur" And tbMatricule.ForeColor = Color.LightGray Then
+        If tbMatricule.Text = pressetMatricule And tbMatricule.ForeColor = Color.LightGray Then
             tbMatricule.ResetText()
             tbMatricule.ForeColor = Color.Black
         End If
@@ -125,14 +150,14 @@ Public Class Connexion
     'Quand on déselectionne le textbox de mot de passe
     Private Sub tbMatricule_Leave(sender As Object, e As EventArgs) Handles tbMatricule.Leave
         If String.IsNullOrWhiteSpace(tbMatricule.Text) Then
-            tbMatricule.Text = "Utilisateur"
+            tbMatricule.Text = pressetMatricule
             tbMatricule.ForeColor = Color.LightGray
         End If
     End Sub
 
     'Quand on appuie sur le textbox de mot de passe
     Private Sub tbMdp_Enter(sender As Object, e As EventArgs) Handles tbMdp.Enter
-        If tbMdp.Text = "Mot de passe" And tbMdp.ForeColor = Color.LightGray Then
+        If tbMdp.Text = pressetMdp And tbMdp.ForeColor = Color.LightGray Then
             tbMdp.ResetText()
             tbMdp.ForeColor = Color.Black
             tbMdp.UseSystemPasswordChar = True
@@ -142,7 +167,7 @@ Public Class Connexion
     'Quand on déselectionne le textbox de mot de passe
     Private Sub tbMdp_Leave(sender As Object, e As EventArgs) Handles tbMdp.Leave
         If String.IsNullOrWhiteSpace(tbMdp.Text) Then
-            tbMdp.Text = "Mot de passe"
+            tbMdp.Text = pressetMdp
             tbMdp.ForeColor = Color.LightGray
             tbMdp.UseSystemPasswordChar = False
         End If

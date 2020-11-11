@@ -12,7 +12,7 @@
     'PARTIE DES RADIO-BUTTONS-------------------------------------------------------------------------------------------------------
 
     'Quand le mode clair est sélectionné
-    Private Sub RbClair_CheckedChanged(sender As Object, e As EventArgs) Handles RbClair.CheckedChanged
+    Private Sub RbClair_CheckedChanged(sender As Object, e As EventArgs) Handles rbClair.CheckedChanged
         changementVisuel()
     End Sub
 
@@ -21,14 +21,14 @@
         changementVisuel()
     End Sub
 
-    'Change la langue
+    'Change la langue pour le français
     Private Sub rbFrancais_CheckedChanged(sender As Object, e As EventArgs) Handles rbFrancais.CheckedChanged
-
+        changementLangue()
     End Sub
 
-    '
+    'Change la langue du programme pour l'anglais
     Private Sub rbAnglais_CheckedChanged(sender As Object, e As EventArgs) Handles rbAnglais.CheckedChanged
-
+        changementLangue()
     End Sub
 
 
@@ -43,7 +43,7 @@
 
     'Fait changer le visuel selon la radio-button qui a été sélectionné
     Private Sub changementVisuel()
-        If RbClair.Checked = True Then
+        If rbClair.Checked = True Then
             pHaut.BackColor = ColorTranslator.FromHtml("#4b6584")
             pBas.BackColor = ColorTranslator.FromHtml("#4b6584")
             Me.BackColor = ColorTranslator.FromHtml("#d1d8e0")
@@ -59,9 +59,20 @@
     End Sub
 
     Private Sub changementLangue()
-
+        If rbFrancais.Checked = True Then
+            rbClair.Text = "Mode clair"
+            rbSombre.Text = "Mode sombre"
+            rbFrancais.Text = "Français"
+            rbAnglais.Text = "Anglais"
+        Else
+            rbClair.Text = "Light mode"
+            rbSombre.Text = "Dark mode"
+            rbFrancais.Text = "French"
+            rbAnglais.Text = "English"
+        End If
     End Sub
 
+    'PARTIE DES PANELS--------------------------------------------------------------------------------------------------------------
     Private Sub pHaut_MouseDown(sender As Object, e As MouseEventArgs) Handles pHaut.MouseDown, lTitre.MouseDown, lQuitter.MouseDown
         If e.Button = MouseButtons.Left Then
             emplacement = e.Location
@@ -73,6 +84,4 @@
             Me.Location += e.Location - emplacement
         End If
     End Sub
-
-
 End Class

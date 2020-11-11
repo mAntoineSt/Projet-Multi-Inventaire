@@ -1169,7 +1169,6 @@ Partial Class Statistiques
     Friend WithEvents lGlobaleChoixAnnee As Label
     Friend WithEvents lGlobaleChoixMois As Label
     Friend WithEvents bGlobalePDF As Button
-    Friend WithEvents bGlobaleDOCS As Button
     Friend WithEvents bGlobaleXLSX As Button
     Friend WithEvents lTitreNbrRetours As Label
     Friend WithEvents lTitreNbrPrets As Label
@@ -1250,4 +1249,5 @@ Partial Class Statistiques
     Friend WithEvents lAdminsTitreNbrAdminsActifs As Label
     Friend WithEvents lAdminsTitreNombreAdmins As Label
     Friend WithEvents pCategories As Panel
+    Friend WithEvents bGlobaleDOCS As Button
 End Class

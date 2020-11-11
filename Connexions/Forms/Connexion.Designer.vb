@@ -69,7 +69,7 @@ Partial Class Connexion
         Me.bConfirmer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bConfirmer.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
         Me.bConfirmer.ForeColor = System.Drawing.Color.White
-        Me.bConfirmer.Location = New System.Drawing.Point(12, 226)
+        Me.bConfirmer.Location = New System.Drawing.Point(12, 232)
         Me.bConfirmer.Name = "bConfirmer"
         Me.bConfirmer.Size = New System.Drawing.Size(325, 62)
         Me.bConfirmer.TabIndex = 4

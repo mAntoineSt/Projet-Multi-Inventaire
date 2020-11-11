@@ -23,7 +23,7 @@ Partial Class Options
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lTitre = New System.Windows.Forms.Label()
-        Me.RbClair = New System.Windows.Forms.RadioButton()
+        Me.rbClair = New System.Windows.Forms.RadioButton()
         Me.gbVisuel = New System.Windows.Forms.GroupBox()
         Me.rbSombre = New System.Windows.Forms.RadioButton()
         Me.pHaut = New System.Windows.Forms.Panel()
@@ -52,24 +52,24 @@ Partial Class Options
         Me.lTitre.TabIndex = 0
         Me.lTitre.Text = "Options"
         '
-        'RbClair
+        'rbClair
         '
-        Me.RbClair.AutoSize = True
-        Me.RbClair.Checked = True
-        Me.RbClair.Font = New System.Drawing.Font("Arial Rounded MT Bold", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RbClair.ForeColor = System.Drawing.Color.White
-        Me.RbClair.Location = New System.Drawing.Point(13, 25)
-        Me.RbClair.Name = "RbClair"
-        Me.RbClair.Size = New System.Drawing.Size(137, 28)
-        Me.RbClair.TabIndex = 1
-        Me.RbClair.TabStop = True
-        Me.RbClair.Text = "Mode Clair"
-        Me.RbClair.UseVisualStyleBackColor = True
+        Me.rbClair.AutoSize = True
+        Me.rbClair.Checked = True
+        Me.rbClair.Font = New System.Drawing.Font("Arial Rounded MT Bold", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rbClair.ForeColor = System.Drawing.Color.White
+        Me.rbClair.Location = New System.Drawing.Point(13, 25)
+        Me.rbClair.Name = "rbClair"
+        Me.rbClair.Size = New System.Drawing.Size(137, 28)
+        Me.rbClair.TabIndex = 1
+        Me.rbClair.TabStop = True
+        Me.rbClair.Text = "Mode Clair"
+        Me.rbClair.UseVisualStyleBackColor = True
         '
         'gbVisuel
         '
         Me.gbVisuel.Controls.Add(Me.rbSombre)
-        Me.gbVisuel.Controls.Add(Me.RbClair)
+        Me.gbVisuel.Controls.Add(Me.rbClair)
         Me.gbVisuel.ForeColor = System.Drawing.Color.White
         Me.gbVisuel.Location = New System.Drawing.Point(4, 3)
         Me.gbVisuel.Name = "gbVisuel"
@@ -201,7 +201,7 @@ Partial Class Options
     End Sub
 
     Friend WithEvents lTitre As Label
-    Friend WithEvents RbClair As RadioButton
+    Friend WithEvents rbClair As RadioButton
     Friend WithEvents gbVisuel As GroupBox
     Friend WithEvents rbSombre As RadioButton
     Friend WithEvents pHaut As Panel
