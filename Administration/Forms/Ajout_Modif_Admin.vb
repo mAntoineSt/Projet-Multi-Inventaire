@@ -1,6 +1,7 @@
 ﻿Public Class Ajout_Modif_Admin
     'Variables nécessaires
     Dim styleVisuel As Integer = 0
+    Dim emplacement As Point
 
 
     'PARTIE FORM------------------------------------------------------------------------------------------
@@ -169,5 +170,21 @@
     'Permet de fermer cette fenêtre
     Private Sub lQuitter_Click(sender As Object, e As EventArgs) Handles lQuitter.Click
         Me.Close()
+    End Sub
+
+    Private Sub bConfirmer_Click(sender As Object, e As EventArgs) Handles bConfirmer.Click
+
+    End Sub
+
+    Private Sub pHaut_MouseDown(sender As Object, e As MouseEventArgs) Handles pHaut.MouseDown, lTitre.MouseDown, lQuitter.MouseDown
+        If e.Button = MouseButtons.Left Then
+            emplacement = e.Location
+        End If
+    End Sub
+
+    Private Sub pHaut_MouseMove(sender As Object, e As MouseEventArgs) Handles pHaut.MouseMove, lTitre.MouseMove, lQuitter.MouseMove
+        If e.Button = MouseButtons.Left Then
+            Me.Location += e.Location - emplacement
+        End If
     End Sub
 End Class

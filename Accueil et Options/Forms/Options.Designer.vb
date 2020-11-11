@@ -22,7 +22,7 @@ Partial Class Options
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.lbTitre = New System.Windows.Forms.Label()
+        Me.lTitre = New System.Windows.Forms.Label()
         Me.RbClair = New System.Windows.Forms.RadioButton()
         Me.gbVisuel = New System.Windows.Forms.GroupBox()
         Me.rbSombre = New System.Windows.Forms.RadioButton()
@@ -41,16 +41,16 @@ Partial Class Options
         Me.pLangue.SuspendLayout()
         Me.SuspendLayout()
         '
-        'lbTitre
+        'lTitre
         '
-        Me.lbTitre.AutoSize = True
-        Me.lbTitre.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbTitre.ForeColor = System.Drawing.Color.White
-        Me.lbTitre.Location = New System.Drawing.Point(3, 7)
-        Me.lbTitre.Name = "lbTitre"
-        Me.lbTitre.Size = New System.Drawing.Size(102, 28)
-        Me.lbTitre.TabIndex = 0
-        Me.lbTitre.Text = "Options"
+        Me.lTitre.AutoSize = True
+        Me.lTitre.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lTitre.ForeColor = System.Drawing.Color.White
+        Me.lTitre.Location = New System.Drawing.Point(3, 7)
+        Me.lTitre.Name = "lTitre"
+        Me.lTitre.Size = New System.Drawing.Size(102, 28)
+        Me.lTitre.TabIndex = 0
+        Me.lTitre.Text = "Options"
         '
         'RbClair
         '
@@ -94,7 +94,7 @@ Partial Class Options
         'pHaut
         '
         Me.pHaut.Controls.Add(Me.lQuitter)
-        Me.pHaut.Controls.Add(Me.lbTitre)
+        Me.pHaut.Controls.Add(Me.lTitre)
         Me.pHaut.Location = New System.Drawing.Point(0, 0)
         Me.pHaut.Name = "pHaut"
         Me.pHaut.Size = New System.Drawing.Size(322, 42)
@@ -200,7 +200,7 @@ Partial Class Options
 
     End Sub
 
-    Friend WithEvents lbTitre As Label
+    Friend WithEvents lTitre As Label
     Friend WithEvents RbClair As RadioButton
     Friend WithEvents gbVisuel As GroupBox
     Friend WithEvents rbSombre As RadioButton

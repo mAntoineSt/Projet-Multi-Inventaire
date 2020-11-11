@@ -1,4 +1,6 @@
 ﻿Public Class Options
+    'Variables nécessaires
+    Dim emplacement As Point
 
     'PARTIE FORM--------------------------------------------------------------------------------------------------------------------
 
@@ -18,6 +20,17 @@
     Private Sub rbSombre_CheckedChanged(sender As Object, e As EventArgs) Handles rbSombre.CheckedChanged
         changementVisuel()
     End Sub
+
+    'Change la langue
+    Private Sub rbFrancais_CheckedChanged(sender As Object, e As EventArgs) Handles rbFrancais.CheckedChanged
+
+    End Sub
+
+    '
+    Private Sub rbAnglais_CheckedChanged(sender As Object, e As EventArgs) Handles rbAnglais.CheckedChanged
+
+    End Sub
+
 
     'PARTIE DES LABELS---------------------------------------------------------------------------------------------------------------
 
@@ -44,4 +57,22 @@
             pLangue.BackColor = ColorTranslator.FromHtml("#747d8c")
         End If
     End Sub
+
+    Private Sub changementLangue()
+
+    End Sub
+
+    Private Sub pHaut_MouseDown(sender As Object, e As MouseEventArgs) Handles pHaut.MouseDown, lTitre.MouseDown, lQuitter.MouseDown
+        If e.Button = MouseButtons.Left Then
+            emplacement = e.Location
+        End If
+    End Sub
+
+    Private Sub pHaut_MouseMove(sender As Object, e As MouseEventArgs) Handles pHaut.MouseMove, lTitre.MouseMove, lQuitter.MouseMove
+        If e.Button = MouseButtons.Left Then
+            Me.Location += e.Location - emplacement
+        End If
+    End Sub
+
+
 End Class

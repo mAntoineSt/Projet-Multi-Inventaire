@@ -8,6 +8,7 @@ Public Class Connexion
     Dim commande As New MySqlCommand
     Dim mdp As String
     Dim styleVisuel As Integer = 1
+    Dim emplacement As Point
 
     'PARTIE FORM--------------------------------------------------------------------------------------------------------------------
 
@@ -184,5 +185,17 @@ Public Class Connexion
             MessageBox.Show(ex.Message)
             con.Close()
         End Try
+    End Sub
+
+    Private Sub pHaut_MouseDown(sender As Object, e As MouseEventArgs) Handles pHaut.MouseDown, lTitrePage.MouseDown, LQuitter.MouseDown
+        If e.Button = MouseButtons.Left Then
+            emplacement = e.Location
+        End If
+    End Sub
+
+    Private Sub pHaut_MouseMove(sender As Object, e As MouseEventArgs) Handles pHaut.MouseMove, lTitrePage.MouseMove, LQuitter.MouseMove
+        If e.Button = MouseButtons.Left Then
+            Me.Location += e.Location - emplacement
+        End If
     End Sub
 End Class

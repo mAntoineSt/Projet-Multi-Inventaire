@@ -7,6 +7,7 @@ Public Class Administration
     Dim ucGestionEmprunteurs As New Gestion_Emprunteurs
     Dim ucGestionPreteur As New Gestion_Preteurs
     Dim ucStatistiques As New Statistiques
+    Dim emplacement As Point
 
     'Variables nécessaires
     Dim styleVisuel As Integer = 1
@@ -185,5 +186,17 @@ Public Class Administration
             Return
         End If
         ucStatistiques.BringToFront()
+    End Sub
+
+    Private Sub pHaut_MouseDown(sender As Object, e As MouseEventArgs) Handles pHaut.MouseDown, lTitreHaut.MouseDown, lQuitter.MouseDown
+        If e.Button = MouseButtons.Left Then
+            emplacement = e.Location
+        End If
+    End Sub
+
+    Private Sub pHaut_MouseMove(sender As Object, e As MouseEventArgs) Handles pHaut.MouseMove, lTitreHaut.MouseMove, lQuitter.MouseMove
+        If e.Button = MouseButtons.Left Then
+            Me.Location += e.Location - emplacement
+        End If
     End Sub
 End Class
