@@ -7,7 +7,7 @@ Public Class Connexion
     Dim reader As MySqlDataReader
     Dim commande As New MySqlCommand
     Dim mdp As String
-    Dim styleVisuel As Integer = 0
+    Dim styleVisuel As Integer = 1
 
     'PARTIE FORM--------------------------------------------------------------------------------------------------------------------
 
@@ -61,43 +61,48 @@ Public Class Connexion
 
         'Recherche dans la BD pour voir si le prêteur ou l'administrateur est là.
         mdp = ""
-        Try
 
-            'Connexion et commande
-            commande.Connection = con
-            commande.CommandText = "Select motdepasse, statut from individus where id_individu='1843395';"
-            con.Open()
-            reader = commande.ExecuteReader
-            MessageBox.Show("passe icit")
-            While (reader.Read)
-                mdp = reader(0)
-            End While
+        MessageBox.Show("test")
+        rechercheBD()
 
-            'Vérifie si la base de donnée a retourné quelque chose, si ce n'est pas le cas : ERREUR.
-            If String.IsNullOrWhiteSpace(mdp) Then
-                MessageBox.Show("Le matricule que vous avez entré n'existe pas.", "ERREUR", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                con.Close()
-                Return
-            End If
+        'Try
 
-            'Vérifie si le mot de passe trouvé dans la base de donné est le bon.
-            If mdp <> tbMdp.Text Then
-                MessageBox.Show("Le mot de passe que vous avez entré n'est pas le bon", "ERREUR", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                con.Close()
-                Return
-            End If
+        'Connexion et commande
+        'commande.Connection = con
+        'commande.CommandText = "Select * from individus;"
+        'con.Open()
+        'reader = commande.ExecuteReader
+        'MessageBox.Show("passe icit")
+        'While (reader.Read)
+        'MessageBox.Show(reader(0))
+        'mdp = reader(0)
+        'End While
 
-            'Appelle la fonction de la page d'accueil
-            Accueil.role(reader(1))
+        'Vérifie si la base de donnée a retourné quelque chose, si ce n'est pas le cas : ERREUR.
+        'If String.IsNullOrWhiteSpace(mdp) Then
+        'MessageBox.Show("Le matricule que vous avez entré n'existe pas.", "ERREUR", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        'con.Close()
+        'Return
+        'End If
 
-            'Referme la connexion pour que cela ne cause pas de problèmes pour la prochaine demande de connexion à la bd
-            con.Close()
+        'Vérifie si le mot de passe trouvé dans la base de donné est le bon.
+        'If mdp <> tbMdp.Text Then
+        '     MessageBox.Show("Le mot de passe que vous avez entré n'est pas le bon", "ERREUR", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        'con.Close()
+        '       Return
+        '    End If
 
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-            con.Close()
-            Return
-        End Try
+        'Appelle la fonction de la page d'accueil
+        '    Accueil.role(reader(1))
+
+        'Referme la connexion pour que cela ne cause pas de problèmes pour la prochaine demande de connexion à la bd
+        '   con.Close()
+
+        'Catch ex As Exception
+        ' MessageBox.Show(ex.Message)
+        '  con.Close()
+        '   Return
+        'End Try
 
 
         'Si tout est correct
@@ -164,5 +169,20 @@ Public Class Connexion
     'Envoie un message à l'utilisateur pour lui dire de communiquer avec un administrateur ou un prêteur autorisé pour effectuer l'action
     Private Sub messageCommunicationAdmin()
         MessageBox.Show("Veuillez communiquer avec un prêteur ou un administrateur autorisé pour effectuer cette action.", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information)
+    End Sub
+
+    Private Sub rechercheBD()
+        Try
+            commande.Connection = con
+            commande.CommandText = "Select * from individus;"
+            con.Open()
+            reader = commande.ExecuteReader
+            While (reader.Read)
+                MessageBox.Show(reader(0))
+            End While
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+            con.Close()
+        End Try
     End Sub
 End Class
